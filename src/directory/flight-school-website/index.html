@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/global.css" />
+    <link rel="stylesheet" href="./src/style.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./src/scripts/fleet.js" defer></script>
+    <script src="./src/scripts/reviews.js" defer></script>
+    <title>Elevation Aviation Academy</title>
+</head>
+
+<body>
+    <header>
+        <div class='header__content'>
+            <div class='header__logo'>
+                <h1>Elevate Aviation Academy</h1>
+                <!--   <img src="./assets/ElevateLogo1.png" /> -->
+            </div>
+            <div>
+                <a class='nav-link' href='index.html'>Home</a>
+                <a class='nav-link' href='/'>Instruction</a>
+                <a class='nav-link' href='#fleet'>Fleet</a>
+                <a class='nav-link' href='/'>About</a>
+                <a class='nav-link' href='/'>Contact</a>
+                <a class='nav-link' href="/index.html">Return</a>
+
+            </div>
+        </div>
+    </header>
+    <main class="container">
+
+        <!-- -->
+        <section class="section__layout darkened--bg" id="home" style="
+        background-image: url('https://images.unsplash.com/photo-1683971336619-d445cbec0276?q=80&w=1489&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        background-position: center;
+        background-size: cover;
+        height: 80vh;
+        ">
+            <div class='home__content'
+                style="width: 90%; color: #fff; background-color: #6a6a6a87; flex-basis: 50%; align-self: center; margin: 0.5% 2%; flex-grow: 1;">
+                <h1>Welcome to Elevate Aviation Academy.</h1>
+                <p>Providing flight training to the Denver area since 1998, Elevated Aviation Academy is
+                    your premier destination for aviation education and training.</p>
+            </div>
+            <div class='cta__buttons' style="flex-grow: 1;">
+                <button class='cta__button button--solid '>
+                    Learn more
+                </button>
+                <button class='cta__button button--transparent '>
+                    Learn more
+                </button>
+            </div>
+        </section>
+
+        <!-- -->
+        <section class="section__layout">
+            <div class='section__content--flex'>
+                <div class='content__col--center--w100 mbt-5'>
+                    <div class='img--col img--md'>
+                        <img
+                            src='https://images.unsplash.com/photo-1503468120394-03d29a34a0bf?q=80&w=1228&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' />
+                    </div>
+                </div>
+                <div class='section__content--main'>
+                    <div class='card__lg'>
+                        <div class='img--col'>
+                            <!--  <GiCommercialAirplane size={60} /> -->
+                        </div>
+                        <div class='card__title--md'>
+                            <h2>Advanced Training</h2>
+                        </div>
+                        <div class='section__text card__text--md'>
+                            <p> Our Advanced Training Program offers specialized courses for experienced pilots
+                                looking to enhance their skills. From instrument ratings to multi-engine
+                                certifications, we provide comprehensive training to help you reach your aviation
+                                goals.</p>
+                        </div>
+                    </div>
+                    <div class='card__lg'>
+                        <div class='img--col'>
+                            <!--    <GiPathDistance size={70}  /> -->
+                        </div>
+                        <div class='card__title--md'>
+                            <h2>Career Pathways</h2>
+                        </div>
+                        <div class='section__text card__text--md'>
+                            <p>Explore our Career Pathways Program designed for aspiring commercial pilots. Gain the
+                                knowledge and expertise required to pursue a career in aviation, including airline
+                                transport pilot (ATP) certification and advanced flight operations.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                                        <div class='content__col--center--w100 mbt-5'>
+                        <div class='text__main--col width-xl'>
+                            <p>
+                                With a focus on safety, professionalism, and hands-on experience, we offer a range
+                                of programs tailored to individual goals and aspirations. Whether you're pursuing a
+                                private pilot's license, seeking advanced certifications, or exploring career
+                                opportunities in aviation, we have the resources and expertise to guide you on your
+                                journey to the skies.
+                            </p>
+                        </div>
+                    </div>-->
+            </div>
+        </section>
+
+        <!-- -->
+        <div class='content__col banner__bg--dark'>
+            <div class='banner__text'>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum aliquam rem amet iure officia
+                    obcaecati!
+                </p>
+            </div>
+            <div class='banner__text'>
+                <button class='cta__button button--orange'>
+                    Lorem
+                </button>
+            </div>
+        </div>
+
+        <!-- -->
+        <section class="section__layout" id="fleet">
+            <div class='section__title--test'>
+                <h2>Fleet</h2>
+            </div>
+            <div class='content__row content__around' id='fleet-content'></div>
+        </section>
+
+        <!-- -->
+        <div class='content__col banner__bg--dark'>
+            <div class='banner__text'>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum aliquam rem amet iure officia
+                    obcaecati!
+                </p>
+            </div>
+            <div class='banner__text'>
+                <button class='cta__button button--orange'>
+                    Lorem
+                </button>
+            </div>
+        </div>
+        <!-- -->
+        <section class="section__layout">
+
+            <div class='section__title--test'>
+                <h2>Reviews</h2>
+            </div>
+
+            <div class='content__row content__even' id='review-content'></div>
+
+            </div>
+
+        </section>
+
+        <!-- -->
+        <section class="content__col mbt-2 height-med">
+            <div class='content__row conent__around'>
+                <div class='img--col img--md'>
+                    <img
+                        src='https://images.unsplash.com/photo-1511140276483-30c1217ca449?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' />
+                </div>
+                <div class='section__text'>
+                    <p>At Elevate Aviation Academy we are passionate about aviation and dedicated to providing
+                        top-notch flight training experiences. Our team of certified flight instructors brings years
+                        of experience and expertise to every lesson, ensuring that our students receive the highest
+                        quality instruction. With state-of-the-art facilities and a diverse fleet of aircraft, we
+                        offer comprehensive training programs designed to prepare you for success in the aviation
+                        industry.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- -->
+    <footer class='footer__standard'>
+        <div class='footer__content'>
+            <div class='footer__section'>
+                <div class='footer__section--logo'>
+                    <img src="./src/assets/logo_a.png" />
+                </div>
+            </div>
+            <div class='footer__section'>
+                <div class="location__title">
+                    <h3>Elevate Aviation Academy</h3>
+                </div>
+                <div class="location__info">
+                    <ul>
+                        <li>(555) 555-5555</li>
+                        <li>email@example.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class='footer__section footer__social'>
+                <ul>
+                    <li>
+                        <img id="socialIcon" src="./src/assets/insta-icon.png" />
+                    </li>
+                    <li>
+                        <img id="socialIcon" src="./src/assets/facebook-outline.png" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
