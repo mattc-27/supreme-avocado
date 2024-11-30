@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/styles/main.css" />
     <script src="anime.min.js"></script>
-    <script type="module" src="./src/js/scripts.js"></script>
     <script type="module" src="./src/js/main.js" defer></script>
     <title>Example sites</title>
 </head>
@@ -31,47 +30,48 @@
         </div>
     </header>
     <main class="container">
-        <div class="section__layout" id="sectionOne">
-            <div class="main__content">
+        <div class="section__layout content__row">
 
-                <div class="main__text">
-                    <p> As an emerging freelance web developer I'm excited to showcase some of my work through a
-                        collection
-                        of static mock-up sites representing various fictitious businesses.
-                    </p>
-                    <p>The goal of these examples are to highlight my attention to detail and ability to create visually
-                        appealing and functional websites.</p>
-                </div>
-                <div class="main__img">
-                    <img
-                        src="https://images.unsplash.com/photo-1481966115753-963394378f23?q=80&w=1813&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-                </div>
+
+            <div class="section__text">
+                <p> As an emerging freelance web developer I'm excited to showcase some of my work through a
+                    collection
+                    of static mock-up sites representing various fictitious businesses.
+                </p>
+                <p>The goal of these examples are to highlight my attention to detail and ability to create visually
+                    appealing and functional websites.</p>
             </div>
-        </div>
-        <div class="section__layout" id="sectionTwo">
-            <div class="example__card" id="cardItem">
-                <div class="content__col--left">
-
-
-                    <h1 class="card__title">Flower shop website</h1>
-                    <a href="./src/directory/floral-website/index.html" class="view__link">View</a>
-                </div>
+            <div class="col__img img--md">
+                <img
+                    src="https://images.unsplash.com/photo-1481966115753-963394378f23?q=80&w=1813&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
             </div>
 
         </div>
-        <div class="section__layout" id="sectionThree">
-            <div class="example__card" data-rellax-speed="7" id="cardItem">
-                <div class="content__col--left">
-                    <h1 class="card__title">Auto detail website</h1>
-                    <a href="./src/directory/auto-detail/index.html" class="view__link">View</a>
+        <div class="section__layout" id="examples">
+            <div class="card__md" id="cardItem">
+                <div class="content__col content_center items_center">
+
+
+                    <h2 class="card__title--md">Flower shop website</h2>
+                    <a class="card__link" href="./floral-website/index.html" class="view__link">View</a>
                 </div>
             </div>
-        </div>
-        <div class="section__layout" id="sectionThree">
-            <div class="example__card" id="cardItem">
-                <div class="content__col--left">
-                    <h1 class="card__title">Flight school website</h1>
-                    <a href="./src/directory/flight-school-website/index.html" class="view__link">View</a>
+
+
+
+            <div class="card__md" data-rellax-speed="7" id="cardItem">
+                <div class="content__col content_center items_center">
+                    <h2 class="card__title--md">Auto detail website</h2>
+                    <a class="card__link" href="./auto-detail/index.html" class="view__link">View</a>
+                </div>
+            </div>
+
+
+            <div class="card__md" id="cardItem">
+                <div class="content__col content_center items_center">
+                    <h2 class="card__title--md">Flight school website</h2>
+                    <a class="card__link" href="./flight-school-website/index.html"
+                        class="view__link">View</a>
                 </div>
             </div>
         </div>
