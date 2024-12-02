@@ -15,7 +15,7 @@ const customerReviews = [
         "id": 3,
         "date": "November 5, 2023",
         "user": "Sarah L",
-        "text": "Choosing Elevation Aviation Academy was one of the best decisions I've made. The curriculum was well-structured, and the personalized instruction helped me progress quickly. The school's fleet of aircraft was impressive, proving me with diverse training experiences. The staff was friendly, approachable, and always willing to answer my questions. I graduated feeling fully prepared and equipped for a successful career in aviation. Thank you, ${schoolName}, for an unforgettable journey!"
+        "text": "Choosing Elevation Aviation Academy was one of the best decisions I've made. The curriculum was well-structured, and the personalized instruction helped me progress quickly. The school's fleet of aircraft was impressive, proving me with diverse training experiences. The staff was friendly, approachable, and always willing to answer my questions. I graduated feeling fully prepared and equipped for a successful career in aviation. Thank you, Elevate, for an unforgettable journey!"
     }
   ]
 

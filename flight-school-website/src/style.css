@@ -33,7 +33,7 @@ header, footer
     height: auto;
     width: 100%;
     margin: 1% 0%;
-    min-height: 80vh;
+    min-height: 100vh;
 }
 
 
@@ -68,7 +68,7 @@ header, footer
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    max-width: 90%;
+    max-width: 50%;
     margin: 0.5%;
 }
 
@@ -120,6 +120,17 @@ header, footer
 header, footer
 ---------------- */
 .content__col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 99%;
+    flex-grow: 1;
+    margin: 0.5%;
+}
+
+.section__content--flex {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -397,12 +408,12 @@ header, footer
     width: 98%;
     color: #333;
     font-family: 'Open sans';
-    border: 0.5px solid #333;
+    border-left: 0.5px solid #333;
 }
 
 .card__lg {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     height: auto;
@@ -411,7 +422,6 @@ header, footer
     color: #333;
     font-family: 'Open sans';
     margin: 2.5% 0.5%;
-    border: 0.5px solid #333;
 }
 
 .card__title--md {
@@ -420,7 +430,7 @@ header, footer
     justify-content: flex-start;
     align-items: center;
     height: auto;
-    width: 100%;
+    width: 95%;
     flex-grow: 1;
     margin: 0.5%;
     margin-bottom: 1.5%;
@@ -443,17 +453,18 @@ header, footer
     font-size: 1.25em;
     text-align: left;
     line-height: 2;
-    font-weight: 400;
+    font-weight: 300;
     width: 100%;
     font-family: 'Open sans';
     margin: 0.5%;
-    max-width: 98%;
+    max-width: 90%;
     text-wrap: wrap;
 }
 
 .card__text--sm {
-    font-size: 1.5vw;
+    font-size: 2vw;
     max-width: 98%;
+    line-height: 2;
     margin: 0.5%;
     width: 100%;
     font-family: 'Open sans';
@@ -477,7 +488,8 @@ header, footer
 /* -- 
 review 
 ------ */
-.review__content {
+.review__content,
+.fleet__content {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -522,25 +534,38 @@ header {
     background-color: #f6f6f6;
 }
 
+
 .header__content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
     width: 100%;
+    margin: 0%;
     height: 100%;
     font-family: "Open sans", serif;
 }
 
-.header__logo {
+nav {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-items: center;
+    width: 100%;
+    flex-grow: 2;
     height: auto;
-    flex-grow: 1;
+    max-width: 99%;
     margin: 0.5%;
-    max-width: 35%;
+}
+
+.nav-link,
+.nav-link a {
+    color: #262020;
+    font-size: 1em;
+    font-weight: 300;
+    text-align: left;
+    flex-grow: 1;
 }
 
 .header__logo h1 {
@@ -549,30 +574,19 @@ header {
     font-size: 3em;
 }
 
-.header__logo img {
-    height: auto;
-    width: auto;
-    margin: 0.5%;
-    max-width: 80%;
-}
-
-nav {
+.header__logo {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
+    justify-content: flex-start;
     flex-grow: 1;
     width: 100%;
+    height: auto;
+    margin: 0.5%;
 }
 
-.nav-link,
-.nav-link a {
-    color: #262020;
-    font-size: 1em;
-    font-weight: 400;
-    text-align: left;
-    flex-grow: 1;
-    margin: 0% 0.5%;
+#headerLogo {
+    height: 100px;
+    width: auto;
 }
 
 .nav-link:hover {
@@ -582,20 +596,20 @@ nav {
 
 
 /* - Footer Block */
-.footer__standard {
-    height: auto;
-    min-height: 150px;
-    margin: 0;
-    background-color: #f9f9f9;
-    font-family: "Open Sans", serif;
-}
+
 
 .footer__content {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-basis: 100%;
+
     height: 100%;
+    height: auto;
+    min-height: 150px;
+    margin: 0;
+    background-color: #f9f9f9;
+    background-color: #333;
+    font-family: "Open Sans", serif;
 }
 
 .footer__section--logo {
@@ -604,10 +618,13 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid #fff;
 }
+
 .footer__section--logo img {
     max-width: 99%;
 }
+
 .footer__section {
     display: flex;
     flex-direction: column;
@@ -617,6 +634,7 @@ nav {
     height: auto;
     width: 100%;
     color: #262020;
+    color: #fff;
 }
 
 .footer__text {
@@ -702,10 +720,12 @@ nav {
     flex-grow: 1;
     margin: 0.5%;
 }
+
 #socialIcon {
-    width: 45px;
-    height: 45px;
+    width: 30px;
+    height: 30px;
 }
+
 /* -----------------------
 
 home content
@@ -766,11 +786,27 @@ home content
 }
 
 .subscribe__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 98%;
+    height: auto;
+    flex-grow: 1;
     backdrop-filter: blur(3px);
     margin: 0.5%;
-    background-color: #e7e7e7e0;
-    margin: 2.5% 0%;
     font-family: "Open sans";
+    border-top: 0.5px solid #333;
+}
+
+.subscribe__title {
+    flex-grow: 0.5;
+    font-size: 3.75em;
+    font-weight: 400;
+    align-self: center;
+    text-align: center;
+    color: #565656;
 }
 
 .subscribe__input {
@@ -778,16 +814,17 @@ home content
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
     height: auto;
     width: 100%;
     max-width: 99%;
     min-width: 0;
     margin: 0;
+    background-color: #fff;
+    box-shadow: 0px 2px 3px 0px rgba(38, 38, 38, 0.2);
 }
 
 .subscribe__input input {
-    height: 2.5em;
+    height: 5em;
     width: 100%;
     flex-grow: 1;
     margin: 0.5%;
@@ -802,7 +839,7 @@ home content
 }
 
 .subscribeBtn {
-    height: 2em;
+    height: 3.5em;
     width: 100%;
     max-width: 35%;
     margin: 0.5%;
@@ -970,7 +1007,18 @@ breakpoints
 
     .section__layout {
         justify-content: space-evenly;
-        min-height: 100vh;
+        min-height: 80vh;
+    }
+
+    .section__content--flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: 99%;
+        flex-grow: 1;
+        margin: 0.5%;
     }
 
     .section__content {
@@ -989,8 +1037,9 @@ breakpoints
     }
 
     .section__title--test h2 {
-        font-size: 10vw;
+        font-size: 8vw;
         text-wrap: wrap;
+        font-weight: 400;
     }
 
     .section__title--med h2 {
@@ -1065,14 +1114,19 @@ breakpoints
         max-width: 98%;
     }
 
+    .card__text--md {
+        width: 100%;
+        line-height: 2.5;
+    }
+
     .card__text--md p {
-        font-size: 1.5vw;
+        font-size: 1em;
         font-weight: 300;
         margin: 0% 1.5%;
     }
 
     .card__title--md {
-        font-size: 1.5vw;
+        font-size: 1.25vw;
     }
 
     .section__content--flex {
@@ -1088,9 +1142,23 @@ breakpoints
     /* */
     .subscribe__content {
         height: auto;
-        width: 59%;
+        width: 55%;
+        text-align: center;
         margin: 0.5%;
         height: auto;
+        flex-grow: 1;
+    }
+
+    .review__content,
+    .fleet__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: auto;
+        margin: 1% 0.5%;
+        height: 100%;
+        flex-grow: 2;
     }
 
     .review__item {
@@ -1112,14 +1180,26 @@ breakpoints
 
     }
 
+    .card__text--sm {
+        font-size: 1vw;
+        max-width: 98%;
+        line-height: 2;
+        margin: 0.5%;
+        width: 100%;
+        font-family: 'Open sans';
+    }
+
     header {
         min-height: 120px;
+        height: 150px;
     }
 
     .header__content {
+        display: flex;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        flex-direction: row;
+        height: 100%;
         width: 100%;
     }
 
@@ -1128,20 +1208,24 @@ breakpoints
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        height: 80%;
-        width: auto;
+        width: 100%;
+        flex-grow: 1;
+        height: 100%;
+        max-height: 80%;
         margin: 0.5%;
-        max-width: 98%;
-        flex-grow: 1;
     }
 
-    .header__logo {
-        flex-grow: 1;
+    .nav-link,
+    .nav-link a {
+        color: #262020;
+        font-size: 1em;
+        font-weight: 400;
+        text-align: right;
     }
 
-    .header-logo img {
-        height: 30%;
-        width: 30%;
+    #headerLogo {
+        width: 50%;
+        height: 50%;
     }
 
     .container {
