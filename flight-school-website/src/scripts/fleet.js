@@ -32,11 +32,11 @@ $(document).ready(function() {
                     <div class='card__text--md'>
                         <p><b>Hourly rate: </b>$${item.hourlyRate}</p>
                     </div>
-                    <div class='col__img'>
+                    <div class='card__col--img'>
                         <img src='${item.image}' alt='${item.name}' />
                     </div>
                     <div class='content__row'>
-                        <button class='cta__button view__button'>View</button>
+                        <button class='view__button'>View</button>
                     </div>
                     <div class='view-item' style='display: none;'>
                         <div class='view-modal' style='display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; margin: 2%;'>
