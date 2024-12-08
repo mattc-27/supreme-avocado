@@ -47,8 +47,55 @@
             </div>
 
         </div>
-        <div class="section__layout" id="examples">
-            <div class="card__md" id="cardItem">
+        <div class="section__layout project_section" id="examples">
+
+            <div class="content__col rellax" id="projects" data-rellax-speed="0">
+                <div class="card__sm rellax" data-rellax-speed="0">
+                    <h2 class="card__title--sm">Auto detail website</h2>
+                    <a class="card__link" href="./auto-detail/index.html" class="view__link">View</a>
+                </div>
+
+                <div class="card__sm rellax" data-rellax-speed="0">
+                    <h2 class="card__title--sm">Flight school website</h2>
+                    <a class="card__link" href="./flight-school-website/index.html" class="view__link">View</a>
+                </div>
+
+                <div class="card__sm rellax" data-rellax-speed="0">
+                    <h2 class="card__title--sm">Flower shop website</h2>
+                    <a class="card__link" href="./floral-website/index.html" class="view__link">View</a>
+                </div>
+
+
+            </div>
+
+            <div class="content__col rellax" data-rellax-speed="0" id="projectBg">
+                <img src="./src/assets/vecteezy_galaxy-paint-brush_24222740.png" />
+            </div>
+        </div>
+
+        <!--
+            <div class="section__layout project_section" id="examples">
+            <h2>Test</h2>
+        </div>
+                <div class="section__layout">
+
+            <div class="rellax" data-rellax-speed="-3">
+                I’m slow and smooth
+            </div>
+
+            <div class="rellax" data-rellax-speed="7">
+                I’m super fast!!
+            </div>
+
+            <div class="rellax" data-rellax-speed="-5">
+                I’m extra slow and smooth
+            </div>
+        </div>
+        <div class="section__layout">
+            <h3>asdf</h3>
+        </div>-->
+        <!--
+         <div class="card__md" id="cardItem">
                 <div class="content__col content_center items_center">
 
 
@@ -74,28 +121,40 @@
                         class="view__link">View</a>
                 </div>
             </div>
-        </div>
-        <!--
-                <div class="section__layout">
-
-            <div class="rellax" data-rellax-speed="-3">
-                I’m slow and smooth
-            </div>
-
-            <div class="rellax" data-rellax-speed="7">
-                I’m super fast!!
-            </div>
-
-            <div class="rellax" data-rellax-speed="-5">
-                I’m extra slow and smooth
-            </div>
-        </div>
-        <div class="section__layout">
-            <h3>asdf</h3>
-        </div>-->
-
+            -->
 
     </main>
+    <!-- -->
+    <footer>
+        <div class='footer__content'>
+            <div class='footer__section'>
+                <div class='footer__section--logo'>
+                    <img src="./src/assets/elevate_logo-dark.png" />
+                </div>
+            </div>
+            <div class='footer__section'>
+                <div class="location__title">
+                    <h3>Elevate Aviation Academy</h3>
+                </div>
+                <div class="location__info">
+                    <ul>
+                        <li>(555) 555-5555</li>
+                        <li>email@example.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class='footer__section footer__social'>
+                <ul>
+                    <li>
+                        <img id="socialIcon" src="./src/assets/icons8-instagram-50.png" />
+                    </li>
+                    <li>
+                        <img id="socialIcon" src="./src/assets/icons8-facebook-30.png" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
 </body>
 <script type="module">
@@ -104,6 +163,7 @@
     import anime from 'animejs/lib/anime.es.js'
 
     var rellax = new Rellax('.rellax');
+
 
     /*     anime({
             targets: '#cardItem',

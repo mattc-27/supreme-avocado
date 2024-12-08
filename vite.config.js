@@ -9,7 +9,7 @@ export default defineConfig({
     emptyOutDir: true, // Clear the dist folder before build
   },
   server: {
-    port: 8000, // Server port
+    port: 8080, // Server port
     open: true,
   },
 });
