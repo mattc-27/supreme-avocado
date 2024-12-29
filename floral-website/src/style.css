@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Pinyon+Script&family=Tangerine:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -1097,4 +1099,142 @@ breakpoints
         font-weight: 300;
     }
 
+}
+
+
+/* -----------------------
+--- Seasonal 
+Primary Colors: Deep Evergreen (#005F33) and Holly Berry Red (#C1272D).
+Secondary Colors: Frost White (#FDFDFD) and Gold (#F5C518).
+Accent Colors: Winter Silver (#D1D1D1) and Warm Cocoa Brown (#7C4A33).
+------------------------ */
+.seasonal__layout {
+    /*    background-image: url('./assets/vecteezy_winter-beautiful-background_47750817.jpg');*/
+    background-color: #FDFDFD;
+}
+
+.seasonal__title {
+    font-family: 'Open sans';
+    margin: 0%;
+    color: #fafafa;
+    width: 100%;
+    max-width: 98%;
+    font-weight: 400;
+    height: 80vh;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    /*     background-position-x: 100%;*/
+    bottom: 0%;
+    background-color: #FDFDFD;
+    position: relative;
+    background-image: url('https://images.unsplash.com/photo-1545024602-5ac8042e0bc5?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.seasonal__headers {
+    position: absolute;
+    left: 2%;
+    max-width: 98%;
+    margin: 0%;
+    top: 1%;
+}
+
+/* 
+.seasonal__headers {
+    background-color: #5151518a;
+}*/
+
+
+.seasonal__hero {}
+
+.seasonal__title h2 {
+    font-size: 8vw;
+    font-family: "Tangerine", cursive;
+    color: #F5C518;
+    max-width: 99%;
+    font-weight: 600;
+    line-height: 1.5;
+
+}
+
+.seasonal__title h3 {
+    font-size: 2em;
+    line-height: 2;
+}
+
+.seasonal__cta--links {
+    line-height: 2;
+    background-color: #3f3f3f8b;
+
+    /*   position: absolute;
+    top: 80%;
+    left: 8%;
+    max-width: 90%;
+    margin: 0%;
+    border: 1px solid #fafafa;
+    left: 8%;*/
+}
+
+.seasonal_cta {
+    text-decoration: underline;
+    margin: 0.5% 0%;
+    color: #fafafa;
+    font-size: 1.5em;
+    font-weight: 400;
+    border-left: 1px solid #fdfdfd;
+}
+
+.seasonal__end {
+    display: flex;
+    height: 50vh;
+
+    background-size: cover;
+}
+
+.seasonal__bg-c {
+    background-color: #005F33;
+    height: 99vh;
+}
+
+.seasonal__bg-b {
+    background-color: #7C4A33;
+    height: 99vh;
+}
+
+.seasonal__bg-a {
+    background-color: #C1272D;
+    height: 99vh;
+}
+
+.subscribe__event {}
+
+.seasonal__text {
+    font-family: 'Open sans';
+    height: auto;
+}
+
+.seasonal__text h2 {
+    font-family: 'Open sans';
+    font-size: 3vw;
+    color: #fafafa;
+    flex-grow: 1;
+}
+
+.seasonal__text p {
+    font-size: 1.5em;
+    color: #fafafa;
+    font-family: 'Open sans';
+    flex-grow: 2;
+    line-height: 2;
+}
+
+.season__button--dark {
+    height: 3em;
+    width: 100%;
+    max-width: 80%;
+    margin: 0.5%;
+    font-size: 1em;
+    border: none;
+    background-color: #2db776;
+    border-radius: 50px;
+    color: #fafafa;
 }

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../styles/global.css" />
+    <link rel="stylesheet" href="../../src/style.css" />
+    <script src="https://kit.fontawesome.com/f923528a34.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../../src/scripts/fleet.js" defer></script>
+    <script src="../../src/scripts/reviews.js" defer></script>
+    <title>Elevation Aviation Academy</title>
+</head>
+
+<body>
+    <header>
+        <div class='header__content'>
+            <div class='header__logo'>
+                <!--  <h1>Elevate Aviation Academy</h1> -->
+                <img src="../../src/assets//logo_b.png" id="headerLogo" />
+            </div>
+            <nav>
+                <a class='nav-link' href='../../index.html'>Home</a>
+                <a class='nav-link' href='./index.html'>Fleet</a>
+                <a class='nav-link' href='./index.html'>About</a>
+                <a class='nav-link' href="/">Return</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+
+        <!-- -->
+        <section class="section__layout darkened--bg" id="home" style="
+        background-image: url('https://images.unsplash.com/photo-1683971336619-d445cbec0276?q=80&w=1489&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        background-position: center;
+        background-size: cover;
+        height: 80vh;
+        ">
+            <div class='home__content'
+                style="width: 90%; color: #fff; background-color: #6a6a6a87; flex-basis: 50%; align-self: center; margin: 0.5% 2%; flex-grow: 1;">
+                <h1>Explore Our Fleet</h1>
+                <p>State-of-the-art aircraft for every training mission. Discover the planes that will take you to the
+                    skies.</p>
+            </div>
+        </section>
+
+        <!-- -->
+        <section class="section__layout section__content--flex">
+
+            <!--
+                        <div class='col__img'>
+                <img
+                    src='https://images.unsplash.com/photo-1511140276483-30c1217ca449?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' />
+            </div>
+            -->
+            <div class="content__row">
+                <div class="content__col">
+                    <div class='title__row--med'>
+                        <h2 id="section__title-1">
+                            Diverse, modern, and meticulously maintained – our fleet is designed to provide the best
+                            learning experience possible.
+                        </h2>
+                    </div>
+                    <div class='content__row'>
+                        <div class="card__sm">
+                            <p class="card__text--sm ">
+                                Diverse Selection: From single-engine trainers to advanced multi-engine aircraft.
+                            </p>
+
+
+
+                        </div>
+                        <div class="card__sm">
+                            <p class="card__text--sm ">
+                                Modern Equipment: All aircraft feature advanced avionics for real-world training.
+                            </p>
+
+                        </div>
+                        <div class="card__sm">
+                            <p class="card__text--sm ">
+                                Safety First: Regular maintenance ensures every flight is safe and reliable.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col__img">
+                    <img
+                        src="https://images.unsplash.com/photo-1686925131684-70ea6f680cd6?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                </div>
+            </div>
+
+        </section>
+
+        <!-- -->
+        <section class="section__layout" id="fleet">
+            <div class='section__title--test'>
+                <h2>Fleet</h2>
+            </div>
+            <div class='content__row fleet__content' id='fleet-content'></div>
+        </section>
+
+        <!-- -->
+
+
+        <!-- -->
+        <div class='content__col banner__bg--dark'>
+            <div class='banner__text'>
+                <h3>Book your discovery flight today and experience the difference in our fleet.</h3>
+                <p>Need flight hours or a plane for a weekend adventure? Our fleet is ready for your next journey, with
+                    flexible rental options to suit every pilot.</p>
+            </div>
+            <div class='cta__button--banner'>
+                <button class='button--orange'>
+                    Schedule a Flight
+                </button>
+            </div>
+
+        </div>
+
+
+    </main>
+    <footer class="footer__standard">
+        <div class="footer__content">
+            <div class="footer__section footer__section--logo">
+                <img src="./assets//logo_c.png" />
+            </div>
+            <div class="footer__section">
+                <div class="footer__location">
+                    <div class="location-title">
+                        <h3>Denver</h3>
+                    </div>
+                    <div class="location-info">
+                        <p>bookings@aspenair.com</p>
+                        <p>(303) 555-2201</p>
+                        <p>8500 Peña Blvd., Suite 500</p>
+                        <p>Denver, CO 80249</p>
+                    </div>
+                </div>
+                <div class="footer__location">
+                    <div class="location-title">
+                        <h3>New England</h3>
+                    </div>
+                    <div class="location-info">
+                        <p>bookings@xaspenair.com</p>
+                        <p>(207) 555-9812</p>
+                        <p>455 Jetway Blvd., Suite 120</p>
+                        <p>Portland, ME 04102</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__section footer__social">
+                <div class="location-title">
+                    <h3>Follow us</h3>
+                </div>
+
+                <div class="location-info">
+                    <ul>
+                        <li>
+                            <img style='height: 25px;' src="./assets/icons/facebook-sq.png" />
+                        </li>
+                        <li>
+                            <img style='height: 25px' src="./assets/icons/linkedin-sq.png" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- 
+    <footer>
+        <div class='footer__content'>
+            <div class='footer__section'>
+                <div class='footer__section--logo'>
+                    <img src="./src/assets/elevate_logo-dark.png" />
+                </div>
+            </div>
+            <div class='footer__section'>
+                <div class="location__title">
+                    <h3>Elevate Aviation Academy</h3>
+                </div>
+                <div class="location__info">
+                    <ul>
+                        <li>(555) 555-5555</li>
+                        <li>email@example.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class='footer__section footer__social'>
+                <ul>
+                    <li>
+                        <img id="socialIcon" src="./src/assets/icons8-instagram-50.png" />
+                    </li>
+                    <li>
+                        <img id="socialIcon" src="./src/assets/icons8-facebook-30.png" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+-->
+</body>
+
+</html>
