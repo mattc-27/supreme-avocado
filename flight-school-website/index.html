@@ -31,26 +31,28 @@
     </header>
     <main class="container">
         <!-- -->
-        <section class="section__layout darkened--bg" id="home" style="
+        <section id="home" style="
         background-image: url('https://images.unsplash.com/photo-1683971336619-d445cbec0276?q=80&w=1489&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
         background-position: center;
         background-size: cover;
-        height: 80vh;
         ">
-            <div class='home__content'
-                style="width: 90%; color: #fff; background-color: #6a6a6a87; flex-basis: 50%; align-self: center; margin: 0.5% 2%; flex-grow: 1;">
-                <h1>Welcome to Elevate Aviation Academy.</h1>
-                <p>Providing flight training to the Denver area since 1998, Elevated Aviation Academy is
-                    your premier destination for aviation education and training.</p>
+            <div class="content__col content_around darkened_bg">
+                <div class='home__content'>
+                    <h1>Welcome to Elevate Aviation Academy.</h1>
+                    <p>Providing flight training to the Denver area since 1998, Elevated Aviation Academy is
+                        your premier destination for aviation education and training.</p>
+                </div>
+                <div class='cta__buttons'>
+                    <button class='cta__button button--solid '>
+                        Learn more
+                    </button>
+                    <button class='cta__button button--transparent '>
+                        Learn more
+                    </button>
+                </div>
             </div>
-            <div class='cta__buttons' style="flex-grow: 1;">
-                <button class='cta__button button--solid '>
-                    Learn more
-                </button>
-                <button class='cta__button button--transparent '>
-                    Learn more
-                </button>
             </div>
+
         </section>
         <!-- 
             <div class='content__col banner__bg--dark'>
@@ -91,7 +93,8 @@
         background-size: cover;
         min-height: 80vh;
         ">
-            <div class="content__col content_center items_center" style="background-color: #1e1d1d83; height: 100%;">
+            <div class="content__col content_center items_center"
+                style="background-color: #1e1d1d83; flex-basis: 100%;">
                 <div class='banner__text'>
                     <h3>Learn to Fly with Confidence</h3>
                     <p>Whether you’re a beginner or advancing your skills, our experienced instructors and
