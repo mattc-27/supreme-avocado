@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/styles/global.css" />
+    <link rel="stylesheet" href="../assets/styles/main.css" />
+    <title>Fleet | Aspen Aviation</title>
+    <!--     <link rel="stylesheet" href="./assets/main.css" />-->
+
+    <style>
+        #mobileNav {
+            display: none;
+        }
+
+        #mobileHeader {
+            display: none;
+        }
+
+        #standardHeader {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- standard header -->
+    <header class="header--standard" id="standardHeader">
+        <div class='header__content'>
+            <div class='header__title'>
+                <img src="../assets/logo_c.png" />
+                <!-- <h1>Aspen Aviation</h1>-->
+            </div>
+            <nav class='header__nav'>
+                <a href="../index.html">Home</a>
+                <a href="../services/index.html">Services</a>
+                <a href="index.html">Fleet</a>
+                <a href="../about/index.html">About</a>
+                <a href="../contact/index.html">Contact</a>
+                <a class='nav-link' href="/">Return</a>
+            </nav>
+        </div>
+    </header>
+    <!-- mobile header 
+    <header id="mobileHeader" style="display: none;">
+        <div class='header-content'>
+            <div class='header-title'>
+                <a href="/">
+                    <h1>Willow Creek Family Medicine</h1>
+                </a>
+            </div>
+            <div class="mobile-nav">
+                <button id="navButton">
+                    <img src="./assets/icons/icons8-menu-50.png">
+                </button>
+                <div id='mobileNav'>
+                    <ul>
+                        <li> <a href="./about/index.html">About</a></li>
+                        
+                            <li> <a href='#services'>Services</a></li>
+                        <li> <a href='/'>Appointments</a></li>
+                        <li> <a href='#contact'>Contact</a></li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </header>
+-->
+    <main class="container">
+        <section class="section__layout" id="section_2">
+            <div class="content__col" id="section_2-content">
+                <div class='services_page-title'>
+                    <h1>
+                        Meet Our Premium Fleet
+                    </h1>
+                </div>
+                <div class='section__text section_2-text'>
+                    <p>
+                        Aspen Aviation’s fleet is built to provide unparalleled comfort, safety, and style for every
+                        type of journey.
+                        From the long-distance luxury of the Gulfstream G650 to the regional versatility of the Pilatus
+                        PC-12,
+                        each aircraft is equipped with advanced features tailored for business and leisure travelers
+                        alike.
+                        Explore our fleet to find the ideal aircraft for your travel needs,
+                        and rest assured that every plane meets the highest standards of safety and sophistication.
+                </div>
+            </div>
+        </section>
+        <!-- -->
+        <section class="content__col services__section">
+            <div class="" id="fleetContainer">
+                <!-- -->
+            </div>
+        </section>
+    </main>
+    <!-- -->
+    <footer class="footer__standard">
+        <div class="footer__content">
+            <div class="footer__section footer__section--logo">
+                <img src="../assets//logo_c.png" />
+            </div>
+            <div class="footer__section">
+                <div class="footer__location">
+                    <div class="location-title">
+                        <h3>Denver</h3>
+                    </div>
+                    <div class="location-info">
+                        <p>bookings@aspenair.com</p>
+                        <p>(303) 555-2201</p>
+                        <p>8500 Peña Blvd., Suite 500</p>
+                        <p>Denver, CO 80249</p>
+                    </div>
+                </div>
+                <div class="footer__location">
+                    <div class="location-title">
+                        <h3>New England</h3>
+                    </div>
+                    <div class="location-info">
+                        <p>bookings@xaspenair.com</p>
+                        <p>(207) 555-9812</p>
+                        <p>455 Jetway Blvd., Suite 120</p>
+                        <p>Portland, ME 04102</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__section footer__social">
+                <div class="location-title">
+                    <h3>Follow us</h3>
+                </div>
+                <div class="location-info">
+                    <ul>
+                        <li>
+                            <img style='height: 25px;' src="../assets/icons/facebook-sq.png" />
+                        </li>
+                        <li>
+                            <img style='height: 25px' src="../assets/icons/linkedin-sq.png" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--   <script type="module" src="./src/main.jsx"></script> -->
+    <script type="module">
+
+        import { FleetInfo } from '../fleetInfo.js';
+        const fleetData = FleetInfo;
+        console.log(fleetData)
+
+        const fleetContainer = document.getElementById("fleetContainer");
+        async function updateFleetItems() {
+            const htmlString = fleetData.map((item) =>
+                `
+                <div class="fleet__card services__item" id="fleetCard">
+                        <div class="services__item-img">
+                            <img src=${item.image} />
+                        </div>
+
+                        <div class="fleet__card-info">
+                            <div class="services__item-title">
+                                <h2>${item.name}</h2>
+                            </div>
+                            <div class="fleet__item-list">
+                                <p><b>Capactiy</b>: ${item.capacity}</p>
+                                <p><b>Altitude</b>: ${item.altitude}</p>
+                                <p><b>Speed</b>: ${item.speed}</p>
+                                <p><b>Range</b>: ${item.range}</p>
+                            </div>
+                            <div class="fleet__item-text">
+                                <p>${item.description}</p>
+                            </div>
+                        </div>
+                </div>
+            `
+            )
+                .join("");
+            fleetContainer.innerHTML = htmlString;
+        }
+        updateFleetItems()
+
+        const fleetCard = document.getElementById("fleetCard");
+        fleetCard.addEventListener()
+
+        const menu = document.querySelector('.menu');
+        const dropdownContent = document.querySelector('.dropdown-content');
+
+        // Ensure both elements exist before adding event listeners
+        if (menu && dropdownContent) {
+            menu.addEventListener('mouseenter', () => {
+                dropdownContent.style.display = 'block';
+            });
+
+            menu.addEventListener('mouseleave', () => {
+                dropdownContent.style.display = 'none';
+            });
+        } else {
+            console.error("Menu or dropdown content not found.");
+        }
+
+    </script>
+
+</html>

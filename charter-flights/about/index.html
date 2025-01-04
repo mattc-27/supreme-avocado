@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/styles/global.css" />
+    <link rel="stylesheet" href="../assets/styles/main.css" />
+    <title>About | Aspen Aviation</title>
+    <!--     <link rel="stylesheet" href="./assets/main.css" />-->
+
+    <style>
+        #mobileNav {
+            display: none;
+        }
+
+        #mobileHeader {
+            display: none;
+        }
+
+        #standardHeader {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- standard header -->
+    <header class="header--standard" id="standardHeader">
+
+        <div class='header__content'>
+            <div class='header__title'>
+                <img src="../assets/logo_c.png" />
+                <!-- <h1>Aspen Aviation</h1>-->
+            </div>
+            <nav class='header__nav menu'>
+                <a href="../index.html">Home</a>
+                <a href="../services/index.html">Services</a>
+                <a href="../fleet/index.html">Fleet</a>
+                <a href="../about/index.html">About</a>
+                <a href="index.html">Contact</a>
+                <a class='nav-link' href="/">Return</a>
+            </nav>
+        </div>
+
+    </header>
+    <!-- mobile header 
+    <header id="mobileHeader" style="display: none;">
+        <div class='header-content'>
+            <div class='header-title'>
+                <a href="/">
+                    <h1>Willow Creek Family Medicine</h1>
+                </a>
+            </div>
+            <div class="mobile-nav">
+                <button id="navButton">
+                    <img src="./assets/icons/icons8-menu-50.png">
+                </button>
+                <div id='mobileNav'>
+                    <ul>
+                        <li> <a href="./about/index.html">About</a></li>
+                        
+                            <li> <a href='#services'>Services</a></li>
+                        <li> <a href='/'>Appointments</a></li>
+                        <li> <a href='#contact'>Contact</a></li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </header>
+-->
+
+    <main class="container">
+        <section class="section__layout" id="about__section">
+            <div class="content__col" id="about__section-content">
+                <div class='about__section-main'>
+                    <h1>
+                        Who We Are
+                    </h1>
+                </div>
+                <div class='about__section-text'>
+                    <p>
+                        Founded with a mission to make private air travel accessible and exceptional,
+                        Aspen Aviation is led by a team of aviation enthusiasts dedicated to quality and client
+                        satisfaction.
+                        </br></br> Headquartered in Colorado, our team brings together a wealth of experience and a
+                        shared
+                        love for
+                        flight, ensuring each journey is a personalized and unforgettable experience.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section__layout" id="about__section">
+            <div class="content__col" id="about__section-content">
+                <div class="about__section-title-2">
+                    <h2>
+                        Our Values
+                    </h2>
+                </div>
+                <div class='about__section-values'>
+                    <ul>
+                        <li>Excellence in service</li>
+                        <li>Safety as our priority</li>
+                        <li> Respect for every client</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!---->
+    <footer class="footer__standard">
+        <div class="footer__content">
+            <div class="footer__section footer__section--logo">
+                <img src="../assets//logo_c.png" />
+            </div>
+            <div class="footer__section">
+                <div class="footer__location">
+                    <div class="location-title">
+                        <h3>Denver</h3>
+                    </div>
+                    <div class="location-info">
+                        <p>bookings@aspenair.com</p>
+                        <p>(303) 555-2201</p>
+                        <p>8500 Peña Blvd., Suite 500</p>
+                        <p>Denver, CO 80249</p>
+                    </div>
+                </div>
+                <div class="footer__location">
+                    <div class="location-title">
+                        <h3>New England</h3>
+                    </div>
+                    <div class="location-info">
+                        <p>bookings@xaspenair.com</p>
+                        <p>(207) 555-9812</p>
+                        <p>455 Jetway Blvd., Suite 120</p>
+                        <p>Portland, ME 04102</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__section footer__social">
+                <div class="location-title">
+                    <h3>Follow us</h3>
+                </div>
+
+                <div class="location-info">
+                    <ul>
+                        <li>
+                            <img style='height: 25px;' src="../assets/icons/facebook-sq.png" />
+                        </li>
+                        <li>
+                            <img style='height: 25px' src="../assets/icons/linkedin-sq.png" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!--   <script type="module" src="./src/main.jsx"></script> -->
+</body>
+<script type="module">
+
+    import { FleetInfo } from './fleetInfo.js';
+    const fleetData = FleetInfo;
+    console.log(fleetData)
+
+    const fleetContainer = document.getElementById("fleetContainer");
+    async function updateFleetItems() {
+        const htmlString = fleetData.map((item) =>
+            `
+            <div class="fleet--card" id="fleetCard">
+                <div class="fleet--card__title">
+                       <h2>${item.name}</h2>
+                </div>
+                <div class="fleet--card__img">
+                    <img src=${item.image} />
+                </div>
+                <div class="fleet--card">
+                </div>
+             
+            </div>
+        `
+        )
+            .join("");
+        fleetContainer.innerHTML = htmlString;
+    }
+    updateFleetItems()
+
+    const fleetCard = document.getElementById("fleetCard");
+    fleetCard.addEventListener()
+
+</script>
+
+</html>
