@@ -36,7 +36,7 @@ $(document).ready(function() {
                         <img src='${item.image}' alt='${item.name}' />
                     </div>
                     <div class='content__row'>
-                        <button class='view__button'>View</button>
+                        <button class='cta_buttons-getStarted'>View</button>
                     </div>
                     <div class='view-item' style='display: none;'>
                         <div class='view-modal' style='display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; margin: 2%;'>
