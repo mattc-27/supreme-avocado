@@ -163,34 +163,6 @@
 </body>
 <script type="module">
 
-    import { FleetInfo } from './fleetInfo.js';
-    const fleetData = FleetInfo;
-    console.log(fleetData)
-
-    const fleetContainer = document.getElementById("fleetContainer");
-    async function updateFleetItems() {
-        const htmlString = fleetData.map((item) =>
-            `
-            <div class="fleet--card" id="fleetCard">
-                <div class="fleet--card__title">
-                       <h2>${item.name}</h2>
-                </div>
-                <div class="fleet--card__img">
-                    <img src=${item.image} />
-                </div>
-                <div class="fleet--card">
-                </div>
-             
-            </div>
-        `
-        )
-            .join("");
-        fleetContainer.innerHTML = htmlString;
-    }
-    updateFleetItems()
-
-    const fleetCard = document.getElementById("fleetCard");
-    fleetCard.addEventListener()
 
 </script>
 
