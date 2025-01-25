@@ -553,7 +553,6 @@ body {
     width: 100%;
     min-height: 100vh;
     margin: 0.5% 0%;
-    border: 0.5px solid red;
 }
 
 
@@ -562,7 +561,7 @@ body {
     align-self: center;
     width: 100%;
     height: auto;
-    border: 0.5px solid red;
+
 }
 
 .flex_container {
