@@ -23,10 +23,10 @@ $(document).ready(function () {
     // Replace the URL with the path to your fleetData.json file
     customerReviews.forEach(function (item) {
         var card = `
-                <div class='card__md' style="margin-top: 5%;" data-id='${item.id}'>
-                    <p class='card__text--sm'>${item.text}</p>
-                    <p class='card__text--sm'>${item.user}</p>
-                    <p class='card__text--sm'>${item.date}</p>
+                <div class='card_md card_text text-light' style="margin-top: 5%;" data-id='${item.id}'>
+                    <p>${item.text}</p>
+                    <p>${item.user}</p>
+                    <p>${item.date}</p>
                 </div>
             `;
 

@@ -4,14 +4,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/styles/global.css" />
-    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <!-- <link rel="stylesheet" href="./assets/styles/global.css" />
+    <link rel="stylesheet" href="./assets/styles/main.css" /> -->
+
+    <link rel="stylesheet" href="./assets/styles/refactored.css" />
+    <script src="https://kit.fontawesome.com/f923528a34.js" crossorigin="anonymous"></script>
 
     <style>
-        #mobileNav {
-            display: none;
-        }
-
         #mobileHeader {
             display: none;
         }
@@ -24,73 +23,71 @@
 
 <body>
     <!-- standard header -->
-    <header class="header--standard" id="standardHeader">
+    <!-- mobile header  -->
+    <header id="standardHeader">
         <div class='header__content'>
             <div class='header__title'>
-                <img src="./assets/logo_c.png" />
-                <!-- <h1>Aspen Aviation</h1>-->
+                <img src="./assets/logo6.png" />
             </div>
-            <nav class='header__nav menu'>
-                <a href='index.html'>Home</a>
-                <a href="./services/index.html">Services</a>
-                <a href="./fleet/index.html">Fleet</a>
-                <a href="./about/index.html">About</a>
-                <a href="./contact/index.html">Contact</a>
-                <a class='nav-link' href="/">Return</a>
+            <nav class="header__nav" id="">
+                <span class="nav_item"> <a href='index.html'>Home</a></span>
+                <span class="nav_item"> <a href="./services/index.html">Services</a></span>
+                <span class="nav_item"> <a href="./fleet/index.html">Fleet</a></span>
+                <span class="nav_item"> <a href="./about/index.html">About</a></span>
+                <span class="nav_item"> <a href="./contact/index.html">Contact</a></span>
+                <span class="nav_item"><a class='nav-link'
+                        href="https://mattc-27.github.io/supreme-avocado/">Return</a></span>
             </nav>
         </div>
-    </header>
-    <!-- mobile header 
-    <header id="mobileHeader" style="display: none;">
-        <div class='header-content'>
-            <div class='header-title'>
-                <a href="/">
-                    <h1>Willow Creek Family Medicine</h1>
-                </a>
+        <!-- mobile nav / dropdown -->
+        <div class='mobile_nav'>
+            <div class='mobile__title'>
+                <img src="./assets/logo6.png" />
             </div>
-            <div class="mobile-nav">
-                <button id="navButton">
-                    <img src="./assets/icons/icons8-menu-50.png">
-                </button>
-                <div id='mobileNav'>
-                    <ul>
-                        <li> <a href="./about/index.html">About</a></li>
-                        
-                            <li> <a href='#services'>Services</a></li>
-                        <li> <a href='/'>Appointments</a></li>
-                        <li> <a href='#contact'>Contact</a></li>
+            <div class="mobile_icon">
+                <i class="fa-solid fa-bars" id="showMobileIcon"></i>
 
-                    </ul>
-
-                </div>
             </div>
+            <ul id="mobileMenu" style="display: none;">
+                <li> <a href='index.html'>Home</a></li>
+                <li> <a href="./services/index.html">Services</a></li>
+                <li> <a href="./fleet/index.html">Fleet</a></li>
+                <li> <a href="./about/index.html">About</a></li>
+                <li> <a href="./contact/index.html">Contact</a></li>
+                <li> <a class='nav-link' href="../index.html">Return</a></li>
+            </ul>
         </div>
     </header>
--->
+    <!-- -->
     <main class="container">
-        <section class="welcome_layout">
-            <div id="home_section">
-            </div>
-            <div class="content__col home__content">
-                <h2 class="home__content-title">
-                    Elevate Your Journey – </br>Discover private air travel with Aspen Aviation.
-                </h2>
-                <p class="home__content-text">
-                    At Aspen Airways, we pride ourselves on our state-of-the-art fleet, personalized services, and a
-                    commitment to excellence. Our mission is to deliver a bespoke travel experience that exceeds
-                    your expectations.
-                </p>
+        <section class="section_layout-md welcome_layout" id="home_section">
+            <div class="flex_col content_center items-center"
+                style="background-color: #718ab480; height: 80vh; flex-grow: 1;">
+                <div class="section_title"
+                    style="height: 100%; margin: 1% 0%; max-width: 95%; align-self: center; border: 0.5px solid red;">
+                    <h1>
+                        Elevate Your Journey – </br>Discover private air travel with Aspen Aviation.
+                    </h1>
+                </div>
+                <div class="section_text"
+                    style="height: 100%; max-width: 95%; align-self: center;  margin: 1% 0%; border: 0.5px solid red;">
+                    <p class="home_text">
+                        At Aspen Airways, we pride ourselves on our state-of-the-art fleet, personalized services, and a
+                        commitment to excellence. Our mission is to deliver a bespoke travel experience that exceeds
+                        your expectations.
+                    </p>
+                </div>
             </div>
         </section>
         <!-- -->
-        <section class="section__layout" id="section_2">
-            <div class="content__col section_2-content">
-                <div class='section_2-title'>
+        <section class="section__layout-md" id="">
+            <div class="flex_col content_even" style="height: 75vh;">
+                <div class='section_title'>
                     <h2>
                         Welcome to Aspen Aviation
                     </h2>
                 </div>
-                <div class='section_2-text'>
+                <div class='section_text'>
                     <p>
                         Experience the luxury and convenience of private air travel with Aspen
                         Aviation. From
@@ -99,85 +96,99 @@
                         safety.
                     </p>
                 </div>
-                <div class='section_2-text'>
+
+                <div style=" display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                width: auto;
+                flex-grow: 1;
+                margin: 1% 0%;
+                width: auto;
+                flex-wrap: wrap;">
+                    <div class="card_md content_center items_center">
+                        <div class="flex_row content_center items_center card_img">
+                            <img src="./assets/icons/employees.png" />
+                        </div>
+                        <div class="card_text">
+                            <p>Exceptional Service</p>
+                        </div>
+                    </div>
+                    <div class="card_md content_center items_center">
+                        <div class="flex_row content_center items_center card_img">
+                            <img src="./assets/icons/travel.png" />
+                        </div>
+                        <div class="card_text">
+                            <p>Modern Fleet</p>
+                        </div>
+                    </div>
+                    <div class="card_md content_center items_center">
+                        <div class="flex_row content_center items_center card_img">
+                            <img src="./assets/icons/employees.png" />
+                        </div>
+                        <div class="card_text">
+                            <p>Experienced Crew</p>
+                        </div>
+                    </div>
+                    <div class="card_md content_center items_center">
+                        <div class="flex_row content_center items_center card_img">
+                            <img src="./assets/icons/calendar.png" />
+                        </div>
+                        <div class="card_text">
+                            <p>Flexible Scheduling</p>
+                        </div>
+                    </div>
+                    <div class="card_md content_center items_center">
+                        <div class="flex_row content_center items_center card_img">
+                            <img src="./assets/icons/shield.png" />
+                        </div>
+                        <div class="card_text">
+                            <p>Safety First</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='section_text'>
                     <p>
                         Take off with us and experience why we’re Colorado’s premier choice for private and
                         corporate air travel.
                     </p>
                 </div>
-                <div class="section_2-row">
-                    <div class="section__card">
-                        <div class="icon__container">
-                            <img src="./assets/icons/employees.png" />
-                        </div>
-                        <div class="section__card-text">
-                            <p>Exceptional Service</p>
-                        </div>
-                    </div>
-                    <div class="section__card">
-                        <div class="icon__container">
-                            <img src="./assets/icons/travel.png" />
-                        </div>
-                        <div class="section__card-text">
-                            <p>Modern Fleet</p>
-                        </div>
-                    </div>
-                    <div class="section__card">
-                        <div class="icon__container">
-                            <img src="./assets/icons/employees.png" />
-                        </div>
-                        <div class="section__card-text">
-                            <p>Experienced Crew</p>
-                        </div>
-                    </div>
-                    <div class="section__card">
-                        <div class="icon__container">
-                            <img src="./assets/icons/calendar.png" />
-                        </div>
-                        <div class="section__card-text">
-                            <p>Flexible Scheduling</p>
-                        </div>
-                    </div>
-                    <div class="section__card">
-                        <div class="icon__container">
-                            <img src="./assets/icons/shield.png" />
-                        </div>
-                        <div class="section__card-text">
-                            <p>Safety First</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
         <!-- -->
-        <section class="section__layout" id="section_3" style="
-        background-image: url('https://images.unsplash.com/photo-1635672033288-0d05f2062105?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDEyNnx8fGVufDB8fHx8fA%3D%3D');
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        ">
-            <div class="content__col section_3-content">
-                <div class="section_3-title">
-                    <h2 class="title-light">
+        <section class="section__layout-md" id="">
+
+            <div class="flex_col content_even" style="height: 75vh;
+            background-image: url('https://images.unsplash.com/photo-1635672033288-0d05f2062105?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDEyNnx8fGVufDB8fHx8fA%3D%3D');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;">
+                <div class="section_title title-light text_bg">
+                    <h2>
                         Explore our fleet
                     </h2>
                 </div>
-                <div class="section__text section_3-text ">
+                <div class="section_text text_bg text-light">
                     <p>Explore our diverse fleet of modern, luxurious aircraft, each equipped with the latest amenities
                         to ensure your comfort and safety. From light jets to heavy jets, we have the perfect aircraft
                         for any journey.</p>
                 </div>
-                <div class="content__row cta_buttons">
+                <div class="flex_row content_center items_center cta_button text_bg">
                     <a type="button" href="fleet/index.html" class="viewFleetButton">VIEW OUR FLEET</a>
                 </div>
             </div>
         </section>
         <!-- -->
-        <section class="section__layout subscribe__content" id="section_4">
-            <h2 class="subscribe__title">Subscribe to receive news and updates</h2>
-            <div class='subscribe__input'>
-                <input defaultValue='email' placeholder="email@example.com" />
-                <button class='subscribeBtn button--orange '>Subscribe</button>
+        <section class="section__layout-md">
+            <div class="flex_col content_even items_center" style="height: 35vh;">
+                <div class="section_title">
+                    <h2 class="title-main">Subscribe to receive news and updates</h2>
+                </div>
+                <div class="flex_row content_center items_center">
+                    <input defaultValue='email' placeholder="email@example.com" class="subscribe_input" />
+                    <button class='subscribeBtn'>Subscribe</button>
+                </div>
             </div>
         </section>
     </main>
@@ -185,25 +196,25 @@
     <footer class="footer__standard">
         <div class="footer__content">
             <div class="footer__section footer__section--logo">
-                <img src="./assets//logo_c.png" />
+                <img src="./assets/logo6.png" />
             </div>
-            <div class="footer__section">
-                <div class="footer__location">
-                    <div class="location-title">
+            <div class="footer__section-row">
+                <div class="footer_col">
+                    <div class="footer_info-title">
                         <h3>Denver</h3>
                     </div>
-                    <div class="location-info">
+                    <div class="footer_info-text">
                         <p>bookings@aspenair.com</p>
                         <p>(303) 555-2201</p>
                         <p>8500 Peña Blvd., Suite 500</p>
                         <p>Denver, CO 80249</p>
                     </div>
                 </div>
-                <div class="footer__location">
-                    <div class="location-title">
+                <div class="footer_col">
+                    <div class="footer_info-title">
                         <h3>New England</h3>
                     </div>
-                    <div class="location-info">
+                    <div class="footer_info-text">
                         <p>bookings@xaspenair.com</p>
                         <p>(207) 555-9812</p>
                         <p>455 Jetway Blvd., Suite 120</p>
@@ -213,19 +224,11 @@
             </div>
 
             <div class="footer__section footer__social">
-                <div class="location-title">
-                    <h3>Follow us</h3>
-                </div>
 
-                <div class="location-info">
-                    <ul>
-                        <li>
-                            <img style='height: 25px;' src="./assets/icons/facebook-sq.png" />
-                        </li>
-                        <li>
-                            <img style='height: 25px' src="./assets/icons/linkedin-sq.png" />
-                        </li>
-                    </ul>
+                <h3>Follow us</h3>
+                <div class="footer__social-icons">
+                    <img style='height: 25px;' src="./assets/icons/facebook-sq.png" />
+                    <img style='height: 25px' src="./assets/icons/linkedin-sq.png" />
                 </div>
             </div>
 
@@ -236,21 +239,42 @@
 <script type="module">
 
 
-    const menu = document.querySelector('.menu');
-    const dropdownContent = document.querySelector('.dropdown-content');
+    const mobileBtn = document.getElementById('showMobileIcon')
+    const mobileNav = document.getElementById('mobileMenu')
+    const mainNav = document.getElementById('mainNav')
+    // const textToChange = document.getElementById('homeText')
 
-    // Ensure both elements exist before adding event listeners
-    if (menu && dropdownContent) {
-        menu.addEventListener('mouseenter', () => {
-            dropdownContent.style.display = 'block';
-        });
+    const textToChange = document.querySelector('.home_text')
 
-        menu.addEventListener('mouseleave', () => {
-            dropdownContent.style.display = 'none';
-        });
-    } else {
-        console.error("Menu or dropdown content not found.");
-    }
+    // Add an event listener to the window's resize event
+    window.addEventListener('resize', () => {
+        // Log the current window width
+        console.log(`Window width: ${window.innerWidth}px`);
+
+        if (window.innerWidth > 740) {
+            textToChange.style.display === '1.5em';
+
+        } else {
+            textToChange.style.fontSize === '0.5em';
+            textToChange.style.color === '#fff';
+        }
+    });
+
+
+
+
+
+    mobileBtn.addEventListener('click', () => {
+        if (mobileNav.style.display === 'none') {
+            mobileNav.style.display = 'block';
+            mainNav.style.display = 'none';
+
+        } else {
+            mobileNav.style.display = 'none'
+        }
+    })
+    //  const dropdownContent = document.querySelector('.dropdown-content');
+
 
 
 

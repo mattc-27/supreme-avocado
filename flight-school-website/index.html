@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../styles/global.css" />
-    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" href="./src/global.css" />
+    <link rel="stylesheet" href="./src/refactored.css" />
     <script src="https://kit.fontawesome.com/f923528a34.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./src/scripts/fleet.js" defer></script>
@@ -15,35 +15,57 @@
 </head>
 
 <body>
-    <header>
+
+
+    <!-- mobile header  -->
+    <header id="standardHeader">
         <div class='header__content'>
-            <div class='header__logo'>
-                <!--  <h1>Elevate Aviation Academy</h1> -->
-                <img src="./src/assets//logo_b.png" id="headerLogo" />
+            <div class='header__title'>
+                <img src="./src/assets/logo_b.png" />
             </div>
-            <nav>
-                <a class='nav-link' href='index.html'>Home</a>
-                <a class='nav-link' href='./src/fleet/index.html'>Fleet</a>
-                <a class='nav-link' href='#about'>About</a>
-                <a class='nav-link' href="/">Return</a>
+            <nav class="header__nav" id="">
+                <span class="nav_item"> <a href='index.html'>Home</a></span>
+                <span class="nav_item"> <a href='./src/fleet/index.html'>Fleet</a></span>
+                <span class="nav_item"> <a href='#about'>About</a></span>
+                <span class="nav_item"><a class='nav-link' href="https://mattc-27.github.io/supreme-avocado/">Return</a></span>
             </nav>
         </div>
+        <!-- mobile nav / dropdown -->
+        <div class='mobile_nav'>
+            <div class='mobile__title'>
+                <img src="./src/assets/logo_b.png" />
+            </div>
+            <div class="mobile_icon">
+                <i class="fa-solid fa-bars" id="showMobileIcon"></i>
+            </div>
+            <ul id="mobileMenu" style="display: none;">
+                <li> <a href='index.html'>Home</a></li>
+                <li> <a href='./src/fleet/index.html'>Fleet</a></li>
+                <li> <a href='#about'>About</a></li>
+                <li> <a class='nav-link' href="/">Return</a></li>
+            </ul>
+
+        </div>
+
     </header>
+    <!-- -->
+
     <main class="container">
-        <!-- -->
+
         <section id="home" style="
         background-image: url('https://images.unsplash.com/photo-1683971336619-d445cbec0276?q=80&w=1489&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
         background-position: center;
         background-size: cover;
         ">
-            <div class="content__col content_around darkened_bg">
-                <div class='home__content'>
+            <div class="flex_col content_around darkened_bg">
+                <div class='flex_col content_even items_center main_title'>
                     <h1>Welcome to Elevate Aviation Academy.</h1>
-                    <p>Providing flight training to the Denver area since 1998, Elevated Aviation Academy is
+                    <p class="main_text">Providing flight training to the Denver area since 1998, Elevated Aviation
+                        Academy is
                         your premier destination for aviation education and training.</p>
                 </div>
                 <div class='cta__buttons'>
-                    <button class='cta__button button--solid '>
+                    <button class='cta__button button--solid'>
                         Learn more
                     </button>
                     <button class='cta__button button--transparent'>
@@ -51,38 +73,18 @@
                     </button>
                 </div>
             </div>
-            </div>
-
         </section>
-        <!-- 
-            <div class='content__col banner__bg--dark'>
-                <div class='banner__text'>
-                    <h3>Turn Passion into Profession</h3>
-                    <p>Join the ranks of our graduates flying for major airlines. With career-focused training, we’ll guide you every step of the way.</p>
-                </div>
-                <div class='cta__button--banner'>
-                    <button class='button--orange'>
-                        Start Your Career Journey
-                    </button>
-                </div>
-            </div>
-        -->
-        <!-- -->
-        <section class="section__layout" id="section_1">
 
-            <div class='section_1-title'>
+        <!-- -->
+        <section class="section__layout-lg flex_col-container" id="">
+
+            <div class='flex_row content_start items_center section_title'>
                 <h2>Experience the difference with a flight school dedicated to
                     excellence, safety, and your
                     success.
                 </h2>
             </div>
-            <!--
-                     <div class="section_1-img">
-                <img
-                    src="https://images.unsplash.com/photo-1556817977-b0f0162622bb?q=80&w=1467&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-            </div>
-            -->
-            <div class='section__text section_1-text'>
+            <div class='flex_row section_text'>
                 <p>At Elevate Aviation Academy we are passionate about aviation and dedicated to providing
                     top-notch flight training experiences. Our team of certified flight instructors brings years
                     of experience and expertise to every lesson, ensuring that our students receive the highest
@@ -91,20 +93,15 @@
                     industry.
                 </p>
             </div>
-            <div class="section_1-img">
-                <img
-                    src="https://images.unsplash.com/photo-1586063029643-fd87377743ef?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fGNlc3NuYXxlbnwwfHwwfHx8Mg%3D%3D" />
-            </div>
-
         </section>
-        <!-- -->
-        <div class='content__col banner__bg--dark' style="
+
+        <div class='flex_col-container banner__bg--dark' style="
         background-image: url('  https://images.unsplash.com/photo-1527057629248-91865e448574?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
         background-position: center;
         background-size: cover;
         min-height: 80vh;
         ">
-            <div class="content__col content_center items_center" style="background-color: #1e1d1d83; flex-grow: 1;">
+            <div class="flex_col content_center items_center" style="background-color: #1e1d1d83; flex-grow: 1;">
                 <div class='banner__text'>
                     <h3>Learn to Fly with Confidence</h3>
                     <p>Whether you’re a beginner or advancing your skills, our experienced instructors and
@@ -120,46 +117,40 @@
             </div>
         </div>
         <!-- -->
-        <section class="section__layout" id="section_2">
-            <!--            
-            <div class="seccol__imgtion_1-img">
-                <img
-                    src="https://images.unsplash.com/photo-1556817977-b0f0162622bb?q=80&w=1467&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+        <section class="section__layout-lg flex_col-container" id="">
+            <div class='flex_row content_start items_center section_title flex-1'>
+                <h2>
+                    Career Pathways
+                </h2>
             </div>
-            -->
-            <div class="content__col" id="section_2-content">
-                <div class='section_2-title'>
-                    <h2>
-                        Career Pathways
-                    </h2>
-                </div>
-                <div class='section__text section_2-text'>
-                    <p>Explore our Career Pathways Program designed for aspiring commercial pilots. Gain the
-                        knowledge and expertise required to pursue a career in aviation, including airline
-                        transport pilot (ATP) certification and advanced flight operations.</p>
-                </div>
-                <div class="section_2-row">
-                    <div class="card__metrics">
-                        <p><span class="metric_num">20+</span></br>Years of Flight Training Excellence</p>
-                    </div>
-                    <div class="card__metrics">
-                        <p><span class="metric_num">95%</span></br>Job Placement Rate for Career Program
-                            Graduates</p>
-                    </div>
-                    <div class="card__metrics">
-                        <p><span class="metric_num">300+</span></br>Graduates Now Flying Commercially</p>
-                    </div>
-                </div>
+            <div class='flex_row section_text flex-1'>
+                <p>Explore our Career Pathways Program designed for aspiring commercial pilots. Gain the
+                    knowledge and expertise required to pursue a career in aviation, including airline
+                    transport pilot (ATP) certification and advanced flight operations.</p>
             </div>
+            <div class="flex_row items_center content_even flex-1">
+                <div class="card__metrics flex_col content_center items_center text-center h_100">
+                    <p><span class="metric_num">20+</span></br>Years of Flight Training Excellence</p>
+                </div>
+                <div class="card__metrics flex_col content_center items_center text-center h_100">
+                    <p><span class="metric_num">95%</span></br>Job Placement Rate for Career Program
+                        Graduates</p>
+                </div>
+                <div class="card__metrics flex_col content_center items_center text-center h_100">
+                    <p><span class="metric_num">300+</span></br>Graduates Now Flying Commercially</p>
+                </div>
+
         </section>
-        <!-- -->
-        <section class="section__layout" id="section_3">
-            <div class='content__col' id="section_3-content">
-                <div class='section_3-title' id="#about">
+
+
+
+        <section class="section__layout-lg" id="">
+            <div class='flex_col' id="programs">
+                <div class='section_title flex-1' id="#about">
                     <h2>Discover Your Perfect Training Path</h2>
 
                 </div>
-                <div class='section__text section_3-text'>
+                <div class='section_text flex-1'>
                     <p>
                         Explore our comprehensive training programs, designed to suit every stage
                         of your
@@ -170,8 +161,8 @@
                         certifications, we provide comprehensive training to help you reach your aviation
                         goals.</p>
                 </div>
-                <div class="ol__col content__col">
-                    <ol>
+                <div class="num_list darkened_bg">
+                    <ol class="flex_col content_center items_center">
                         <li>
                             <i class="fa-regular fa-1 num_icon"></i>
                             <span class="li_title">Private Pilot License (PPL)</span>
@@ -201,19 +192,20 @@
                             Certified Flight Instructor.
                         </li>
                     </ol>
-                </div>
-
-                <div class="content__row items_center section_3-row" style="margin: 1% 0.5%;">
                     <button class="cta_buttons-getStarted"><i class="fa-classic fa-arrow-right"
                             style="color: #fff;"></i>Get Started
                     </button>
+
                 </div>
-                <div class='section_3-img'>
-                    <img
-                        src='https://images.unsplash.com/photo-1503468120394-03d29a34a0bf?q=80&w=1228&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' />
-                </div>
+                <img class="section_img-001"
+                    src='https://images.unsplash.com/photo-1503468120394-03d29a34a0bf?q=80&w=1228&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' />
+
+
             </div>
+
             <!--
+           
+
                 <div class='content__col--center--w100 mbt-5'>
                         <div class='text__main--col width-xl'>
                             <p>
@@ -240,55 +232,84 @@
             </div>
         </div>
         -->
-        <!-- -->
-        <section class="section__layout" id="section_4">
-            <div class='section_3-title'>
+
+        <section class="section__layout-md flex_col-container content_center items_center section_bg-dark">
+
+            <div class="section_title title-light">
                 <h2>What Our Students Are Saying</h2>
             </div>
-            <div class='review__content' id='review-content'></div>
-            </div>
+            <div style=" display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            width: auto;
+            flex-grow: 1;
+            margin: 1% 0%;
+            width: auto;
+            flex-wrap: wrap;" id='review-content'></div>
+
         </section>
-        <!-- -->
-        <section class="subscribe__content" id="section_5">
-            <h2 class="subscribe__title content__row">Subscribe to receive news and updates</h2>
-            <div class='subscribe__input'>
-                <input defaultValue='email' placeholder="email@example.com" />
+
+        <section class="section__layout-md">
+
+            <div class="section_title">
+                <h2>Subscribe to receive news and updates</h2>
+            </div>
+            <div class="flex_row content_center items_center">
+                <input class="subscribe_input" defaultValue='email' placeholder="email@example.com" />
                 <button class='subscribeBtn button--orange '>Subscribe</button>
             </div>
+
         </section>
 
     </main>
     <!-- -->
-    <footer>
-        <div class='footer__content'>
-            <div class='footer__section items_start w100'>
-                <div class='footer__section--logo'>
-                    <img src="./src/assets/elevate_logo-dark.png" />
+    <footer class="footer__standard">
+        <div class="footer__content">
+            <div class="footer__section footer__section--logo">
+                <img src="./src/assets/elevate_logo-dark.png" />
+            </div>
+
+            <div class="footer__section-row">
+                <div class="footer_col">
+                    <div class="footer_info-title">
+                        <h3>Elevate Aviation Academy</h3>
+                    </div>
+                    <div class="footer_info-text">
+                        <ul>
+                            <li>(555) 555-5555</li>
+                            <li>email@example.com</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class='footer__section'>
-                <div class="location__title">
-                    <h3>Elevate Aviation Academy</h3>
+            <div class="footer__section footer__social">
+
+                <h3>Follow us</h3>
+                <div class="footer__social-icons">
+                    <img id="socialIcon" src="./src/assets/icons8-instagram-50.png" />
+
+                    <img id="socialIcon" src="./src/assets/icons8-facebook-30.png" />
+
                 </div>
-                <div class="location__info">
-                    <ul>
-                        <li>(555) 555-5555</li>
-                        <li>email@example.com</li>
-                    </ul>
-                </div>
-            </div>
-            <div class='footer__section footer__social'>
-                <ul>
-                    <li>
-                        <img id="socialIcon" src="./src/assets/icons8-instagram-50.png" />
-                    </li>
-                    <li>
-                        <img id="socialIcon" src="./src/assets/icons8-facebook-30.png" />
-                    </li>
-                </ul>
             </div>
         </div>
     </footer>
 </body>
+
+<script type="module">
+    const mobileBtn = document.getElementById('showMobileIcon')
+    const mobileNav = document.getElementById('mobileMenu')
+    const mainNav = document.getElementById('mainNav')
+    mobileBtn.addEventListener('click', () => {
+        if (mobileNav.style.display === 'none') {
+            mobileNav.style.display = 'block';
+            mainNav.style.display = 'none';
+
+        } else {
+            mobileNav.style.display = 'none'
+        }
+    })
+</script>
 
 </html>

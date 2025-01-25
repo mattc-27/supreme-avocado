@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/styles/global.css" />
-    <link rel="stylesheet" href="../assets/styles/main.css" />
+    <link rel="stylesheet" href="../assets/styles/refactored.css" />
+    <script src="https://kit.fontawesome.com/f923528a34.js" crossorigin="anonymous"></script>
     <title>About | Aspen Aviation</title>
     <!--     <link rel="stylesheet" href="./assets/main.css" />-->
 
@@ -26,61 +26,48 @@
 
 <body>
     <!-- standard header -->
-    <header class="header--standard" id="standardHeader">
-
+    <header id="standardHeader">
         <div class='header__content'>
             <div class='header__title'>
-                <img src="../assets/logo_c.png" />
-                <!-- <h1>Aspen Aviation</h1>-->
+                <img src="../assets/logo6.png" />
             </div>
-            <nav class='header__nav menu'>
-                <a href="../index.html">Home</a>
-                <a href="../services/index.html">Services</a>
-                <a href="../fleet/index.html">Fleet</a>
-                <a href="../about/index.html">About</a>
-                <a href="../contact/index.html">Contact</a>
-                <a class='nav-link' href="/">Return</a>
+            <nav class="header__nav" id="">
+                <span class="nav_item"> <a href="../index.html">Home</a></span>
+                <span class="nav_item">
+                    <a href="../services/index.html">Services</a></span>
+                <span class="nav_item"> <a href="../fleet/index.html">Fleet</a></span>
+                <span class="nav_item"> <a href="index.html">About</a></span>
+                <span class="nav_item"> <a href="../contact/index.html">Contact</a></span>
+                <span class="nav_item"><a class='nav-link' href="/">Return</a></span>
             </nav>
         </div>
-
-    </header>
-    <!-- mobile header 
-    <header id="mobileHeader" style="display: none;">
-        <div class='header-content'>
-            <div class='header-title'>
-                <a href="/">
-                    <h1>Willow Creek Family Medicine</h1>
-                </a>
+        <!-- mobile nav / dropdown -->
+        <div class='mobile_nav'>
+            <div class='mobile__title'>
+                <img src="../assets/logo6.png" />
             </div>
-            <div class="mobile-nav">
-                <button id="navButton">
-                    <img src="./assets/icons/icons8-menu-50.png">
-                </button>
-                <div id='mobileNav'>
-                    <ul>
-                        <li> <a href="./about/index.html">About</a></li>
-                        
-                            <li> <a href='#services'>Services</a></li>
-                        <li> <a href='/'>Appointments</a></li>
-                        <li> <a href='#contact'>Contact</a></li>
-
-                    </ul>
-
-                </div>
+            <div class="mobile_icon">
+                <i class="fa-solid fa-bars" id="showMobileIcon"></i>
             </div>
+            <ul id="mobileMenu" style="display: none;">
+                <li> <a href='../index.html'>Home</a></li>
+                <li> <a href="../services/index.html">Services</a></li>
+                <li> <a href="../fleet/index.html">Fleet</a></li>
+                <li> <a href="index.html">About</a></li>
+                <li> <a href="../contact/index.html">Contact</a></li>
+                <li> <a class='nav-link' href="/">Return</a></li>
+            </ul>
         </div>
     </header>
--->
-
     <main class="container">
-        <section class="section__layout" id="about__section">
-            <div class="content__col" id="about__section-content">
-                <div class='about__section-main'>
+        <section class="section__layout-md" id="">
+            <div class="flex_col content_even" style="height: 75vh;">
+                <div class='section_title'>
                     <h1>
                         Who We Are
                     </h1>
                 </div>
-                <div class='about__section-text'>
+                <div class='section_text text-med'>
                     <p>
                         Founded with a mission to make private air travel accessible and exceptional,
                         Aspen Aviation is led by a team of aviation enthusiasts dedicated to quality and client
@@ -92,14 +79,14 @@
                 </div>
             </div>
         </section>
-        <section class="section__layout" id="about__section">
-            <div class="content__col" id="about__section-content">
-                <div class="about__section-title-2">
+        <section class="section__layout-md" style="height: fit-content;">
+            <div class="flex_col">
+                <div class='section_title'>
                     <h2>
                         Our Values
                     </h2>
                 </div>
-                <div class='about__section-values'>
+                <div class='section_text text-med'>
                     <ul>
                         <li>Excellence in service</li>
                         <li>Safety as our priority</li>
@@ -113,25 +100,25 @@
     <footer class="footer__standard">
         <div class="footer__content">
             <div class="footer__section footer__section--logo">
-                <img src="../assets//logo_c.png" />
+                <img src="../assets/logo6.png" />
             </div>
-            <div class="footer__section">
-                <div class="footer__location">
-                    <div class="location-title">
+            <div class="footer__section-row">
+                <div class="footer_col">
+                    <div class="footer_info-title">
                         <h3>Denver</h3>
                     </div>
-                    <div class="location-info">
+                    <div class="footer_info-text">
                         <p>bookings@aspenair.com</p>
                         <p>(303) 555-2201</p>
                         <p>8500 Peña Blvd., Suite 500</p>
                         <p>Denver, CO 80249</p>
                     </div>
                 </div>
-                <div class="footer__location">
-                    <div class="location-title">
+                <div class="footer_col">
+                    <div class="footer_info-title">
                         <h3>New England</h3>
                     </div>
-                    <div class="location-info">
+                    <div class="footer_info-text">
                         <p>bookings@xaspenair.com</p>
                         <p>(207) 555-9812</p>
                         <p>455 Jetway Blvd., Suite 120</p>
@@ -139,30 +126,31 @@
                     </div>
                 </div>
             </div>
-
             <div class="footer__section footer__social">
-                <div class="location-title">
-                    <h3>Follow us</h3>
-                </div>
-
-                <div class="location-info">
-                    <ul>
-                        <li>
-                            <img style='height: 25px;' src="../assets/icons/facebook-sq.png" />
-                        </li>
-                        <li>
-                            <img style='height: 25px' src="../assets/icons/linkedin-sq.png" />
-                        </li>
-                    </ul>
+                <h3>Follow us</h3>
+                <div class="footer__social-icons">
+                    <img style='height: 25px;' src="../assets/icons/facebook-sq.png" />
+                    <img style='height: 25px' src="../assets/icons/linkedin-sq.png" />
                 </div>
             </div>
-
         </div>
     </footer>
     <!--   <script type="module" src="./src/main.jsx"></script> -->
 </body>
 <script type="module">
+    const mobileBtn = document.getElementById('showMobileIcon')
+    const mobileNav = document.getElementById('mobileMenu')
+    const mainNav = document.getElementById('mainNav')
 
+    mobileBtn.addEventListener('click', () => {
+        if (mobileNav.style.display === 'none') {
+            mobileNav.style.display = 'block';
+            mainNav.style.display = 'none';
+
+        } else {
+            mobileNav.style.display = 'none'
+        }
+    })
 
 </script>
 
