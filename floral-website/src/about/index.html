@@ -5,101 +5,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../../refactored.css" />
+    <script src="https://kit.fontawesome.com/f923528a34.js" crossorigin="anonymous"></script>
     <title>About</title>
 </head>
 
 <body>
+    <!-- -->
     <header>
         <div class='header__content'>
-            <div class='header__logo'>
-                <!-- <img src="src/assets/mainLogo.png" />-->
+            <div class='header__title'>
+                <img src="../assets/mainLogo.png" />
                 <h1>Aspen Bloom & Harvest</h1>
             </div>
-            <nav>
-                <a class='nav-link' href="../../index.html">Home</a>
-                <a class='nav-link' href="index.html">About</a>
-                <a class='nav-link' href="/">Return</a>
-                <!--   <a class='nav-link' href='/about'>About</a>
-                <a class='nav-link' href='/store'>Store</a> -->
+            <nav class="header__nav">
+                <span class="nav_item"> <a href="../../index.html">Home</a></span>
+                <span class="nav_item"> <a href="index.html">About</a></span>
+                <span class="nav_item"> <a href="/">Return</a></span>
             </nav>
         </div>
     </header>
     <!-- -->
     <main class="container">
-
         <!-- -->
-        <section class="section__layout">
-            <div class="section__title--test content__row content_start">
+        <section class="section__layout-sm flex_col-container" id="">
+            <div class='flex_row items_center section_title flex-0'>
                 <h2>What Sets Us Apart</h2>
             </div>
-            <div class="section__content--flex">
-                <div class="section__text border_dec--bottom">
-                    <p>
-                        At Aspen Bloom & Harvest, we believe that every product tells a story—a story of passion,
-                        craftsmanship, and connection to the land. Nestled in the heart of Colorado, our
-                        family-owned
-                        business was founded on a simple mission: to bring the beauty and abundance of our region to
-                        your home and table.
-                    </p>
-                    <p>
-                        From vibrant floral arrangements to fresh produce and handcrafted goods, our offerings
-                        reflect
-                        the care and dedication of the local farmers, artisans, and makers we are proud to call our
-                        partners. Whether it’s a bouquet of seasonal blooms or a jar of locally made honey, every
-                        item
-                        you’ll find here embodies our love for Colorado and our commitment to quality.
-                    </p>
-                </div>
-                <div class="section__text row__content--text-col w50">
-                    <p>Image</p>
-                </div>
-            </div>
+            <div class='flex_col section_text flex-0'>
+                <p>
+                    At Aspen Bloom & Harvest, we believe that every product tells a story—a story of passion,
+                    craftsmanship, and connection to the land. Nestled in the heart of Colorado, our
+                    family-owned
+                    business was founded on a simple mission: to bring the beauty and abundance of our region to
+                    your home and table.
+                </p>
+                <p>
+                    From vibrant floral arrangements to fresh produce and handcrafted goods, our offerings
+                    reflect
+                    the care and dedication of the local farmers, artisans, and makers we are proud to call our
+                    partners. Whether it’s a bouquet of seasonal blooms or a jar of locally made honey, every
+                    item
+                    you’ll find here embodies our love for Colorado and our commitment to quality.
+                </p>
             </div>
         </section>
-
-        <section class="section__layout">
-            <div class="section__title--test content__row content_start">
+        <!---->
+        <section class="section__layout-sm flex_col-container" id="">
+            <div class='flex_row items_center section_title flex-0'>
                 <h2>Our Mission</h2>
             </div>
-            <div class="section__content--flex">
-                <div class="section__text border_dec--bottom">
-                    <p>To cultivate joy, beauty, and connection through nature’s finest offerings, while supporting
-                        sustainable practices and strengthening our local community.</p>
-                </div>
-
+            <div class='flex_col section_text flex-0'>
+                <p>To cultivate joy, beauty, and connection through nature’s finest offerings, while supporting
+                    sustainable practices and strengthening our local community.</p>
             </div>
-
         </section>
-        <!-- -->
-        <footer class='footer__standard'>
-            <div class='footer__content'>
-                <div class='footer__section'>
-                    <div class='footer-logo'>
-                        <img src="../assets/Aspen.png" />
+        <!---->
+        <footer class="footer__standard">
+            <div class="footer__content">
+                <div class="footer_col">
+                    <img src="../assets/Aspen.png" />
+                </div>
+                <div class="footer_col">
+                    <div class="footer_info-title">
+                        <h3>Aspen Bloom & Harvest</h3>
+                    </div>
+                    <div class="footer_info-text">
+                        <p>(555) 555-5555</p>
+                        <p>email@example.com</p>
                     </div>
                 </div>
-                <div class='footer__section'>
-                    <div class="itle__row--med">
-                        <h3>Pure Roots Floral Studio</h3>
+                <div class="footer_col content_center items_center">
+                    <div class="footer__social-icons">
+                        <i class="fa-brands fa-square-facebook footer_icon"></i>
+                        <i class="fa-brands fa-instagram footer_icon"></i>
                     </div>
-                    <div class="location__info">
-                        <ul>
-                            <li>(555) 555-5555</li>
-                            <li>email@example.com</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class='footer__section footer__social'>
-                    <ul>
-                        <li>
-                            <img id="socialIcon" src="../assets/linkedin-sq.png" />
-                        </li>
-                        <li>
-                            <img id="socialIcon" src="../assets/facebook-sq.png" />
-                        </li>
-                    </ul>
                 </div>
             </div>
         </footer>
