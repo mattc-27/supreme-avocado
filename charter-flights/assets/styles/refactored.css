@@ -500,13 +500,15 @@ body {
 }
 
 .content_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-grow: 1;
-    border: 0.5px solid red;
-    max-width: 45%;
+    max-width: 98%;
 }
 
 .content_img img {
-    max-width: 80%;
+    max-width: 99%;
 }
 
 /* --- --- --- --- ---
