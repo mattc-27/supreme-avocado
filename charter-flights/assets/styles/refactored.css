@@ -256,12 +256,13 @@ body {
 .section_title h1 {
     width: 100%;
     margin: 0%;
-    text-align: left;
+    text-align: center;
     align-self: center;
     font-weight: 500;
     font-size: 2.75em;
     line-height: 2;
 }
+
 
 .section_title h2 {
     width: 100%;
@@ -279,7 +280,24 @@ body {
     align-items: center;
     width: auto;
     flex-grow: 1;
+    text-align: center;
     font-family: var(--main-font-family);
+}
+
+#heroTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    max-width: 98%;
+}
+
+#heroTitleA, #heroTitleB {
+    color: #fff;
+    text-align: left;
+    margin-left: 3%;
+    line-height: 2;
 }
 
 .section_text p {
@@ -287,8 +305,13 @@ body {
     max-width: 98%;
     margin: 0.5%;
     line-height: 3;
-    font-size: 1em;
-    text-align: left;
+    font-size: 1.25em;
+    font-weight: 400;
+    text-align: center;
+}
+
+.home_text {
+    color: #fff;
 }
 
 .section_text ul {
@@ -325,6 +348,10 @@ body {
 
 .text-left, .text-left p, .text-left h2 {
     text-align: left;
+}
+
+.text-center, .text-center p, .text-center h2 {
+    text-align: center;
 }
 
 .text-right {
@@ -443,8 +470,8 @@ body {
 }
 
 .card_text-col p {
-    font-size: 0.75em;
-    line-height: 2;
+    font-size: 1em;
+    line-height: 3;
 }
 
 .card_text-lg {
@@ -919,7 +946,7 @@ breakpoints
         max-width: 90%;
     }
 
-    .section_title h1 {
+    .section_title h1, .section_title h2 {
         line-height: 1;
         text-align: left;
     }
@@ -990,5 +1017,9 @@ breakpoints
         height: fit-content;
         width: 100%;
         max-width: 90%;
+    }
+
+    .section_text p {
+        text-align: left;
     }
 }
