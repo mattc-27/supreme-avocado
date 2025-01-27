@@ -54,10 +54,10 @@
             </ul>
         </div>
     </header>
-<!-- -->
+    <!-- -->
     <main class="container">
-        <section class="section__layout-md" id="">
-            <div class="flex_col content_even" style="height: 75vh;">
+        <section class="section__layout-md flex_col-container" id="">
+            <div class="flex_col content_even" style="min-height: 75vh;">
                 <div class='section_title'>
                     <h1>
                         Meet Our Premium Fleet
@@ -77,8 +77,8 @@
             </div>
         </section>
         <!-- -->
-        <section class="section__layout-lg" style="height: fit-content;">
-            <div class="" style="width: 100%;" id="fleetContainer">
+        <section class="section__layout-lg flex_col" style="height: fit-content;">
+            <div class="flex_col-container" id="fleetContainer">
                 <!-- -->
             </div>
         </section>
@@ -148,21 +148,21 @@
             const htmlString = fleetData.map((item) =>
                 `
                 <div class="card_lg" id="fleetCard">
-                        <div class="content_img">
+                        <div class="flex_col-img">
                             <img src=${item.image} />
                         </div>
 
                         <div class="flex_col">
-                            <div class="card_title-lg">
+                            <div class="card_title-lg text-left">
                                 <h2>${item.name}</h2>
                             </div>
-                            <div class="card_text-col card_text-lg text-left">
+                            <div class="card_text-col">
                                 <p><b>Capactiy</b>: ${item.capacity}</p>
                                 <p><b>Altitude</b>: ${item.altitude}</p>
                                 <p><b>Speed</b>: ${item.speed}</p>
                                 <p><b>Range</b>: ${item.range}</p>
                             </div>
-                            <div class="card_text-col card_text-lg text-left">
+                             <div class="card_text-col">
                                 <p>${item.description}</p>
                             </div>
                         </div>

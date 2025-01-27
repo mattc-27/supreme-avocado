@@ -145,7 +145,7 @@ button {
     margin: 0%;
     text-align: left;
     font-weight: 500;
-    font-size: 7vw;
+    font-size: 1em;
     line-height: 2;
 }
 
@@ -173,7 +173,7 @@ button {
     color: #748f87;
     color: #2d2d2d;
     font-weight: 400;
-    font-size: 7;
+    font-size: 2em;
     max-width: 90%;
     font-family: "Caveat", serif;
 }
@@ -1084,7 +1084,7 @@ nav {
         color: #748f87;
         color: #2d2d2d;
         font-weight: 400;
-        font-size: 10vw;
+        font-size: 6em;
         font-family: "Caveat", serif;
     }
 

@@ -135,11 +135,12 @@ body {
 
 .footer__section-row {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
-    flex-grow: 1;
-    height: 100%;
+    height: fit-content;
     width: 100%;
+    max-width: 99%;
 }
 
 .footer__section--logo {
@@ -152,13 +153,13 @@ body {
 .footer_col {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-startÏ;
     height: auto;
     width: auto;
     flex-grow: 1;
-    max-height: 80%;
-    max-width: 45%;
+    max-width: 98%;
+    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -213,17 +214,15 @@ body {
 .footer_info-text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
-    max-width: 80%;
-    width: 100%;
-    text-wrap: wrap;
+    max-width: 98%;
 }
 
 .footer_info-text p {
-    font-size: 0.75em;
+    font-size: 0.5em;
     line-height: 2;
-    margin: 0.5% 2.5%;
+    margin: 0.5%;
 }
 
 #home_section {
@@ -257,10 +256,10 @@ body {
 .section_title h1 {
     width: 100%;
     margin: 0%;
-    text-align: center;
+    text-align: left;
     align-self: center;
-    font-weight: 400;
-    font-size: 7vw;
+    font-weight: 500;
+    font-size: 2.75em;
     line-height: 2;
 }
 
@@ -287,9 +286,9 @@ body {
     width: 100%;
     max-width: 98%;
     margin: 0.5%;
-    line-height: 2.5;
+    line-height: 3;
     font-size: 1em;
-    text-align: center;
+    text-align: left;
 }
 
 .section_text ul {
@@ -315,7 +314,8 @@ body {
 }
 
 .text-med p {
-    font-size: 1.5em;
+    font-size: 1em;
+    font-weight: 400;
 }
 
 .text-lg p {
@@ -398,13 +398,36 @@ body {
 
 .card_lg {
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     justify-content: space-evenly;
     align-items: center;
     height: auto;
     flex-grow: 1;
     width: 100%;
-    margin: 1% 0%;
+    max-width: 98%;
+    margin: 5% 0%;
+}
+
+.flex_col-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 98%;
+}
+
+.flex_col-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 98%;
+    margin: 2.5% 0%;
+}
+
+.flex_col-img img {
+    max-width: 90%;
 }
 
 .card_text-col {
@@ -412,9 +435,16 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    align-self: center;
     flex-grow: 1;
     width: 100%;
+    max-width: 95%;
     font-family: 'Open sans';
+}
+
+.card_text-col p {
+    font-size: 0.75em;
+    line-height: 2;
 }
 
 .card_text-lg {
@@ -427,10 +457,11 @@ body {
 
 .card_title-lg h2 {
     font-family: 'Open sans';
-    font-size: 3em;
-    font-weight: 300;
+    font-size: 2em;
+    font-weight: 400;
     text-align: left;
-    line-height: 3;
+    line-height: 2;
+    width: 100%;
 }
 
 .card_md {
@@ -889,22 +920,75 @@ breakpoints
     }
 
     .section_title h1 {
-        font-size: 6vw;
-        line-height: 2;
+        line-height: 1;
         text-align: left;
-
     }
 
-    /*     .section_text p {
+    #heroTitle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        align-self: flex-start;
+        line-height: 2;
+        margin: 0% 2.5%;
+    }
+
+    #heroTitleA {
+        color: #fff;
+        font-size: 5em;
+        line-height: 2;
+        margin: 1% 2.5%;
+    }
+
+    #heroTitleB {
+        color: #fff;
+        font-size: 2em;
+        text-align: left;
+        margin-left: 3%;
+        line-height: 2;
+    }
+
+    .flex_col-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        max-width: 98%;
+    }
+
+    .card_lg {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: auto;
+        flex-grow: 1;
         width: 100%;
         max-width: 98%;
-        margin: 0.5%;
-        line-height: 2.5;
-        font-size: 1em;
-        text-align: left;
+        margin: 1% 0%;
     }
 
-    .text-lg p {
-        font-size: 2em;
-    }*/
+    .flex_col-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        width: 100%;
+        max-width: 50%;
+    }
+
+    .flex_col-img img {
+        max-width: 75%;
+    }
+
+    .flex_col {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width: 100%;
+        max-width: 90%;
+    }
 }
