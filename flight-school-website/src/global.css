@@ -205,9 +205,10 @@ body {
     max-width: 98%;
 }
 
-.footer__social-icons img {
+.footer_icon {
+    font-size: 32px;
     width: auto;
-    margin: 0% 1.5%;
+    color: #fff;
 }
 
 .footer_info-title {
@@ -354,7 +355,5 @@ breakpoints
         max-width: 25%;
         justify-content: space-around;
     }
-
-    .footer__social img {}
 
 }

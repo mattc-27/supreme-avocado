@@ -25,25 +25,16 @@ $(document).ready(function() {
 
         fleetData.forEach(function(item) {
             var card = `
-                <div class='card__md' data-id='${item.id}'>
-                       <div class='card__title--md'>
-                        <h2>${item.name}</h2>
-                    </div>
-                    <div class='card__text--md'>
-                        <p><b>Hourly rate: </b>$${item.hourlyRate}</p>
-                    </div>
-                    <div class='card__col--img'>
-                        <img src='${item.image}' alt='${item.name}' />
-                    </div>
-                    <div class='content__row'>
-                        <button class='cta_buttons-getStarted'>View</button>
-                    </div>
-                    <div class='view-item' style='display: none;'>
-                        <div class='view-modal' style='display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; margin: 2%;'>
-                            <h1>View modal</h1>
-                            <p>${item.name}</p>
-                      
-                            <button class='cta_button button--orange' style='background-color: #460814fd;'>Close</button>
+                <div class='card_lg' data-id='${item.id}'>
+                    <div class="flex_col">
+                        <div class="card_title-lg text-left">
+                            <h2>${item.name}</h2>
+                        </div>
+                        <div class="card_text-col">
+                            <p><b>Hourly rate: </b>$${item.hourlyRate}</p>
+                        </div>
+                        <div class="flex_col-img">
+                            <img src='${item.image}' alt='${item.name}' />
                         </div>
                     </div>
                 </div>
