@@ -28,18 +28,14 @@
     </header>
     <!-- -->
     <main class="container">
-        <section id="home" style="
-        background-image: url('https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-        background-position: center;
-        background-size: cover;
-        ">
-            <div class="flex_col content_around darkened_bg" style="height: 80%; align-self: center;">
-                <div class='flex_col content_even items_center main_title'>
+        <section id="hero_wrapper">
+            <div class="hero_content">
+                <div class='hero_title'>
                     <h1>Welcome to Aspen Bloom & Harvest</h1>
-                    <p class="main_text">Colorado's premier destination for artisanal flowers, local produce, and
+                    <p class="hero_text">Colorado's premier destination for artisanal flowers, local produce, and
                         handcrafted goods</p>
                 </div>
-                <div class='flex_row content_even'>
+                <div class='cta__buttons'>
                     <button class='cta__button'>
                         Discover Our Seasonal Collections
                     </button>
@@ -50,14 +46,17 @@
             </div>
         </section>
         <!---->
-        <section class="section__layout-lg flex_col-container content_even mbt5" id="">
-            <div class='section_title'>
-                <img id="titleImg" src="https://storage.googleapis.com/personal-site-393900-media/images/22483479-min.png" />
-                <h1 id="collectionTitle">
+        <section class="section__layout-lg flex_col content_even" id="">
+            <div class='section_title flex_row items_end flex-1'>
+                <!--            collectionTitle    <img id="titleImg"
+                    src="https://storage.googleapis.com/personal-site-393900-media/images/22483479-min.png" />-->
+                <img id="titleImg"
+                    src="https://storage.googleapis.com/personal-site-393900-media/images/22483479-min.png" />
+                <h1 id="" style="margin-bottom: 5%;">
                     Explore Our Collections
                 </h1>
             </div>
-            <div class="flex_col content_center items_center" id="" style="width: 100%;">
+            <div class="flex_col content_even items_center collection_col" id="">
                 <div class="card_lg" id="">
                     <div class="flex_col-img">
                         <img
@@ -65,9 +64,9 @@
                     </div>
                     <div class="flex_col-card">
                         <div class="card_title-lg">
-                            <h2> Fresh Flowers</h2>
+                            <h2>Fresh Flowers</h2>
                         </div>
-                        <div class="card_text-col card_text-lg text-left">
+                        <div class="flex_col card_text-lg text-left">
                             <p> <b>Custom Arrangements:</b> Expertly designed arrangements for any occasion,
                                 tailored to
                                 your
@@ -87,7 +86,7 @@
                         <div class="card_title-lg">
                             <h2> Farm Fresh</h2>
                         </div>
-                        <div class="card_text-col card_text-lg text-left">
+                        <div class="flex_col card_text-lg text-left">
                             <p> <b>Seasonal Produce:</b> Fresh from our partner farms, featuring Colorado’s finest
                                 fruits and
                                 vegetables.</p>
@@ -104,7 +103,7 @@
                         <div class="card_title-lg">
                             <h2> Artisan Market</h2>
                         </div>
-                        <div class="card_text-col card_text-lg text-left">
+                        <div class="flex_col card_text-lg text-left">
                             <p>
                                 <b>Local Crafts:</b> Showcasing handmade pottery, woodwork, textiles, and other
                                 local
@@ -120,62 +119,18 @@
                 </div>
             </div>
         </section>
-        <!--  -->
-        <section class="section__layout-md flex_col-container mbt5" id="">
 
-            <div class='flex_row items_center section_title flex-0'>
-                <h2 id="aboutTitle">What Sets Us Apart</h2>
-            </div>
-            <div class='flex_col section_text flex-0'>
-                <p>
-                    We take pride in partnering with Colorado’s farmers and artisans to bring you the finest local
-                    products, celebrating the rich agricultural and creative heritage of our community. Every
-                    purchase you make supports sustainable agriculture and eco-friendly practices, helping to
-                    protect our environment for future generations.
-                </p>
-                <p>
-                    From our family to yours, we prioritize quality
-                    and care in everything we do, ensuring that each product reflects our commitment to excellence
-                    and authenticity.
-                </p>
-            </div>
-            <div style=" display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                align-items: center;
-                width: auto;
-                flex-grow: 1;
-                margin: 1% 0%;
-            max-width: 99%;
-                flex-wrap: wrap;">
-                <p class="card_text">
-                    "The flowers from Aspen Bloom & Harvest always brighten my home and my day! The arrangements
-                    are
-                    stunning and long-lasting." – Jessica R.
-                </p>
-                <p class="card_text">
-
-                    "I love the fresh produce and artisanal goods. Shopping here feels like visiting a piece of
-                    Colorado’s heart." – Mark T.
-                </p>
-                <p class="card_text">
-
-                    "I love the fresh produce and artisanal goods. Shopping here feels like visiting a piece of
-                    Colorado’s heart." – Mark T.
-                </p>
-            </div>
-        </section>
         <!-- -->
         <section class="section__layout-md flex_col-container mbt5" id="">
             <div class="section_title content__row content_start">
-                <h2 class="title-main" id="aboutTitle">Stay Connected</h2>
+                <h2 class="" id="">Stay Connected</h2>
             </div>
             <div class="flex_row content_center items_center flex-1 mbt5">
                 <input defaultValue='email' placeholder="email@example.com" class="subscribe_input" />
                 <button class='subscribeBtn'>Subscribe</button>
             </div>
             <div class="flex_col content_even items_center">
-                <div class="flex_row content_even items_start">
+                <div class="flex_container">
                     <div class="flex_col content_center items_center">
                         <img id="mapImg" src='./src/assets/maps.png' />
                     </div>
