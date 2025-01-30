@@ -154,7 +154,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-startÏ;
+    align-items: flex-start;
     height: auto;
     width: auto;
     flex-grow: 1;
@@ -593,6 +593,13 @@ body {
     width: 100%;
     min-height: 50vh;
     margin: 0.5% 0%;
+}
+
+.grid_section {
+    display: block;
+    height: auto;
+    width: 100%;
+    margin: 0%;
 }
 
 .section__layout-md {
