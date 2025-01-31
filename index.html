@@ -8,19 +8,20 @@
     <link rel="stylesheet" href="./src/styles/main.css" />
     <script src="anime.min.js"></script>
     <script type="module" src="./src/js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/f923528a34.js" crossorigin="anonymous"></script>
     <title>Example sites</title>
 </head>
 
 <body>
     <header>
-        <div class='header__content'>
-            <div class='main__title'>
+        <div class='header_content'>
+            <div class='header_logo'>
                 <h1>High Altitude Web Solutions</h1>
                 <h2>Demo Sites</h2>
             </div>
-            <nav class="header__nav">
-                <a class='nav__link' href="/">Home</a>
-                <a class='nav__link' href="https://www.highaltitudeweb.design">About</a>
+            <nav class="header_nav">
+                <span class="nav_item"> <a href="/">Home</a></span>
+                <span class="nav_item"> <a href="https://www.highaltitudeweb.design">About</a></span>
                 <!--   <a class='nav-link' href='/about'>About</a>
                 <a class='nav-link' href='/store'>Store</a> -->
             </nav>
@@ -29,101 +30,78 @@
     <main class="container">
 
 
-        <div class="section__layout section__text rellax" id="" data-rellax-speed="-5">
-            <p> As an emerging freelance web developer I'm excited to showcase some of my work through a
-                collection
-                of static mock-up sites representing various fictitious businesses.
+        <div class="section__layout-sm section_text rellax" data-rellax-speed="3">
+            <p>
+                My web design projects are a reflection of my appreciation for engaging and thoughtful design. I’m
+                fascinated by the many layers that go into a successful website—from the technical foundation to the
+                visual elements that capture attention and drive user interaction. I enjoy the challenge of creating
+                designs that not only look great but also enhance usability and conversion.
             </p>
-            <p>The goal of these examples are to highlight my attention to detail and ability to create visually
-                appealing and functional websites.</p>
+            <p>
+                This collection showcases a variety of static sites featuring fictitious business details, serving as a
+                space to experiment with different styles, layouts, and concepts. It’s a work in progress, evolving as I
+                explore new inspirations and refine my approach to web design.
+            </p>
         </div>
-        <img src="./src/assets/vecteezy_galaxy-paint-brush_24222740.png" class="rellax" data-rellax-speed="-15"
+        <img src="./src/assets/vecteezy_galaxy-paint-brush_24222740.png" class="rellax" data-rellax-speed="-5"
             id="projectBg" />
-        <div class="section__layout rellax" id="" data-rellax-speed="-5">
+        <div class="section__layout-md flex_col-container rellax" id="" data-rellax-speed="1">
 
-            <div class="content__col" id="">
+            <div class="flex_col" id="">
                 <div class="card__sm">
                     <h2 class="card__title--sm">Auto detail website</h2>
-                    <a class="card__link" href="./auto-detail/index.html" class="view__link">View</a>
+                    <div class="view_row">
+                        <p>VIEW</p>
+                        <a href="./auto-detail/index.html" class="view_icon"> <i
+                                class="fa-regular fa-circle-right"></i></a>
+                    </div>
                 </div>
                 <div class="card__sm">
                     <h2 class="card__title--sm">Charter flight business</h2>
-                    <a class="card__link" href="./charter-flights/index.html" class="view__link">View</a>
+                    <div class="view_row">
+                        <p>VIEW</p>
+                        <a href="./charter-flights/index.html" class="view_icon"> <i
+                                class="fa-regular fa-circle-right"></i></a>
+                    </div>
                 </div>
                 <div class="card__sm">
                     <h2 class="card__title--sm">Flight school website</h2>
-                    <a class="card__link" href="./flight-school-website/index.html" class="view__link">View</a>
+                    <div class="view_row">
+                        <p>VIEW</p>
+                        <a href="./flight-school-website/index.html" class="view_icon"> <i
+                                class="fa-regular fa-circle-right"></i></a>
+                    </div>
                 </div>
-
                 <div class="card__sm">
                     <h2 class="card__title--sm">Flower shop website</h2>
-                    <a class="card__link" href="./floral-website/index.html" class="view__link">View</a>
+                    <div class="view_row">
+                        <p>VIEW</p>
+                        <a href="./floral-website/index.html" class="view_icon"> <i
+                                class="fa-regular fa-circle-right"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
-        <!--
-            <div class="section__layout project_section" id="examples">
-            <h2>Test</h2>
-        </div>
-                <div class="section__layout">
-
-            <div class="rellax" data-rellax-speed="-3">
-                I’m slow and smooth
-            </div>
-
-            <div class="rellax" data-rellax-speed="7">
-                I’m super fast!!
-            </div>
-
-            <div class="rellax" data-rellax-speed="-5">
-                I’m extra slow and smooth
-            </div>
-        </div>
-        <div class="section__layout">
-            <h3>asdf</h3>
-        </div>-->
-        <!--
-         <div class="card__md" id="cardItem">
-                <div class="content__col content_center items_center">
-
-
-                    <h2 class="card__title--md">Flower shop website</h2>
-                    <a class="card__link" href="./floral-website/index.html" class="view__link">View</a>
-                </div>
-            </div>
-
-
-
-            <div class="card__md" data-rellax-speed="7" id="cardItem">
-                <div class="content__col content_center items_center">
-                    <h2 class="card__title--md">Auto detail website</h2>
-                    <a class="card__link" href="./auto-detail/index.html" class="view__link">View</a>
-                </div>
-            </div>
-
-
-            <div class="card__md" id="cardItem">
-                <div class="content__col content_center items_center">
-                    <h2 class="card__title--md">Flight school website</h2>
-                    <a class="card__link" href="./flight-school-website/index.html"
-                        class="view__link">View</a>
-                </div>
-            </div>
-            -->
-
     </main>
     <!-- -->
-    <footer>
+    <footer class="footer__standard">
         <div class='footer__content'>
-            <div class='footer__section'>
-                <div class="footer_text">
+            <div class='footer_col'>
+                <div class="footer_info-text">
                     <h3>Matt Copeland</h3>
                     <a href="https://mattcopeland.space">mattcopeland.space</a>
                 </div>
             </div>
+            <div class="footer_bottom_row">
+                <a href="https://www.linkedin.com/in/mattcopeland27/">
+                    <i class="fa-brands fa-linkedin footer_icon"></i>
+                </a>
+                <a href="https://github.com/mattc-27">
+                    <i class="fa-brands fa-github footer_icon"></i>
+                </a>
+            </div>
         </div>
     </footer>
-
 </body>
 <script type="module">
     import Rellax from "rellax";
@@ -131,16 +109,6 @@
     import anime from 'animejs/lib/anime.es.js'
 
     var rellax = new Rellax('.rellax');
-
-
-    /*     anime({
-            targets: '#cardItem',
-            opacity: 1,
-            scale: [2, 1],
-            duration: 1000,
-            delay: 1,
-            easing: 'easeInOutSine'
-        });*/
 
 </script>
 
