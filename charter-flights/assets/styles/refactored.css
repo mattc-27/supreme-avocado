@@ -274,6 +274,23 @@ body {
     line-height: 1.5;
 }
 
+.section_title-lg {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    font-family: var(--main-font-family);
+}
+
+.section_title-lg h2 {
+    width: 100%;
+    margin: 0%;
+    text-align: center;
+    align-self: center;
+    font-weight: 500;
+    font-size: 2.5em;
+    line-height: 1.5;
+}
+
 .section_text {
     display: flex;
     justify-content: center;
@@ -362,9 +379,24 @@ body {
     color: #f9f9f9;
 }
 
-.title-main, .title-main h2 {
+.title-main {
     color: #333;
+    text-align: center;
+    max-width: 90%;
+    line-height: 1.5;
+    width: 100%;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    font-family: 'Open sans';
+    flex-grow: 1;
+    font-size: 1.5em;
 }
+
+.title-main h2 {
+    font-weight: 300;
+}
+
 
 .text-main {
     color: #565656;
@@ -591,15 +623,8 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 50vh;
+    height: 35vh;
     margin: 0.5% 0%;
-}
-
-.grid_section {
-    display: block;
-    height: auto;
-    width: 100%;
-    margin: 0%;
 }
 
 .section__layout-md {
@@ -638,6 +663,17 @@ body {
     align-items: center;
     height: fit-content;
     width: 100%;
+}
+
+.flex_container-rev {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    align-self: center;
+    width: 100%;
+    max-width: 98%;
 }
 
 .flex_col {
@@ -936,8 +972,16 @@ breakpoints
     .flex_container {
         display: flex;
         flex-direction: row;
+        align-items: flex-start;
         height: fit-content;
         width: 100%;
+    }
+
+    .flex_container-rev {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        max-width: 90%;
     }
 
     .content_img {
@@ -956,6 +1000,24 @@ breakpoints
     .section_title h1, .section_title h2 {
         line-height: 1;
         text-align: left;
+    }
+
+    .title-main {
+        color: #333;
+        font-size: 2em;
+        text-align: center;
+        max-width: 90%;
+        line-height: 1.5;
+        width: 100%;
+        align-self: center;
+        display: flex;
+        align-items: center;
+        font-family: 'Open sans';
+        flex-grow: 1;
+    }
+
+    .title-main h2 {
+        font-weight: 400;
     }
 
     #heroTitle {
@@ -982,6 +1044,14 @@ breakpoints
         text-align: left;
         margin-left: 3%;
         line-height: 2;
+    }
+
+
+
+    .section_title h2 {
+        font-size: 5em;
+        font-weight: 500;
+        text-align: center;
     }
 
     .flex_col-card {
@@ -1029,4 +1099,24 @@ breakpoints
     .section_text p {
         text-align: left;
     }
+}
+
+@media only screen and (min-width: 1000px) {
+    .flex_container-rev {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        max-width: 90%;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .flex_container-rev {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        max-width: 80%;
+    }
+
 }

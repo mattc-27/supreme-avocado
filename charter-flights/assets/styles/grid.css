@@ -1,12 +1,29 @@
 .grid_section {
     display: block;
-    min-height: 100vh;
+    height: fit-content;
+    margin: 0% 0%;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
 
 .grid_container {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    max-width: 98%;
+    justify-content: center;
+    align-self: center;
+}
+
+
+.flex_grid-col {
+    display: flex;
+    flex-direction: column;
+    flex: 0 32%;
+    flex-grow: 1;
 }
 
 .grid_text-lg,
@@ -17,7 +34,7 @@
 
 .grid_text-xl {
     font-family: "Open Sans";
-    font-size: 7.5em;
+    font-size: 4em;
 }
 
 .grid_text {
@@ -28,7 +45,6 @@
     align-items: center;
     max-width: 90%;
     margin: 0.5% 1%;
-
 }
 
 .grid_button {
@@ -55,11 +71,10 @@
     font-family: "Open Sans";
     font-size: 1em;
     line-height: 2;
-
 }
 
 .grid_text-lg h2 {
-    font-size: 5em;
+    font-size: 4em;
     font-weight: 400;
     color: #333;
 }
@@ -76,7 +91,7 @@
     justify-content: space-around;
     align-items: flex-start;
     width: 100%;
-    max-width: 25%;
+    flex-grow: 1;
 }
 
 .flex_grid-2 {
@@ -84,8 +99,7 @@
     flex-direction: column;
     flex-grow: 1;
     width: 100%;
-
-    border: 0.5px dashed #333;
+    border-left: 0.5px dashed #333;
 }
 
 .flex_grid-3 {
@@ -93,10 +107,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    flex-grow: 1;
-    width: 100%;
+    max-width: 50%;
 
-    border: 0.5px dashed #333;
+    border-left: 0.5px dashed #333;
 }
 
 .flex_grid-3 img {
@@ -106,26 +119,21 @@
 .flex_grid-4 {
     display: flex;
     flex-direction: column;
-
     width: 100%;
-
-    flex-grow: 1;
+    border-bottom: 0.5px dashed #333;
+    border-top: 0.5px dashed #333;
 }
 
 .flex_grid-5 {
     display: flex;
     flex-direction: column;
-
     width: 100%;
-    border: 0.5px dashed #333;
 }
 
 .flex_grid-6 {
     display: flex;
     flex-direction: column;
-    max-width: 30%;
     width: 100%;
-    border: 0.5px dashed #333;
 }
 
 .flex_grid-7 {
@@ -133,7 +141,6 @@
     flex-direction: column;
     flex-grow: 1;
     width: 100%;
-    border: 0.5px dashed #333;
 }
 
 .flex_grid-8 {
@@ -144,18 +151,7 @@
     border: 0.5px dashed #333;
 }
 
-.flex_grid-col {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    border: 0.5px dashed #333;
-}
 
-.flex_grid-row {
-    display: flex;
-    flex-grow: 1;
-    border: 0.5px dashed #333;
-}
 
 .div1 {
     border: 0.5px solid red;
@@ -189,6 +185,41 @@
     grid-area: div8;
 }
 
+
+
+@media only screen and (min-width: 700px) {
+
+    .grid_container {
+        max-width: 90%;
+        align-self: center;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .grid_container {
+        max-width: 90%;
+        align-self: center;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .grid_container {
+        max-width: 80%;
+        align-self: center;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+
+    .grid_container {
+        max-width: 50%;
+        align-self: center;
+    }
+}
 
 /*.grid_container {
     display: grid;
