@@ -256,10 +256,10 @@ body {
 .section_title h1 {
     width: 100%;
     margin: 0%;
-    text-align: center;
+    text-align: left;
     align-self: center;
     font-weight: 500;
-    font-size: 2.75em;
+    font-size: 3.5em;
     line-height: 2;
 }
 
@@ -267,7 +267,7 @@ body {
 .section_title h2 {
     width: 100%;
     margin: 0%;
-    text-align: center;
+    text-align: left;
     align-self: center;
     font-weight: 400;
     font-size: 2.25em;
@@ -297,7 +297,7 @@ body {
     align-items: center;
     width: auto;
     flex-grow: 1;
-    text-align: center;
+    text-align: left;
     font-family: var(--main-font-family);
 }
 
@@ -324,7 +324,7 @@ body {
     line-height: 3;
     font-size: 1.25em;
     font-weight: 400;
-    text-align: center;
+    text-align: left;
 }
 
 .home_text {
@@ -339,7 +339,8 @@ body {
     flex-grow: 1;
     /* */
     margin: 0.5%;
-    max-width: 80%;
+    width: 100%;
+
 }
 
 .section_text ul li {
@@ -349,7 +350,7 @@ body {
     line-height: 2.5;
     font-size: 1em;
     font-weight: 200;
-    text-align: center;
+    text-align: left;
     list-style-position: inside;
 }
 
@@ -481,12 +482,12 @@ body {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    max-width: 98%;
+    /*     max-width: 98%;*/
     margin: 2.5% 0%;
 }
 
 .flex_col-img img {
-    max-width: 90%;
+    max-width: 75%;
 }
 
 .card_text-col {
@@ -497,13 +498,16 @@ body {
     align-self: center;
     flex-grow: 1;
     width: 100%;
-    max-width: 95%;
+    max-width: 98%;
     font-family: 'Open sans';
 }
 
 .card_text-col p {
     font-size: 1em;
+    font-weight: 300;
     line-height: 3;
+    width: 100%;
+    text-align: left;
 }
 
 .card_text-lg {
@@ -630,10 +634,11 @@ body {
 .section__layout-md {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
-    min-height: 75vh;
+    flex-grow: 1;
+    min-height: 90vh;
     margin: 0.5% 0%;
 }
 
@@ -681,6 +686,8 @@ body {
     flex-direction: column;
     height: fit-content;
     width: 100%;
+    margin-bottom: 5%;
+    flex-grow: 1;
 }
 
 .flex_row {
@@ -969,13 +976,7 @@ breakpoints
         font-weight: 300;
     }
 
-    .flex_container {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        height: fit-content;
-        width: 100%;
-    }
+
 
     .flex_container-rev {
         display: flex;
@@ -997,9 +998,34 @@ breakpoints
         max-width: 90%;
     }
 
+    .section_title {
+        align-self: center;
+        width: 100%;
+        max-width: 90%;
+
+    }
+
     .section_title h1, .section_title h2 {
         line-height: 1;
         text-align: left;
+    }
+
+    .section_title h2 {
+        font-size: 4em;
+        line-height: 1.5;
+        font-weight: 500;
+        text-align: left;
+        line-height: 1.5;
+
+    }
+
+    .section_title h1 {
+        font-size: 4em;
+        line-height: 1.5;
+        font-weight: 500;
+        text-align: left;
+        line-height: 1.5;
+
     }
 
     .title-main {
@@ -1051,7 +1077,6 @@ breakpoints
     .section_title h2 {
         font-size: 5em;
         font-weight: 500;
-        text-align: center;
     }
 
     .flex_col-card {
@@ -1075,38 +1100,124 @@ breakpoints
         margin: 1% 0%;
     }
 
-    .flex_col-img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-grow: 1;
-        width: 100%;
-        max-width: 50%;
-    }
 
-    .flex_col-img img {
-        max-width: 75%;
-    }
 
     .flex_col {
         display: flex;
         flex-direction: column;
-        height: fit-content;
+        justify-content: space-around;
+        width: 100%;
+        flex-grow: 1;
+        max-width: 98%;
+    }
+
+    .section_text {
+        align-self: center;
         width: 100%;
         max-width: 90%;
     }
 
     .section_text p {
         text-align: left;
+        height: auto;
+        align-self: flex-start;
+        font-size: 1.25em;
+        font-weight: 300;
+        text-align: left;
+        line-height: 2.5;
+
+    }
+
+    .card_text-col {
+        font-size: 1.35em;
+        font-weight: 400;
+        margin: 0.5%;
+
+    }
+
+
+    .card_title-lg h2 {
+        font-family: 'Open sans';
+        font-size: 3em;
+        font-weight: 400;
+        text-align: left;
+        line-height: 2;
+        width: 100%;
+
     }
 }
 
 @media only screen and (min-width: 1000px) {
+
+    .section__layout-md {
+        flex-grow: 1;
+        min-height: 50vh;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
     .flex_container-rev {
         display: flex;
         flex-direction: row-reverse;
-        align-items: center;
+        align-items: flex-start;
         max-width: 90%;
+    }
+
+    .flex_container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        height: fit-content;
+        width: 100%;
+        max-width: 90%;
+    }
+
+    .flex_col-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        width: auto;
+        max-width: 40%;
+
+    }
+
+    .flex_col-img img {
+        max-width: 98%;
+
+        align-self: center;
+    }
+
+    #card_img_vertical img {
+        height: 300px;
+        width: 400px;
+    }
+
+    .card_title-lg h2 {
+        font-family: 'Open sans';
+        font-size: 2.75em;
+        font-weight: 500;
+        text-align: left;
+        line-height: 2;
+        width: 100%;
+    }
+
+    .section_text {
+        align-self: center;
+    }
+
+    .section_text p {
+        text-align: left;
+        height: auto;
+        align-self: center;
+        font-size: 1.75em;
+        font-weight: 300;
+
+        text-align: left;
+        line-height: 2.5;
+        align-self: center;
+
     }
 
 }
@@ -1117,6 +1228,16 @@ breakpoints
         flex-direction: row-reverse;
         align-items: center;
         max-width: 80%;
+    }
+
+    .section_title h1 {
+        font-size: 8em;
+        line-height: 2;
+        font-weight: 500;
+        text-align: left;
+        line-height: 1.5;
+
+
     }
 
 }
