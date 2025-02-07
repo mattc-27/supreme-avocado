@@ -270,7 +270,7 @@ body {
     text-align: left;
     align-self: center;
     font-weight: 400;
-    font-size: 2.25em;
+    font-size: 3em;
     line-height: 1.5;
 }
 
@@ -306,24 +306,30 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    width: 100%;
-    max-width: 98%;
+    flex-basis: 100%;
 }
 
 #heroTitleA, #heroTitleB {
     color: #fff;
     text-align: left;
-    margin-left: 3%;
     line-height: 2;
+
+}
+
+#heroTitleB {
+    font-size: 3.5em;
+}
+
+#heroTitleB {
+    font-size: 1.75em;
 }
 
 .section_text p {
-    width: 100%;
-    max-width: 98%;
+    flex-basis: 100%;
     margin: 0.5%;
-    line-height: 3;
+    line-height: 2.5;
     font-size: 1.25em;
-    font-weight: 400;
+    font-weight: 300;
     text-align: left;
 }
 
@@ -634,11 +640,11 @@ body {
 .section__layout-md {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
     flex-grow: 1;
-    min-height: 90vh;
+    height: 100vh;
     margin: 0.5% 0%;
 }
 
@@ -1011,7 +1017,7 @@ breakpoints
     }
 
     .section_title h2 {
-        font-size: 4em;
+        font-size: 3em;
         line-height: 1.5;
         font-weight: 500;
         text-align: left;
@@ -1020,7 +1026,7 @@ breakpoints
     }
 
     .section_title h1 {
-        font-size: 4em;
+        font-size: 3em;
         line-height: 1.5;
         font-weight: 500;
         text-align: left;
@@ -1059,9 +1065,9 @@ breakpoints
 
     #heroTitleA {
         color: #fff;
-        font-size: 5em;
+        font-size: 3em;
         line-height: 2;
-        margin: 1% 2.5%;
+        margin: 1%;
     }
 
     #heroTitleB {
@@ -1075,7 +1081,7 @@ breakpoints
 
 
     .section_title h2 {
-        font-size: 5em;
+        font-size: 3.5em;
         font-weight: 500;
     }
 
@@ -1151,7 +1157,7 @@ breakpoints
 
     .section__layout-md {
         flex-grow: 1;
-        min-height: 50vh;
+        min-height: 75vh;
         align-items: flex-start;
         justify-content: center;
     }
