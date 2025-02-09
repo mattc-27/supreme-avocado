@@ -98,7 +98,102 @@ button {
 
 ------ ------ ------ ------ */
 
+.card_lg-test {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    margin: 2.5% 0%;
+    font-family: 'Open sans';
+}
+
+.card_lg-test-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    margin: 2.5% 0%;
+    font-family: 'Open sans';
+    flex-grow: 1;
+}
+
+.flex_container-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+    max-width: 98%;
+}
+
+.flex_img-test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+    max-width: 75%;
+    margin: 0.25%;
+}
+
+.flex_img-test img {
+    max-width: 98%;
+    border-radius: 5px;
+}
+
+.flex_card-row {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 98%;
+}
+
+.card_row-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0.25%;
+}
+
+.card_row-title {}
+
+.card_row-title h3 {
+    font-size: 1.75em;
+    font-weight: 400;
+}
+
+.card_row-content {
+    flex-grow: 1;
+}
+
+.card_row-text {
+    margin: 0.25% 0.5%;
+}
+
+.card_row-text p {
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 2;
+}
+
+/* ------ ------ ------ 
+
+\ sections
+
+------ ------ ------ ------ */
 .card_lg {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    margin: 2.5% 0%;
+    font-family: 'Open sans';
+}
+
+.card_lg-rev {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-evenly;
@@ -214,9 +309,49 @@ button {
     z-index: 80000;*/
 }
 
+.subscribe_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.subscribe_input {
+    height: 50px;
+    width: 100%;
+    max-width: 80%;
+    margin: 0.5%;
+    padding: 0.5%;
+    padding-left: 0.75%;
+    /* */
+    cursor: pointer;
+    /* */
+    background-color: none;
+    font-size: 0.9em;
+    font-weight: 300;
+    color: #222222;
+    /* */
+    border: none;
+    border-radius: 5px;
+}
+
+.subscribeBtn {
+    height: 50px;
+    width: 100%;
+    max-width: 35%;
+    margin: 0.5%;
+    cursor: pointer;
+    border: none;
+    font-size: 1.25em;
+    font-weight: 300;
+    background-color: #99c578;
+    color: #fff;
+    align-self: center;
+}
+
 #mapImg {
-    width: 75%;
-    max-width: 90%;
+    width: 100%;
+    max-width: 82.5%;
     align-self: center;
     border-radius: 5px;
     box-shadow: 0px 3px 5px 0px rgba(157, 157, 157, 0.2);
@@ -224,6 +359,7 @@ button {
 
 .collection_col {
     min-height: 200vh;
+    width: 100%;
 }
 
 #collectionTitle {
@@ -348,37 +484,23 @@ button {
 }
 
 
-.subscribe_input {
-    height: 50px;
-    width: 100%;
-    max-width: 90%;
-    margin: 0.5%;
-    padding: 0.5%;
-    padding-left: 0.75%;
-    border: 1px solid #333;
-    border-radius: 5px;
-    cursor: pointer;
-    color: #222222;
-    background-color: none;
-    font-size: 0.9em;
-    font-weight: 300;
-}
 
-.subscribeBtn {
-    height: 50px;
+/* 
+
     width: 100%;
-    max-width: 35%;
-    margin: 0.5%;
-    cursor: pointer;
-    border: none;
+    max-width: 80%;
+    height: 50px;
     font-size: 1em;
-    font-weight: 300;
-    background-color: #99c578;
-    background-color: #FFAA33;
-    background-color: #718ab4d5;
+    font-weight: 200;
+    border: none;
+    border-radius: 5px;
+    background-color: #6777c6;
+    background-color: #2b7545;
     color: #fff;
-    align-self: center;
-}
+    margin: 0.5% 0%;
+    border: none;
+    text-wrap: wrap;*/
+
 
 .border_dec--bottom {
     border-bottom: 0.25px solid #333;
@@ -489,6 +611,22 @@ button {
     border-radius: 5px;
 }
 
+.feature_img-rev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0.25%;
+    width: 100%;
+    max-width: 35%;
+    margin-bottom: 2.75%;
+}
+
+.feature_img-rev img {
+    max-width: 80%;
+    border-radius: 5px;
+}
+
 /* ------ ------ ------ 
 
 banners
@@ -554,48 +692,24 @@ button {
     border: 1px solid #fff;
 }
 
-.subscribe_input {
-    align-self: center;
-    height: 50px;
-    width: 100%;
-    max-width: 40%;
-    margin: 0.5%;
-    padding: 0.5%;
-    padding-left: 0.75%;
-    font-size: 0.9em;
-    font-weight: 300;
-    color: #222222;
-    border: 1px solid #333;
-    border-radius: 5px;
-    background-color: none;
-}
 
-.subscribeBtn {
-    height: 50px;
-    width: 100%;
-    max-width: 20%;
-    margin: 0.5%;
-    border: none;
-    font-size: 1em;
-    font-weight: 300;
-    color: #fff;
-}
 
 .flex_col ol {}
 
-.num_list, .num_list ol, .num_list ul {
-    height: auto;
+.num_list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+}
+
+.num_list ol, .num_list ul {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    flex-grow: 1;
-    max-width: 95%;
+    align-self: flex-start;
     height: auto;
-    margin: 2% 0%;
-    margin-bottom: 3%;
+    margin-left: 0.5%;
     max-width: 90%;
-    position: relative;
-    z-index: 99999999;
 }
 
 .num_list li,
@@ -605,9 +719,9 @@ button {
     list-style: none;
     font-size: 1.25em;
     font-weight: 300;
-    line-height: 2;
+    line-height: 1.25;
     margin: 1.5% 0.5%;
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: 300;
     color: #333;
 }
@@ -741,8 +855,6 @@ button {
     display: flex;
     flex-direction: column-reverse;
     height: fit-content;
-    width: 100%;
-    max-width: 99%;
 }
 
 .flex_row-rev {
@@ -1106,7 +1218,7 @@ nav {
 
 
     .section__layout-lg {
-        max-width: 90%;
+        max-width: 98%;
     }
 
 
@@ -1122,6 +1234,53 @@ nav {
         align-self: center;
         border-radius: 5px;
         box-shadow: 0px 3px 5px 0px rgba(157, 157, 157, 0.2);
+    }
+
+    .subscribe_container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        margin: 5% 0%;
+    }
+
+    .subscribe_input {
+        height: 50px;
+        width: 100%;
+        max-width: 50%;
+        margin: 0.5%;
+        padding: 0.5%;
+        padding-left: 0.75%;
+        /* */
+        cursor: pointer;
+        /* */
+        background-color: none;
+        font-size: 0.9em;
+        font-weight: 300;
+        color: #222222;
+        /* */
+        border: none;
+        border-radius: 5px;
+    }
+
+    .subscribeBtn {
+        align-self: center;
+        /* */
+        height: 50px;
+        width: 100%;
+        max-width: 30%;
+        /* */
+        margin: 0.5%;
+        /* */
+        font-size: 1.25em;
+        font-weight: 300;
+        background-color: #99c578;
+        color: #fff;
+        /**/
+        cursor: pointer;
+        border: none;
+
     }
 
     /*     #collectionTitle {
@@ -1363,6 +1522,100 @@ nav {
     }
 
     /* ##cards */
+    /* ------ ------ ------ 
+
+\ sections
+
+------ ------ ------ ------ */
+
+    .card_lg-test {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: auto;
+        margin: 2.5% 0%;
+        width: 100%;
+        font-family: 'Open sans';
+    }
+
+    .card_lg-test-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: auto;
+        margin: 2.5% 0%;
+        width: 100%;
+        font-family: 'Open sans';
+        flex-grow: 1;
+    }
+
+    .flex_container-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        width: 100%;
+        max-width: 65%;
+    }
+
+    .flex_img-test {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        width: 100%;
+        max-width: 35%;
+        margin: 0.25%;
+    }
+
+    .flex_img-test img {
+        max-width: 98%;
+        border-radius: 5px;
+    }
+
+    .flex_card-row {
+        display: flex;
+        align-items: flex-start;
+
+        width: 100%;
+        max-width: 98%;
+    }
+
+    .card_row-item {
+        display: flex;
+        flex-direction: column;
+        margin: 0.25%;
+    }
+
+    .card_row-title {}
+
+    .card_row-title h3 {
+        font-size: 2.5em;
+        font-weight: 400;
+    }
+
+    .card_row-content {
+        flex-grow: 1;
+    }
+
+    .card_row-text {
+        margin: 0.25% 0.5%;
+    }
+
+    .card_row-text p {
+        font-size: 1.25em;
+        font-weight: 300;
+        line-height: 2;
+    }
+
+    /* ------ ------ ------ 
+
+\ sections
+
+------ ------ ------ ------ */
     .card_lg {
         display: flex;
         flex-direction: row;
@@ -1372,9 +1625,30 @@ nav {
         align-self: center;
     }
 
+    .card_lg-rev {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        height: 60vh;
+        width: 100%;
+        align-self: center;
+    }
 
 
     .flex_col-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0.25%;
+        width: 100%;
+        max-width: 60%;
+        position: relative;
+        height: fit-content;
+        max-height: 60%;
+    }
+
+    .flex_row-card {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1438,11 +1712,22 @@ nav {
 
     }
 
+    .feature_img-rev {
+        position: unset;
+        right: -95%;
+        z-index: 5000;
+        top: 10%;
+        max-width: 98%;
+    }
+
+    .feature_img-rev img {
+        max-width: 70%;
+    }
+
     .collection_col {
         min-height: 150vh;
-        max-width: 99%;
+
         display: flex;
-        justify-content: center;
         align-self: center;
         width: 100%;
         align-items: center;
