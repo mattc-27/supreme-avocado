@@ -2,28 +2,39 @@
     display: block;
     height: fit-content;
     margin: 0% 0%;
-    height: auto;
+    height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-self: center;
+    margin-top: 5;
 }
 
 .grid_container {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
     flex-wrap: wrap;
     width: 100%;
     max-width: 98%;
-    justify-content: center;
-    align-self: center;
+
+    height: 100%;
 }
 
 
 .flex_grid-col {
     display: flex;
     flex-direction: column;
-    flex: 0 32%;
+    justify-content: space-around;
+    align-items: center;
+    flex: 0 49%;
+
     flex-grow: 1;
+}
+
+.grid_text-lg {
+    align-self: center;
 }
 
 .grid_text-lg,
@@ -41,10 +52,10 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    max-width: 90%;
     margin: 0.5% 1%;
+    text-align: center;
 }
 
 .grid_button {
@@ -53,9 +64,9 @@
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 75%;
+    max-width: 90%;
     text-align: center;
-    align-self: flex-start;
+    align-self: center;
     justify-content: center;
     border: 0.5px solid #333;
     border-radius: 50px;
@@ -88,8 +99,8 @@
 .flex_grid-1 {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     flex-grow: 1;
 }
@@ -97,6 +108,8 @@
 .flex_grid-2 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex-grow: 1;
     width: 100%;
     border-left: 0.5px dashed #333;
@@ -106,19 +119,25 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    max-width: 50%;
-
-    border-left: 0.5px dashed #333;
+    align-items: center;
+    max-width: 90%;
 }
 
 .flex_grid-3 img {
     max-width: 99%;
 }
 
+.grid_4 {
+    width: 100%;
+    align-self: center;
+}
+
 .flex_grid-4 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 100%;
     border-bottom: 0.5px dashed #333;
     border-top: 0.5px dashed #333;
@@ -127,7 +146,11 @@
 .flex_grid-5 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 100%;
+    text-align: center;
 }
 
 .flex_grid-6 {
@@ -190,9 +213,112 @@
 @media only screen and (min-width: 700px) {
 
     .grid_container {
-        max-width: 90%;
+        max-width: 98%;
         align-self: center;
+        flex-wrap: wrap;
+        /*         flex-direction: row;*/
+        position: relative;
+        z-index: 9999999;
+
     }
+
+    .flex_grid-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        flex: 0 49%;
+        flex-grow: 1;
+    }
+
+    .flex_grid-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-grow: 1;
+        position: relative;
+        z-index: 9999999;
+    }
+
+    .grid_text {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: flex-start;
+        align-items: center;
+        border: 0.5px solid red;
+        width: 100%;
+        font-size: 0.75em;
+    }
+
+    .grid_text p {
+        margin: 1% 0%;
+        line-height: 2;
+    }
+
+    .grid_button {
+        width: 100%;
+        margin-top: 5%;
+        height: 30px;
+    }
+
+    .flex_grid-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-grow: 1;
+        width: 100%;
+        position: relative;
+        z-index: 9999999;
+        border-left: 0.5px dashed #333;
+    }
+
+    .grid_4 {
+        height: 100%;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .flex_grid-3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 80%;
+        left: -7.5%;
+  /*       position: absolute;*/
+        top: 45%;
+        z-index: 5000;
+        border: none;
+    }
+
+    .flex_grid-4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        position: relative;
+        flex-grow: 0.5;
+        z-index: 9999999;
+        border-bottom: 0.5px dashed #333;
+        border-top: 0.5px dashed #333;
+
+        border-left: 0.5px dashed #333;
+    }
+
+    .flex_grid-5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-self: flex-start;
+        width: 100%;
+        flex-grow: 1%;
+        position: relative;
+        z-index: 9999999;
+    }
+
 }
 
 @media only screen and (min-width: 1000px) {
@@ -209,7 +335,7 @@
         max-width: 80%;
         align-self: center;
         flex-direction: row;
-        flex-wrap: wrap-reverse;
+
     }
 }
 

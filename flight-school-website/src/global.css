@@ -263,6 +263,7 @@ breakpoints
         background-color: #f6f6f6;
     }
 
+
     .header__title {
         display: flex;
         align-items: center;
@@ -288,15 +289,21 @@ breakpoints
         height: 20%;
         display: flex;
         border-left: 0.5px solid #b1b1b1;
+        color: #fff;
     }
 
     .nav_item a {
         text-decoration: none;
-        margin-left: 5%;
+        margin-left: 0.5%;
         font-size: 0.9em;
         align-self: center;
         font-family: 'Open sans';
         cursor: pointer;
+        color: #fff;
+    }
+
+    .nav-link {
+        color: #fff;
     }
 
     .mobile_nav {
