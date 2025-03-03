@@ -923,7 +923,7 @@ button {
 .section__layout-xlg {
     display: block;
     width: 100%;
-    height: 100vh;
+    height: 125vh;
     margin: 5% 0%;
     position: relative;
     z-index: 999999;

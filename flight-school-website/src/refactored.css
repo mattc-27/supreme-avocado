@@ -95,6 +95,34 @@ button {
     color: #fff;
 }
 
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 75%;
+    margin: 0.5% 0%;
+}
+
+.nav_item {
+    flex-grow: 1;
+    height: auto;
+    display: flex;
+    max-width: 20%;
+    border-left: 0.5px solid #b1b1b1;
+}
+
+.nav_item a {
+    text-decoration: none;
+    margin-left: 5%;
+    font-size: 0.9em;
+    align-self: center;
+    font-family: 'Open sans';
+    cursor: pointer;
+    color: #fff;
+}
+
 /* ------ ------ ------ 
 
 \ sections
@@ -224,7 +252,7 @@ header {
     align-items: center;
     width: auto;
     flex-grow: 0.5;
-    margin: 0%;
+    margin: 1% 0%;
     width: 100%;
     font-family: var(--main-font-family);
 }
@@ -242,7 +270,7 @@ header {
 .section_title h2 {
     font-weight: 400;
     font-size: 2em;
-    line-height: 1.5;
+    line-height: 2;
     text-align: left;
     width: 100%;
     color: #444444;
@@ -917,7 +945,7 @@ banners
     z-index: 5000;
     max-width: 45%;
     flex-grow: 1;
-    top: 30%;
+    top: 45%;
     left: 0%;
     margin: 0%;
     width: 100%;
@@ -928,6 +956,24 @@ banners
 .section_2-img img {
     mask-image: radial-gradient(circle, black, black 35%, transparent 95%);
     max-width: 50%;
+
+}
+
+
+.section_3-img {
+    position: absolute;
+    z-index: 5000;
+    flex-grow: 1;
+    top: 60%;
+    left: 0%;
+    margin: 0%;
+    width: 100%;
+    max-width: 98%;
+}
+
+.section_3-img img {
+    mask-image: radial-gradient(circle, black, black 35%, transparent 95%);
+    max-width: 60%;
 
 }
 
@@ -974,8 +1020,8 @@ banners
 .section__layout-md {
     display: block;
     width: 100%;
-    min-height: 50vh;
-    margin: 0.5% 0%;
+    min-height: 80vh;
+    margin: 5% 0%;
     position: relative;
     z-index: 999999;
     /*     border: 0.5px solid blue;*/
@@ -1015,13 +1061,13 @@ banners
 .section_2-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: relative;
     z-index: 99999;
-    height: 100%;
-    align-self: center;
+    height: auto;
     flex-grow: 1;
+    align-self: center;
     /*   width: 100%;
     max-width: 98%;
          */
@@ -1391,6 +1437,19 @@ banners
         width: auto;
     }
 
+    .section_3-img {
+        position: absolute;
+        z-index: 5000;
+        flex-grow: 1;
+        top: 60%;
+        left: 0%;
+        margin: 0%;
+        width: 100%;
+        max-width: 98%;
+    }
+    .section_3-img img {
+        max-width: 45%;
+    }
     /* */
     .section_3-content {
         display: flex;
