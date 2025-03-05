@@ -34,6 +34,11 @@ button {
     background-image: url('https://images.unsplash.com/photo-1701602029591-ed354736e28c');
     background-position: center;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
 }
 
 .hero_content {
@@ -43,8 +48,7 @@ button {
     align-items: center;
     align-self: center;
     color: #fff;
-    height: 100%;
-    max-width: 98%;
+    flex-basis: 80%;
     /*         background-color: #3c555a73;
     background-color: #6a6a6abe;*/
 }
@@ -55,20 +59,39 @@ button {
     justify-content: center;
     align-items: center;
     width: auto;
-    flex-basis: 100%;
+    align-self: center;
+    flex-grow: 0.5;
     font-family: var(--main-font-family);
 }
 
 .hero_title h1 {
     align-self: center;
     font-weight: 500;
-    font-size: 3.5em;
-    line-height: 1.5;
+    font-size: 2.5em;
+    line-height: 1.25;
     color: #fafafa;
-    flex-grow: 1;
-    margin: 0%;
+    width: 100%;
+    margin: 0.25%;
+    margin-bottom: 1%;
     max-width: 98%;
-    text-align: left;
+    text-align: center;
+    /*     margin: 0%;
+    max-width: 98%;
+    text-align: center;
+    flex-grow: 0.5;*/
+}
+
+.hero_title p {
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    font-weight: 400;
+    font-size: 1.25em;
+    line-height: 2;
+    color: #fafafa;
+    margin: 0.25%;
+    margin-top: 1%;
+    max-width: 98%;
 }
 
 .hero_text {
@@ -80,7 +103,8 @@ button {
     line-height: 2.5;
     max-width: 98%;
     color: #fff;
-    flex-grow: 1;
+    max-width: 98%;
+    flex-grow: 0.5;
 }
 
 .cta__buttons {
@@ -89,7 +113,8 @@ button {
     justify-content: space-evenly;
     align-items: center;
     align-self: center;
-    flex-basis: 50%;
+    flex-grow: 0.25;
+    max-width: 98%;
 }
 
 /* ------ ------ ------ 
@@ -101,22 +126,20 @@ button {
 .card_lg-test {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     height: auto;
-    margin: 0.5% 0%;
+    margin: 1% 0%;
+    min-height: 60vh;
     font-family: 'Open sans';
 }
 
 .card_lg-test-container {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: auto;
-    margin: 2.5% 0.5%;
-    font-family: 'Open sans';
-    flex-grow: 1;
+    height: 100%;
 }
 
 .flex_container-card {
@@ -246,28 +269,34 @@ button {
     color: #fff;
 }
 
+.card_title-lg {
+    text-align: center;
+    width: 100%;
+}
+
 .card_title-lg h2 {
     font-size: 2.5em;
     font-weight: 500;
-    text-align: left;
     line-height: 2;
     margin-bottom: 2.5%;
     color: #2d2d2d;
 }
 
 .card_text-lg p {
-    font-size: 1.25em;
+    font-size: 1em;
     font-weight: 300;
-    text-align: left;
+    text-align: center;
     line-height: 2;
     margin-bottom: 5%;
     color: #2d2d2d;
 }
 
 .card_cta {
-    height: 50px;
+    height: 45px;
     border: none;
     border-radius: 5px;
+    width: 100%;
+    max-width: 60%;
     text-align: center;
     display: flex;
     align-items: center;
@@ -302,7 +331,9 @@ button {
     display: flex;
     align-items: center;
     flex-grow: 0;
-
+    width: 100%;
+    align-self: center;
+    text-align: center;
     font-family: var(--main-font-family);
 }
 
@@ -341,14 +372,14 @@ button {
 }
 
 .section_title h2 {
-    margin: 0%;
-    text-align: left;
-    align-self: center;
-    font-size: 2.5em;
-    font-weight: 400;
-    line-height: 1.5;
-    flex-grow: 1;
+    width: 100%;
+    text-align: center;
+    color: #748f87;
     color: #2d2d2d;
+    font-weight: 500;
+    font-size: 3em;
+    line-height: 1.5;
+    align-self: center;
 }
 
 .section_title-alt h2 {
@@ -428,11 +459,13 @@ button {
     display: flex;
     flex-direction: row;
     align-items: center;
+    align-self: center;
     flex-grow: 1;
+    max-width: 90%;
 }
 
 .subscribe_input {
-    height: 50px;
+    height: 45px;
     width: 100%;
     max-width: 80%;
     margin: 0.5%;
@@ -451,31 +484,28 @@ button {
 }
 
 .subscribeBtn {
-    height: 50px;
+    height: 45px;
     width: 100%;
     max-width: 35%;
     margin: 0.5%;
     cursor: pointer;
     border: none;
-    font-size: 1.25em;
+    font-size: 1em;
     font-weight: 300;
-    background-color: #99c578;
     color: #fff;
     align-self: center;
 }
 
 #mapImg {
     width: 100%;
-    max-width: 82.5%;
+    max-width: 50%;
     align-self: center;
+    margin: 2.5% 0%;
     border-radius: 5px;
     box-shadow: 0px 3px 5px 0px rgba(157, 157, 157, 0.2);
 }
 
-.collection_col {
-    min-height: 200vh;
-    width: 100%;
-}
+.collection_col {}
 
 #collectionTitle {
     /*     position: absolute;
@@ -483,12 +513,12 @@ button {
     top: 17.5%;
     left: 5%;*/
     width: 100%;
-    text-align: left;
+    text-align: center;
     color: #748f87;
     color: #2d2d2d;
-    font-weight: 300;
-    font-size: 5em;
-    color: #fff;
+    font-weight: 500;
+    font-size: 3em;
+    line-height: 1.5;
     align-self: center;
     /*     font-family: "Caveat", serif;*/
 }
@@ -501,15 +531,7 @@ button {
     /*     font-family: "Caveat", serif;*/
 }
 
-.section_title h2 {
-    width: 100%;
-    margin: 0%;
-    text-align: center;
-    align-self: center;
-    font-weight: 400;
-    font-size: 9vw;
-    line-height: 1.5;
-}
+
 
 .section_text {
     display: flex;
@@ -755,10 +777,10 @@ button {
 
 .cta__button {
     width: 100%;
-    max-width: 80%;
+    max-width: 75%;
     height: 50px;
     font-size: 1em;
-    font-weight: 200;
+    font-weight: 300;
     border: none;
     border-radius: 5px;
     background-color: #6777c6;
@@ -817,7 +839,10 @@ button {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-
+    width: 100%;
+    max-width: 98%;
+    margin: 2.5% 0%;
+    align-self: center;
 }
 
 .num_list ol, .num_list ul {
@@ -927,7 +952,7 @@ button {
     margin: 5% 0%;
     position: relative;
     z-index: 999999;
-/*     border: 0.5px solid blue;*/
+    /*     border: 0.5px solid blue;*/
 }
 
 .section_content {
@@ -1139,6 +1164,7 @@ header {
     height: 100%;
     font-family: "Open sans", serif;
 
+
 }
 
 .header__title {
@@ -1227,6 +1253,8 @@ nav {
     max-width: 100%;
     font-family: "Open Sans", serif;
     background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
 }
 
 .footer__content {
@@ -1237,6 +1265,7 @@ nav {
     flex-basis: 100%;
     height: 100%;
     margin: 0.5% 0%;
+    font-family: "Open Sans", serif;
 }
 
 .footer__section-row {
@@ -1257,11 +1286,24 @@ nav {
 }
 
 .footer_col img {
-    height: 100px;
+    max-width: 75%;
     width: auto;
+    align-self: flex-end;
 }
 
 .footer_col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    height: auto;
+    width: auto;
+    flex-grow: 1;
+    width: 100%;
+    max-width: 99%;
+}
+
+.footer_row {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -1297,14 +1339,14 @@ nav {
 .footer__social-icons {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     flex-grow: 0.5;
     width: 100%;
-    max-width: 98%;
+    max-width: 70%;
 }
 
 .footer_icon {
-    font-size: 32px;
+    font-size: 25px;
     width: auto;
     color: #2d2d2d;
 }
@@ -1322,6 +1364,7 @@ nav {
     max-width: 98%;
     font-size: 1em;
     flex-grow: 1;
+    font-weight: 400;
 }
 
 .footer_info-text {
@@ -1337,6 +1380,7 @@ nav {
     text-align: left;
     max-width: 95%;
     font-size: 0.75em;
+    font-weight: 300;
     line-height: 2;
     flex-grow: 1;
 }
@@ -1356,8 +1400,18 @@ nav {
         max-width: 99%;
     }
 
+    .flex_col-rev {
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+        align-items: center;
+        width: 100%;
+        max-width: 98%;
+    }
+
+
     #mapImg {
-        width: 75%;
+        width: 45%;
         align-self: center;
         border-radius: 5px;
         box-shadow: 0px 3px 5px 0px rgba(157, 157, 157, 0.2);
@@ -1402,8 +1456,8 @@ nav {
         /* */
         font-size: 1.25em;
         font-weight: 300;
-        background-color: #99c578;
         color: #fff;
+        background-color: #6fa16b;
         /**/
         cursor: pointer;
         border: none;
@@ -1433,9 +1487,9 @@ nav {
 
     /* ##text */
     .section_title h1 {
-        max-width: 90%;
+
         margin: 0%;
-        text-align: left;
+        text-align: center;
         align-self: center;
         font-weight: 500;
         font-size: 3em;
@@ -1538,8 +1592,7 @@ nav {
     }
 
     .footer_col img {
-        height: 50%;
-        width: 50%;
+        width: 35%;
     }
 
     .footer__section-row {
@@ -1591,49 +1644,61 @@ nav {
 
     .hero_content {
         max-height: 98%;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
     .hero_title {
-        justify-content: space-around;
-        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        text-align: left;
     }
 
     .hero_title h1 {
         flex-grow: 0;
-        font-size: 7.5em;
+        font-size: 6em;
         max-width: 80%;
         align-self: flex-start;
+        text-align: left;
         margin-left: 2.5%;
         line-height: 1.5;
         font-weight: 600;
     }
 
-    .hero_text {
+
+    .hero_title p {
         flex-grow: 0;
         font-size: 1.5em;
         max-width: 60%;
         align-self: flex-start;
-        margin-left: 2.5%;
+        text-align: left;
+        margin-left: 5%;
         line-height: 2;
         font-weight: 500;
     }
 
     .cta__buttons {
         flex-direction: row;
-        max-width: 80%;
+        max-width: 60%;
+        align-self: flex-start;
+        width: 100%;
+        justify-content: space-evenly;
+        margin-left: 2.5%;
     }
 
     .cta__button {
-        max-width: 30%;
+        width: 45%;
         height: 65px;
         font-size: 1.25em;
     }
 
     /* ##text */
     .section_title h1 {
-        max-width: 90%;
         margin: 0%;
-        text-align: left;
+        text-align: center;
         align-self: center;
         font-weight: 500;
         font-size: 5em;
@@ -1666,15 +1731,16 @@ nav {
         justify-content: space-evenly;
         align-items: center;
         height: auto;
-        margin: 0.5% 0%;
+        margin: 1% 0%;
         width: 100%;
+
         font-family: 'Open sans';
-  /*       border: 0.5px solid red;*/
+        /*       border: 0.5px solid red;*/
     }
 
     .card_lg-test-container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
         height: auto;
@@ -1683,7 +1749,11 @@ nav {
         width: 100%;
         font-family: 'Open sans';
         flex-grow: 1;
-/*         border: 0.5px dashed blue;*/
+        /*         border: 0.5px dashed blue;*/
+    }
+
+    .card_cta {
+        max-width: 30%;
     }
 
     .flex_container-card {
@@ -1813,13 +1883,13 @@ nav {
         width: 100%;
         max-width: 99%;
         margin-top: 1%;
-        align-self: flex-start;
+        align-self: center;
     }
 
     .card_title-lg h2 {
-        font-size: 5em;
+        font-size: 3em;
         font-weight: 400;
-        text-align: left;
+        text-align: center;
         line-height: 2;
 
     }
@@ -1831,15 +1901,15 @@ nav {
         z-index: 9999999;
         width: 100%;
         max-width: 99%;
-
         flex-grow: 1;
         margin-bottom: 1%;
     }
 
     .card_text-lg p {
-        font-size: 1.75em;
+        font-size: 1.25em;
         font-weight: 300;
         line-height: 3;
+        max-width: 75%;
     }
 
     .flex_col-img {
