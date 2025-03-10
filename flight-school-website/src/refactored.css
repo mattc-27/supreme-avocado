@@ -32,6 +32,7 @@ button {
     justify-content: flex-end;
     flex-direction: column;
     height: 10%;
+    padding-bottom: 2.5%;
     margin: 0%;
     /*
         position: fixed;
@@ -56,7 +57,7 @@ button {
 
 #headerTitle h1 {
     color: #fff;
-    font-size: 0.75em;
+    font-size: 1.25em;
     transition: color 0.3s ease-in-out;
 }
 
@@ -82,8 +83,8 @@ button {
 }
 
 .header_logo img {
-    height: 100px;
-    width: auto;
+    height: 80px;
+    width: 100px;
 }
 
 .header_content-nav {
@@ -99,10 +100,12 @@ button {
 .header__nav {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
     max-width: 75%;
     margin: 0.5% 0%;
+    padding: 0.25%;
+    margin-left: 2.5%;
 }
 
 .nav_item {
@@ -111,12 +114,15 @@ button {
     display: flex;
     max-width: 20%;
     border-left: 0.5px solid #b1b1b1;
+    font-family: 'Open sans';
+    font-weight: 400;
 }
 
 .nav_item a {
     text-decoration: none;
-    margin-left: 5%;
-    font-size: 0.9em;
+    margin-left: 2.5%;
+    font-size: 0.75em;
+
     align-self: center;
     font-family: 'Open sans';
     cursor: pointer;
@@ -176,18 +182,18 @@ header {
     align-self: center;
     color: #fff;
     height: 100%;
-
     /*     background-color: #6a6a6abe;*/
-    background-color: #6a6a6a45;
+    background-color: #bbbbbb45;
+    background-color: #e7e7e725;
 }
 
 .hero_title {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: auto;
-    flex-basis: 100%;
+    flex-basis: 80%;
     font-family: var(--main-font-family);
 }
 
@@ -196,10 +202,10 @@ header {
     text-align: center;
     align-self: center;
     font-weight: 500;
-    font-size: 3em;
-    line-height: 1.5;
+    font-size: 3.5em;
+    line-height: 2;
     color: #fff;
-    flex-grow: 0;
+    flex-grow: 0.5;
 }
 
 .hero_text {
@@ -211,8 +217,8 @@ header {
     line-height: 3;
     color: #fff;
     flex-grow: 0.5;
-    margin: 5% 0%;
-
+    max-width: 92.5%;
+    margin: 5% 0% 2.5% 0%;
 }
 
 .hero_button {
@@ -251,9 +257,7 @@ header {
     display: flex;
     align-items: center;
     width: auto;
-    flex-grow: 0.5;
-    margin: 1% 0%;
-    width: 100%;
+    margin: 0.25%;
     font-family: var(--main-font-family);
 }
 
@@ -263,16 +267,15 @@ header {
     text-align: center;
     align-self: center;
     font-weight: 400;
-    font-size: 7vw;
+    font-size: 3em;
     line-height: 2;
 }
 
 .section_title h2 {
-    font-weight: 400;
-    font-size: 2em;
+    font-weight: 500;
+    font-size: 2.25em;
     line-height: 2;
     text-align: left;
-    width: 100%;
     color: #444444;
 }
 
@@ -282,13 +285,12 @@ header {
     align-items: center;
     width: auto;
     flex-grow: 1;
-    margin: 1% 0.25%;
+    margin: 0.25%;
     font-family: var(--main-font-family);
 }
 
 .section_text p {
-    margin: 0.5%;
-    line-height: 3;
+    line-height: 2.5;
     font-size: 1em;
     text-align: left;
     font-weight: 300;
@@ -673,6 +675,22 @@ header {
     height: auto;
 }
 
+.cta_button--transparent {
+    width: 100%;
+    max-width: 70%;
+    height: 35px;
+    font-size: 1em;
+    font-weight: 400;
+    border: 0.5px solid #2d2d2d;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #2d2d2d;
+    padding: 1%;
+    margin: 0.5%;
+    align-self: flex-start;
+}
+
 .cta_button a {
     background-color: transparent;
     font-family: 'Open sans';
@@ -812,7 +830,7 @@ banners
 
 .cta_buttons-getStarted {
     width: 100%;
-    max-width: 80%;
+    max-width: 60%;
     height: 50px;
     font-size: 1em;
     font-weight: 400;
@@ -824,7 +842,9 @@ banners
     color: #fff;
     padding: 1%;
     margin: 0.5%;
+    margin-bottom: 5%;
     align-self: center;
+
 }
 
 .button--transparent {
@@ -867,24 +887,18 @@ banners
 
 .flex_col ol {}
 
-.num_list {
-    height: 75vh;
-    /*   background-color: #444e5e9e;*/
-}
 
 .num_list {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 75vh;
     margin: 2% 0%;
-    margin-bottom: 3%;
+    margin-bottom: 5%;
     position: unset;
     z-index: 99999999;
     background-color: #b8b8b800;
     text-wrap: wrap;
-
-
+    max-width: 65%;
 }
 
 .num_list li {
@@ -895,10 +909,12 @@ banners
     font-weight: 300;
     line-height: 2.5;
     margin: 1.5% 0.5%;
-    font-size: 1.25em;
+    font-size: 1em;
     font-weight: 300;
     text-wrap: wrap;
     color: #333;
+    flex-grow: 1;
+
 }
 
 .li_title {
@@ -941,40 +957,54 @@ banners
 
 
 .section_2-img {
-    position: absolute;
-    z-index: 5000;
-    max-width: 45%;
-    flex-grow: 1;
-    top: 45%;
-    left: 0%;
-    margin: 0%;
+    position: unset;
     width: 100%;
-    margin-right: 2.5%;
-    max-width: 90%;
+    margin: 0%;
+    align-self: center;
+    margin: 0.25%;
 }
 
 .section_2-img img {
     mask-image: radial-gradient(circle, black, black 35%, transparent 95%);
-    max-width: 50%;
-
+    max-width: 75%;
+    align-self: center;
 }
 
 
 .section_3-img {
-    position: absolute;
-    z-index: 5000;
-    flex-grow: 1;
-    top: 60%;
-    left: 0%;
+    position: unset;
     margin: 0%;
-    width: 100%;
-    max-width: 98%;
+    width: auto;
+    flex-grow: 1;
+    align-self: center;
 }
 
 .section_3-img img {
     mask-image: radial-gradient(circle, black, black 35%, transparent 95%);
-    max-width: 60%;
+    max-width: 75%;
+    align-self: center;
+}
 
+.section_4-img {
+    position: unset;
+    flex-grow: 1;
+    margin: 0%;
+    width: auto;
+    max-width: 50%;
+    align-self: center;
+    margin: 0% 2.5%;
+    position: absolute;
+    z-index: 5000;
+    left: 60%;
+    top: 5%;
+}
+
+.section_4-img img {
+    max-width: 75%;
+    border-radius: 5px;
+    align-self: center;
+    margin: 0.5%;
+    box-shadow: -0.25px 1px 3px 0.5px rgba(157, 157, 157, 0.2);
 }
 
 
@@ -1020,7 +1050,7 @@ banners
 .section__layout-md {
     display: block;
     width: 100%;
-    min-height: 80vh;
+    height: 100vh;
     margin: 5% 0%;
     position: relative;
     z-index: 999999;
@@ -1030,12 +1060,12 @@ banners
 .section__layout-lg {
     display: block;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     height: fit-content;
     margin: 5% 0%;
     position: relative;
     z-index: 999999;
-    /*    border: 0.5px solid red;*/
+    /*     min-height: 100vh;   border: 0.5px solid red;*/
 }
 
 #section_2 {
@@ -1068,6 +1098,7 @@ banners
     height: auto;
     flex-grow: 1;
     align-self: center;
+    margin: 0.25%;
     /*   width: 100%;
     max-width: 98%;
          */
@@ -1280,6 +1311,15 @@ banners
 
 @media only screen and (min-width: 740px) {
 
+    .section__layout-lg {
+        display: block;
+        width: 100%;
+        margin: 5% 0%;
+        position: unset;
+        /*         position: relative;
+        z-index: 999999;  border: 0.5px solid red;*/
+    }
+
     .header_content-new {
         width: 100%;
         max-width: 99.99%;
@@ -1289,6 +1329,7 @@ banners
         flex-direction: row;
         height: 10%;
         margin: 0%;
+
         /*
             position: fixed;
         z-index: 999999;
@@ -1304,16 +1345,13 @@ banners
         align-items: center;
         align-self: center;
         width: auto;
-        flex-basis: 75%;
-        width: 100%;
+        flex-basis: 50%;
         max-width: 98%;
         font-family: var(--main-font-family);
     }
 
     .hero_content {
         margin-top: 5%;
-        width: 100%;
-
     }
 
     .hero_title h1 {
@@ -1325,8 +1363,7 @@ banners
         line-height: 3;
         color: #fff;
         margin: 0.5%;
-        flex-grow: 0;
-
+        flex-grow: 0.5;
     }
 
     .hero_text {
@@ -1337,10 +1374,8 @@ banners
         font-size: 1.75em;
         line-height: 3;
         color: #fff;
-        flex-grow: 0;
+        flex-grow: 0.5;
         margin: 0.5% 1%;
-
-
     }
 
     .banner__text h3,
@@ -1371,6 +1406,7 @@ banners
         width: 100%;
         max-width: 45%;
         align-self: flex-start;
+        margin-left: 3.5%;
     }
 
     .flex_container {
@@ -1418,7 +1454,7 @@ banners
 
 
     .section_2-img {
-        position: absolute;
+        position: unset;
         z-index: 5000;
         max-width: 45%;
         flex-grow: 1;
@@ -1427,7 +1463,7 @@ banners
         margin: 0%;
         width: 100%;
         margin-right: 2.5%;
-        max-width: 90%;
+        max-width: 75%;
         border-radius: 12px;
     }
 
@@ -1438,18 +1474,41 @@ banners
     }
 
     .section_3-img {
-        position: absolute;
-        z-index: 5000;
+        position: unset;
         flex-grow: 1;
-        top: 60%;
-        left: 0%;
         margin: 0%;
+        width: auto;
+        width: auto;
+        align-self: center;
+        margin: 0% 2.5%;
+    }
+
+    .section_3-img img {
+        position: unset;
         width: 100%;
         max-width: 98%;
+        margin: 0%;
+        align-self: center;
+        margin: 0.25%;
+        box-shadow: -0.25px 1px 3px 0.5px rgba(157, 157, 157, 0.2);
     }
-    .section_3-img img {
-        max-width: 45%;
+
+    .cta_button--transparent {
+        width: 100%;
+        max-width: 50%;
+        height: 50px;
+        font-size: 1em;
+        font-weight: 400;
+        border: 0.5px solid #2d2d2d;
+        cursor: pointer;
+        border-radius: 5px;
+        background-color: transparent;
+        color: #2d2d2d;
+        padding: 1%;
+        margin: 0.5%;
+        align-self: flex-start;
     }
+
     /* */
     .section_3-content {
         display: flex;
@@ -1563,20 +1622,33 @@ banners
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        height: 100%;
         flex-grow: 1;
-        max-width: 50%;
+        max-width: 98%;
         height: auto;
         margin: 2% 0%;
         margin-bottom: 3%;
-        position: relative;
+        position: unset;
         margin-left: 1%;
-        height: 75vh;
+        height: auto;
         z-index: 9999999;
         background-color: transparent;
+        background-color: none;
+
     }
 
-    .num_list {
-        background-color: none;
+    .num_list li {
+        list-style-position: inside;
+        text-align: left;
+        list-style: none;
+        line-height: 3;
+        margin: 0.5%;
+        font-size: 1em;
+        font-weight: 300;
+        text-wrap: wrap;
+        color: #333;
+        flex-grow: 1;
+        padding: 0.5% 1.5%;
     }
 
     .section_img-001 {
@@ -1591,6 +1663,24 @@ banners
         max-width: 25%;
         visibility: visible;
         margin: 5%;
+    }
+
+    .section_4-img {
+        position: unset;
+        flex-grow: 1;
+        margin: 0%;
+        width: auto;
+        max-width: 50%;
+        align-self: center;
+        margin: 0.5%;
+    }
+
+    .section_4-img img {
+        max-width: 75%;
+        border-radius: 5px;
+        align-self: center;
+        margin: 0.5%;
+        box-shadow: -0.25px 1px 3px 0.5px rgba(157, 157, 157, 0.2);
     }
 
     .flex_col {
@@ -1613,28 +1703,31 @@ banners
     }
 
     .section_title {
-        align-self: center;
+        align-self: flex-start;
         flex-grow: 0.5;
+        width: 100%;
+        max-width: 98%;
         /*     border: 0.5px dashed red;*/
     }
 
     .section_title h2 {
         font-weight: 500;
-        font-size: 3.5em;
-        line-height: 2;
-        text-align: left;
+        font-size: 3em;
+        line-height: 1.5;
         margin: 1.5% 0%;
         width: 100%;
+        max-width: 98%;
     }
 
     .section_text {
         flex-grow: 1;
-        align-self: center;
+        margin: 0.5%;
+        align-self: flex-start;
     }
 
     .section_text p {
         line-height: 3;
-        font-size: 1.5em;
+        font-size: 1.25em;
         font-weight: 300;
         text-align: left;
         margin: 1.5% 0%;
