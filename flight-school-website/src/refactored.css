@@ -958,31 +958,33 @@ banners
 
 .section_2-img {
     position: unset;
-    width: 100%;
+    width: auto;
     margin: 0%;
     align-self: center;
     margin: 0.25%;
+    margin-top: 1%;
 }
 
 .section_2-img img {
     mask-image: radial-gradient(circle, black, black 35%, transparent 95%);
-    max-width: 75%;
+    max-width: 50%;
     align-self: center;
 }
 
 
 .section_3-img {
-    position: unset;
     margin: 0%;
     width: auto;
     flex-grow: 1;
     align-self: center;
+    position: absolute;
+    z-index: 5000;
 }
 
 .section_3-img img {
+    max-width: 50%;
+    align-self: flex-end;
     mask-image: radial-gradient(circle, black, black 35%, transparent 95%);
-    max-width: 75%;
-    align-self: center;
 }
 
 .section_4-img {
@@ -1415,7 +1417,8 @@ banners
         justify-content: center;
         align-items: center;
         height: fit-content;
-        width: 100%;
+        width: auto;
+        margin: 0.5%;
     }
 
 
@@ -1478,24 +1481,23 @@ banners
         flex-grow: 1;
         margin: 0%;
         width: auto;
-        width: auto;
-        align-self: center;
-        margin: 0% 2.5%;
+        max-width: 40%;
     }
 
     .section_3-img img {
         position: unset;
-        width: 100%;
-        max-width: 98%;
+        width: auto;
         margin: 0%;
+        max-width: 50%;
         align-self: center;
         margin: 0.25%;
+        border-radius: 5px;
         box-shadow: -0.25px 1px 3px 0.5px rgba(157, 157, 157, 0.2);
     }
 
     .cta_button--transparent {
         width: 100%;
-        max-width: 50%;
+        max-width: 35%;
         height: 50px;
         font-size: 1em;
         font-weight: 400;
