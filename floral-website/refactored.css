@@ -10,6 +10,7 @@
     width: 100%;
 }
 
+
 .border {
     border: 0.5px solid red;
 }
@@ -29,6 +30,7 @@ button {
     min-height: fit-content;
     width: 100%;
     margin: 0%;
+    max-width: 98%;
     /*     background-color: #8d8d8d6e; */
     /* background-image: url('https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');*/
     background-image: url('https://images.unsplash.com/photo-1701602029591-ed354736e28c');
@@ -45,6 +47,7 @@ button {
     height: 100vh;
     min-height: fit-content;
     width: 100%;
+    max-width: 98%;
     margin: 0%;
     /*     background-color: #8d8d8d6e; */
     /* background-image: url('https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');*/
@@ -66,6 +69,7 @@ button {
     align-self: center;
     color: #fff;
     flex-basis: 80%;
+
 }
 
 .hero_content {
@@ -455,6 +459,17 @@ button {
     font-size: 3em;
     line-height: 1.5;
     align-self: center;
+}
+
+.section_title h3 {
+    width: 100%;
+    text-align: left;
+    color: #748f87;
+    color: #2d2d2d;
+    font-weight: 500;
+    font-size: 2.5em;
+    line-height: 1.5;
+    align-self: flex-start;
 }
 
 .section_title-alt h2 {
@@ -981,6 +996,7 @@ button {
 -- Container Block
 --- --- --- --- --- */
 
+
 .container {
     display: flex;
     flex-direction: column;
@@ -994,6 +1010,7 @@ button {
     min-height: 105vh;
     background-color: hsl(220, 100%, 99%);
     background-color: #f6f6f6;
+
 }
 
 .section__layout {
@@ -1024,6 +1041,8 @@ button {
     margin: 0.5% 0%;
     position: relative;
     z-index: 999999;
+    max-width: 98%;
+
 }
 
 .section__layout-lg {
@@ -1033,6 +1052,7 @@ button {
     margin: 5% 0%;
     position: relative;
     z-index: 999999;
+    max-width: 98%;
 }
 
 .section__layout-xlg {
@@ -1092,7 +1112,7 @@ button {
     justify-content: center;
     align-items: center;
     height: fit-content;
-    width: 100%;
+    margin: 0.5%;
 }
 
 .flex_col {
@@ -1617,7 +1637,8 @@ nav {
         font-size: 1.25em;
         font-weight: 300;
         color: #fff;
-        background-color: #6fa16b;
+        background-color: #7BAA8E;
+
         /**/
         cursor: pointer;
         border: none;
@@ -1752,7 +1773,7 @@ nav {
         border-bottom: 0.5px solid #2d2d2d;
         flex-grow: 0.5;
         max-width: 95%;
-    
+
     }
 
     .footer_col-img {
@@ -1763,7 +1784,7 @@ nav {
         width: auto;
         align-self: center;
         flex-grow: 0.5;
- 
+
     }
 
     .footer_col-img img {
