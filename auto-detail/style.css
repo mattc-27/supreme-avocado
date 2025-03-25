@@ -544,21 +544,21 @@ header {
 }
 
 #service-content {
-    max-width: 80%;
+    max-width: 98%;
     width: 100%;
 }
 
 .table_container {
-    max-width: 87.5%;
+    max-width: 98%;
     width: 100%;
-    height: 80vh;
+    height: auto;
     align-items: center;
 }
 
 .services_table {
     flex-grow: 1;
-    max-width: 95%;
-
+    max-width: 98%;
+    width: 100%;
     background-color: #0f0f0f;
     background-color: transparent;
 }
@@ -576,48 +576,42 @@ header {
 
 .services_table td {
     text-align: left;
-    margin: 0.25% 1%;
+    margin: 0.25%;
 
 }
 
 .services_table tr {
-    margin-bottom: 1.5%;
+    margin-bottom: 1%;
 }
 
 .services_table td:first-child {
-    font-size: 1em;
-    font-weight: 500;
+    font-size: 0.9em;
+    font-weight: 400;
     line-height: 2;
     background-color: #181818;
     background-color: transparent;
-}
-
-.services_table tr th:nth-child(1),
-.services_table tr th:nth-child(5) {
-    font-size: 1em;
 }
 
 .services_table tr th:nth-child(2),
 .services_table tr th:nth-child(3),
 .services_table tr th:nth-child(4) {
     text-align: center;
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: 400;
-    width: 20%;
-
+    width: 12.5%;
 }
 
 .services_table td:nth-child(2),
 .services_table td:nth-child(3),
 .services_table td:nth-child(4) {
     text-align: center;
-    flex-grow: 1;
+    flex-grow: 0.5;
     background-color: #f1f1f1;
 
 }
 
 .services_table td:last-child {
-    font-size: 1em;
+    font-size: 0.75em;
     line-height: 2;
     font-weight: 300;
     padding: 0.5%;
@@ -627,14 +621,8 @@ header {
 
 .check_icon {
     color: rgb(98, 178, 98);
-    font-size: 22px;
+    font-size: 15px;
 }
-
-.x_icon {
-    color: rgb(192, 87, 98);
-    font-size: 22px;
-}
-
 
 /* --- --- --- --- 
 
@@ -717,10 +705,10 @@ header {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 600px;
-    flex-grow: 1;
-    width: 30%;
-    margin: 0.5% 1%;
+    height: 50vh;
+    width: 100%;
+    max-width: 98%;
+    margin: 0.5%;
     color: #333;
     border: 0.25px solid #d0d0d0;
 }
@@ -729,10 +717,8 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: flex-start;
-    width: 100%;
-    height: 30%;
-    max-width: 98%;
+    align-items: center;
+    height: 100%;
     margin: 0%;
 }
 
@@ -741,18 +727,18 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    line-height: 1.5;
     flex-grow: 1;
     text-align: left;
 }
 
 .pricing_card-name h2 {
-    color: #333;
-    font-size: 1.5em;
+    color: #515151;
+    font-size: 1.75em;
     width: 100%;
+    max-width: 98%;
     font-weight: 600;
-    margin: 0.25%;
-    margin-left: 1%;
+    margin-left: 0.25%;
 }
 
 .pricing_card-pricing {
@@ -761,21 +747,21 @@ header {
     justify-content: space-evenly;
     align-items: center;
     height: auto;
-    width: 100%;
-    flex-grow: 1;
-    max-width: 98%;
+    flex-grow: 0;
     margin-left: 1%;
+    width: 100%;
+    max-width: 98%;
+
 }
 
 .pricing_card-col {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-content: center;
-    flex-grow: 1;
+    flex-grow: 0.5;
     width: 100%;
     max-width: 99.99%;
-    max-height: 30%;
 }
 
 .pricing_card-row {
@@ -783,17 +769,18 @@ header {
     flex-direction: row;
     justify-content: center;
     align-content: center;
-    flex-grow: 0;
     width: 100%;
     max-width: 99.99%;
+    height: 15%;
 }
 
 .pricing_card-text-md {
-    font-size: 1.75em;
-    font-weight: 500;
+    font-size: 1.25em;
+    font-weight: 400;
     margin: 0.25%;
     margin-left: 1%;
     width: 100%;
+    color: #515151;
     text-align: left;
 }
 
@@ -804,6 +791,7 @@ header {
     margin: 0.25%;
     margin-left: 1%;
     text-align: left;
+    color: #515151;
 }
 
 .pricing_card-ul {
@@ -812,7 +800,7 @@ header {
     justify-content: space-evenly;
     align-items: center;
     align-self: center;
-    flex-grow: 1;
+    flex-grow: 0.5;
     margin: 0.25%;
     max-width: 98%;
     list-style-position: inside;
@@ -823,30 +811,29 @@ header {
     list-style-position: outside;
     width: auto;
     text-align: left;
-    font-size: 0.9em;
+    font-size: 0.75em;
     line-height: 2;
     font-weight: 300;
-    width: 100%;
 }
 
 .pricing_card-btn {
-    height: 35px;
-    max-width: 80%;
-    width: 100%;
-    align-self: center;
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
+    height: 35px;
+    max-width: 80%;
+    width: 100%;
     padding: 0.25%;
-    border: none;
     font-size: 1em;
     font-weight: 300;
     cursor: pointer;
     border-radius: 5px;
+    border: none;
     background-color: #606cc8;
     color: #fff;
+    text-align: center;
+    text-decoration: none;
+    align-self: center;
 }
 
 .pricing_card-btn:hover {
@@ -857,6 +844,7 @@ header {
     font-size: 16px;
     color: #333;
 }
+
 
 /* height + width */
 .w50 {
@@ -930,4 +918,246 @@ header {
 
 .mbt5 {
     margin: 5% 0.5%;
+}
+
+
+
+@media only screen and (min-width: 740px) {
+
+    /* --
+
+-- */
+    #memberships {
+        max-width: 98%;
+    }
+
+    #service-content {
+        max-width: 80%;
+        width: 100%;
+    }
+
+    .table_container {
+        max-width: 87.5%;
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+
+    .services_table {
+        flex-grow: 1;
+        max-width: 95%;
+
+        background-color: #0f0f0f;
+        background-color: transparent;
+    }
+
+    .services_table tr {
+        color: #fff;
+        color: #333;
+    }
+
+    .services_table tr th {
+        font-weight: 500;
+        text-align: left;
+        flex-grow: 1;
+    }
+
+    .services_table td {
+        text-align: left;
+        margin: 0.25% 1%;
+
+    }
+
+    .services_table tr {
+        margin-bottom: 1.5%;
+    }
+
+    .services_table td:first-child {
+        font-size: 1em;
+        font-weight: 500;
+        line-height: 2;
+        background-color: #181818;
+        background-color: transparent;
+    }
+
+    .services_table tr th:nth-child(1),
+    .services_table tr th:nth-child(5) {
+        font-size: 1em;
+    }
+
+    .services_table tr th:nth-child(2),
+    .services_table tr th:nth-child(3),
+    .services_table tr th:nth-child(4) {
+        text-align: center;
+        font-size: 1em;
+        font-weight: 400;
+        width: 20%;
+
+    }
+
+    .services_table td:nth-child(2),
+    .services_table td:nth-child(3),
+    .services_table td:nth-child(4) {
+        text-align: center;
+        flex-grow: 1;
+        background-color: #f1f1f1;
+
+    }
+
+    .services_table td:last-child {
+        font-size: 1em;
+        line-height: 2;
+        font-weight: 300;
+        padding: 0.5%;
+        background-color: #181818;
+        background-color: #fafafa;
+    }
+
+    .check_icon {
+        color: rgb(98, 178, 98);
+        font-size: 22px;
+    }
+
+    .x_icon {
+        color: rgb(192, 87, 98);
+        font-size: 22px;
+    }
+
+
+    .pricing_card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 50vh;
+        width: 100%;
+        max-width: 98%;
+        margin: 0.5%;
+        color: #333;
+        border: 0.25px solid #d0d0d0;
+    }
+
+    .pricing_card-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+        margin: 0%;
+    }
+
+    .pricing_card-name {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        line-height: 1.5;
+        flex-grow: 1;
+        text-align: left;
+    }
+
+    .pricing_card-name h2 {
+        color: #515151;
+        font-size: 2.5em;
+        width: 100%;
+        max-width: 98%;
+        font-weight: 600;
+        margin-left: 0.25%;
+    }
+
+    .pricing_card-pricing {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: auto;
+        flex-grow: 0.5;
+        margin-left: 1%;
+        width: 100%;
+        max-width: 98%;
+    }
+
+    .pricing_card-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+        flex-grow: 1;
+        width: 100%;
+        max-width: 99.99%;
+    }
+
+    .pricing_card-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        max-width: 99.99%;
+        height: 15%;
+    }
+
+    .pricing_card-text-md {
+        font-size: 1.25em;
+        font-weight: 400;
+        margin: 0.25%;
+        margin-left: 1%;
+        width: 100%;
+        color: #515151;
+        text-align: left;
+    }
+
+    .pricing_card-text-sm {
+        width: 100%;
+        font-size: 1em;
+        font-weight: 300;
+        margin: 0.25%;
+        margin-left: 1%;
+        text-align: left;
+        color: #515151;
+    }
+
+    .pricing_card-ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        align-self: center;
+        flex-grow: 0.5;
+        margin: 0.25%;
+        max-width: 98%;
+        list-style-position: inside;
+    }
+
+    .pricing_card-ul li {
+        list-style: none;
+        list-style-position: outside;
+        width: auto;
+        text-align: left;
+        font-size: 0.75em;
+        line-height: 2;
+        font-weight: 300;
+    }
+
+    .pricing_card-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 35px;
+        max-width: 80%;
+        width: 100%;
+        padding: 0.25%;
+        font-size: 1em;
+        font-weight: 300;
+        align-self: center;
+    }
+
+    .pricing_card-btn:hover {
+        background-color: #4d59b8;
+    }
+
+    .check_dark {
+        font-size: 16px;
+        color: #333;
+    }
 }

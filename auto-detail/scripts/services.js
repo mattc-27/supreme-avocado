@@ -98,18 +98,16 @@ $(document).ready(function () {
                                 $${item.singleWash} single wash
                             </p>
                         </div>
-
+                        <div class="pricing_card-col">
+                            <ul 
+                                class="pricing_card-ul" 
+                                id="details-${item.id}">
+                            </ul>
+                        </div>
+                        <div class="pricing_card-row">
+                            <a type=button href="../membership/index.html" class='pricing_card-btn'>GET STARTED</a>
+                        </div>
                     </div>
-                    <div class="pricing_card-col">
-                        <ul 
-                            class="pricing_card-ul" 
-                            id="details-${item.id}">
-                        </ul>
-                      
-                    </div>
-                         <div class="pricing_card-row">
-                           <a type=button href="../membership/index.html" class='pricing_card-btn'>GET STARTED</a>
-                         </div
                 </div>
             `;
 
