@@ -7,26 +7,26 @@ const serviceData = [
         "details": [
             {
                 "id": 1,
-                "name": "Exterior Wash & Dry",
-                "description": "Thorough hand wash and drying to remove dirt and grime.",
+                "name": "Exterior Wash & Dry | Interior Vacuuming | Wheel Cleaning",
+                // "description": "Thorough hand wash and drying to remove dirt and grime.",
 
             },
-            {
-                "id": 2,
-                "name": "Wheel Cleaning",
-                "description": "Quick cleaning of wheels and tires for a refreshed look."
-            },
-            {
-                "id": 3,
-                "name": "Interior Vacuuming",
-                "description": "Light vacuuming of carpets and seats to remove surface debris."
-            },
+            /*     {
+                    "id": 2,
+                    "name": "Wheel Cleaning",
+                    "description": "Quick cleaning of wheels and tires for a refreshed look."
+                },
+                {
+                    "id": 3,
+                    "name": "Interior Vacuuming",
+                    "description": "Light vacuuming of carpets and seats to remove surface debris."
+                },*/
             /*       {
                 "id": 1,
                 "description": ""
             },*/
         ],
-        "image": "https://images.unsplash.com/photo-1708805282785-77092a1628d3?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "image": "https://images.unsplash.com/photo-1607860108358-47c0441e7adb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNhciUyMHdhc2h8ZW58MHwwfDB8fHwy"
     },
     {
         "id": 2,
@@ -36,19 +36,19 @@ const serviceData = [
         "details": [
             {
                 "id": 1,
-                "name": "Complete Interior Detailing",
-                "description": "Deep cleaning of carpets, seats, and surfaces for a like-new appearance."
+                "name": "Complete Interior Detailing | Wax Application | Window & Mirror Cleaning",
+                //  "description": "Deep cleaning of carpets, seats, and surfaces for a like-new appearance."
             },
-            {
-                "id": 2,
-                "name": "Wax Application",
-                "description": "Hand-applied wax for a lasting shine and protection."
-            },
-            {
-                "id": 3,
-                "name": "Window & Mirror Cleaning",
-                "description": "Streak-free cleaning for crystal-clear visibility."
-            }
+            /*   {
+                  "id": 2,
+                  "name": "Wax Application",
+                  "description": "Hand-applied wax for a lasting shine and protection."
+              },
+              {
+                  "id": 3,
+                  "name": "Window & Mirror Cleaning",
+                  "description": "Streak-free cleaning for crystal-clear visibility."
+              }*/
         ],
         "image": "https://images.unsplash.com/photo-1589362086172-2c29bea70386?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
@@ -60,21 +60,21 @@ const serviceData = [
         "details": [
             {
                 "id": 1,
-                "name": "Full Exterior Detailing",
-                "description": "Includes clay bar treatment, polish, and premium wax for ultimate shine and paint protection."
+                "name": "Full Exterior Detailing | Comprehensive Interior Detailing | Engine Bay Cleaning",
+                //"description": "Includes clay bar treatment, polish, and premium wax for ultimate shine and paint protection. | Shampooing of carpets and upholstery, leather conditioning, and odor neutralizing."
             },
-            {
-                "id": 2,
-                "name": "Comprehensive Interior Detailing",
-                "description": "Shampooing of carpets and upholstery, leather conditioning, and odor neutralizing."
-            },
-            {
-                "id": 3,
-                "name": "Engine Bay Cleaning",
-                "description": "Professional cleaning and detailing of the engine bay to remove grease and grime."
-            }
+            /*    {
+                   "id": 2,
+                   "name": "Comprehensive Interior Detailing",
+                  // "description": "Shampooing of carpets and upholstery, leather conditioning, and odor neutralizing."
+               },
+               {
+                   "id": 3,
+                   "name": "Engine Bay Cleaning",
+                   "description": "Professional cleaning and detailing of the engine bay to remove grease and grime."
+               }*/
         ],
-        "image": "https://images.unsplash.com/photo-1708805282785-77092a1628d3?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "image": "https://images.unsplash.com/photo-1560037962-08931d95007f?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
 ]
 
@@ -116,7 +116,7 @@ $(document).ready(function () {
         // Map over details and append to the corresponding ul
         if (item.details && item.details.length > 0) {
             item.details.forEach(function (detail) {
-                $(`#details-${item.id}`).append(`<li><i class="fa-solid fa-check check_dark"></i> ${detail.description}</li>`);
+                $(`#details-${item.id}`).append(`<p><i class=""></i> ${detail.name}</p>`);
             });
         }
     });

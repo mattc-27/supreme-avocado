@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -70,7 +71,7 @@ header, footer
 ---------------- */
 
 header {
-    height: auto;
+    height: 15vh;
     width: 100%;
     margin: 0;
     max-width: 100%;
@@ -78,56 +79,58 @@ header {
     color: #fff;
 }
 
-.header__content {
+.header_content {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
+    height: 100%;
+    margin: 0%;
     width: 100%;
     max-width: 100%;
-    height: 100%;
+    align-self: center;
     font-family: "Open sans", serif;
 }
 
-.header__logo {
+.header_title {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    height: auto;
-    flex-grow: 1;
-}
-
-.header__title h1 {
-    color: #fff;
-}
-
-.header__logo img {
-    height: auto;
-    width: auto;
+    width: 100%;
     margin: 0.5%;
-    max-width: 45%;
+    flex-grow: 0.5;
+    max-width: 98%;
 }
 
-.header__nav {
+.header_title a {
+    text-decoration: none;
+}
+
+.header_title h1 {
+    color: #fff;
+
+}
+
+.header_nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
-    height: 80%;
-    width: 50%;
-    max-width: 30%;
+    width: 100%;
     margin: 0.5%;
-    max-width: 99%;
+    flex-grow: 0.5%;
+    max-width: 98%;
 }
 
-.header__nav,
-.header__nav a {
+.header_nav,
+.header_nav a {
     color: #fff;
     font-size: 1em;
     font-weight: 300;
     text-align: center;
     align-self: center;
+    margin: 0% 1%;
 }
 
 
@@ -135,16 +138,7 @@ header {
 
 - */
 
-#welcome {
-    /*  background-image: url('https://images.unsplash.com/photo-1683971336619-d445cbec0276?q=80&w=1489&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-size: cover;
-    background-position: center;*/
-    background-color: #0f0f0f;
-    width: 100%;
-    max-width: 100%;
-    margin: 0%;
-    min-height: 99vh;
-}
+
 
 .border__dash {
     border-left: 1px dashed yellow;
@@ -201,7 +195,7 @@ header {
 }
 
 
-.cta__button {
+.cta_button {
     height: 3em;
     width: auto;
     border: none;
@@ -233,7 +227,11 @@ header {
     background-color: #21a871;
     color: #fff;
     border-radius: 30px;
-    width: 25vw;
+    width: 100%;
+    margin: 2.5% 0%;
+    max-width: 50%;
+    height: 45px;
+    align-self: center;
 }
 
 .button--transparent {
@@ -242,11 +240,25 @@ header {
     border: 0.5px solid #fff;
 }
 
+.banner_text {
+    margin: 2.5% 0%;
+    width: 100%;
+    max-width: 98%;
+    align-self: center;
+    text-align: center;
+    line-height: 2;
+}
+
+.banner_text p {
+    font-size: 1.5em;
+    color: #fff;
+}
+
 /* -
 
 -*/
 
-.container__main {
+.container_main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -256,7 +268,19 @@ header {
     margin: 0%;
 }
 
-.section__layout {
+.section_layout-md {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 59vh;
+    height: fit-content;
+    width: 100%;
+    margin: 0%;
+    margin: 1% 0%;
+}
+
+.section_layout {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -269,7 +293,26 @@ header {
     margin: 1% 0%;
 }
 
-.content__col--center--w100 {
+#welcome {
+    /*  background-image: url('https://images.unsplash.com/photo-1683971336619-d445cbec0276?q=80&w=1489&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;*/
+    background-color: #0f0f0f;
+    width: 100%;
+    max-width: 100%;
+    margin: 0%;
+    min-height: 99vh;
+}
+
+#welcomeTitle {
+    flex-grow: 1;
+}
+
+#welcomeTitle h2 {
+    font-size: 2.75em;
+}
+
+.content_col--center--w100 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -280,7 +323,7 @@ header {
     flex-grow: 1;
 }
 
-.content__col--left {
+.content_col--left {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -290,7 +333,7 @@ header {
     flex-grow: 1;
 }
 
-.content__col--right {
+.content_col--right {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -301,7 +344,7 @@ header {
     flex-grow: 1;
 }
 
-.content__col {
+.content_col {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -309,13 +352,23 @@ header {
     width: 100%;
 }
 
-.content__row {
+.content_row {
     display: flex;
     flex-direction: row;
     align-items: center;
     height: auto;
     width: 100%;
     flex-grow: 1;
+}
+
+.content_flex {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    align-self: center;
+    width: 100%;
+    max-width: 98%;
 }
 
 .content_end {
@@ -326,7 +379,7 @@ header {
     align-items: center;
 }
 
-.content__row--around {
+.welcome_cta {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -426,11 +479,11 @@ header {
     align-items: flex-start;
 }
 
-.content__even {
+.content_even {
     justify-content: space-evenly;
 }
 
-.content__around {
+.content_around {
     justify-content: space-around;
 }
 
@@ -440,6 +493,10 @@ header {
 
 .content_center {
     justify-content: center;
+}
+
+.flex_row {
+    display: flex;
 }
 
 
@@ -452,31 +509,96 @@ header {
     width: 100%;
 }
 
-.section__title--md--light {
+.section_title-md {
+    font-size: 4em;
     width: 100%;
-    max-width: 90%;
-    font-size: 2em;
-    margin: 0.5%;
-    font-weight: 400;
-    color: #fff;
-}
-
-.section__title--sm--light {
-    width: 100%;
-    font-size: 3vw;
-    font-weight: 400;
-    margin: 0.5%;
-    color: #fff;
-}
-
-.section__title--md {
-    max-width: 82.5%;
-    width: 100%;
-    font-size: 6em;
     text-align: left;
-    margin: 1.5% 0.5%;
+    margin: 1.5 0%;
+    max-width: 100%;
     font-weight: 500;
-    color: #333;
+    color: #2d2d2d;
+
+}
+
+.flex_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+}
+
+.section_2-img {
+    position: unset;
+    flex-grow: 1;
+    margin: 0%;
+    width: auto;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section_2-img img {
+    mask-image: radial-gradient(circle, black, black 35%, transparent 95%);
+    max-width: 85%;
+    align-self: center;
+}
+
+
+.section_title-md-light {
+    flex-grow: 1;
+}
+
+.section_title-md-light h3 {
+    width: 100%;
+    max-width: 98%;
+    font-size: 2em;
+    text-align: left;
+    margin: 0.5%;
+    line-height: 2;
+    font-weight: 500;
+    color: #fafafa;
+
+}
+
+.section_text-light {
+    width: 100%;
+    flex-grow: 1;
+    margin: 2.5% 0%;
+}
+
+.section_text-light p {
+    color: #fafafa;
+    font-size: 1em;
+    line-height: 3;
+    max-width: 98%;
+    font-weight: 300;
+
+}
+
+.footer_title-md-light {
+    width: 100%;
+    max-width: 98%;
+    font-size: 2em;
+    text-align: left;
+    margin: 0.5%;
+    line-height: 2;
+    font-weight: 500;
+    color: #fafafa;
+
+}
+
+.footer_text-light p {
+    color: #fafafa;
+    font-size: 1em;
+    line-height: 3;
+    max-width: 98%;
+    font-weight: 300;
 
 }
 
@@ -546,12 +668,15 @@ header {
 #service-content {
     max-width: 98%;
     width: 100%;
+    flex-grow: 1;
+    overflow-x: hidden;
 }
 
 .table_container {
     max-width: 98%;
     width: 100%;
     height: auto;
+    flex-grow: 1;
     align-items: center;
 }
 
@@ -580,15 +705,17 @@ header {
 
 }
 
-.services_table tr {
-    margin-bottom: 1%;
+.services_table tr td {
+    margin: 0.25%;
 }
 
 .services_table td:first-child {
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-weight: 400;
-    line-height: 2;
-    background-color: #181818;
+    line-height: 1.5;
+    text-align: left;
+    flex-grow: 1;
+    background-color: #2d2d2d;
     background-color: transparent;
 }
 
@@ -623,6 +750,8 @@ header {
     color: rgb(98, 178, 98);
     font-size: 15px;
 }
+
+
 
 /* --- --- --- --- 
 
@@ -703,11 +832,11 @@ header {
 .pricing_card {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
-    height: 50vh;
+    height: 500px;
     width: 100%;
     max-width: 98%;
+    min-width: 25%;
     margin: 0.5%;
     color: #333;
     border: 0.25px solid #d0d0d0;
@@ -716,7 +845,7 @@ header {
 .pricing_card-details {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     height: 100%;
     margin: 0%;
@@ -728,15 +857,14 @@ header {
     justify-content: center;
     align-items: center;
     line-height: 1.5;
-    flex-grow: 1;
+    flex-grow: 0;
     text-align: left;
 }
 
 .pricing_card-name h2 {
     color: #515151;
     font-size: 1.75em;
-    width: 100%;
-    max-width: 98%;
+    width: auto;
     font-weight: 600;
     margin-left: 0.25%;
 }
@@ -744,22 +872,24 @@ header {
 .pricing_card-pricing {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     height: auto;
     flex-grow: 0;
-    margin-left: 1%;
+    margin: 0%;
     width: 100%;
-    max-width: 98%;
-
+    max-width: 99.99%;
+    align-self: center;
+    line-height: 2;
 }
+
 
 .pricing_card-col {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
-    flex-grow: 0.5;
+    flex-grow: 0;
     width: 100%;
     max-width: 99.99%;
 }
@@ -770,6 +900,7 @@ header {
     justify-content: center;
     align-content: center;
     width: 100%;
+    flex-grow: 0;
     max-width: 99.99%;
     height: 15%;
 }
@@ -800,10 +931,21 @@ header {
     justify-content: space-evenly;
     align-items: center;
     align-self: center;
-    flex-grow: 0.5;
-    margin: 0.25%;
+    flex-grow: 0;
+    margin: 0%;
     max-width: 98%;
     list-style-position: inside;
+}
+
+.pricing_card-ul p {
+    width: 100%;
+    font-size: 0.8em;
+    font-weight: 300;
+    margin: 0.25%;
+    line-height: 2;
+    margin-left: 0%;
+    text-align: left;
+    color: #515151;
 }
 
 .pricing_card-ul li {
@@ -843,6 +985,102 @@ header {
 .check_dark {
     font-size: 16px;
     color: #333;
+}
+
+/* */
+#review-content {
+    align-self: center;
+    max-width: 98%;
+}
+
+
+.review_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    min-height: fit-content;
+    width: auto;
+    max-width: 92.5%;
+    align-self: center;
+    margin: 0.5%;
+    color: #333;
+    margin: 1.5% 0%;
+}
+
+.review_card-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-self: center;
+    height: auto;
+    min-height: 75%;
+    width: auto;
+    max-width: 98%;
+    margin: 0.5%;
+    color: #3f3f3f;
+}
+
+.review_card-date {
+    font-size: 1.25em;
+    font-weight: 400;
+    font-family: "Caveat", cursive;
+}
+
+.review_card-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    height: 98%;
+    width: 100%;
+    margin: 0.5%;
+}
+
+.review_card-img img {
+    width: 100%;
+    max-width: 50%;
+    border-radius: 5px;
+    mask-image: radial-gradient(circle, black, black 35%, transparent 95%);
+}
+
+.review_card-main {
+    font-size: 1.25em;
+    line-height: 2;
+    font-weight: 200;
+    font-family: "Caveat", cursive;
+}
+
+.review_card-customer {
+    font-size: 1.5em;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-align: left;
+    width: 100%;
+    max-width: 90%;
+}
+
+.pricing_card-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+    flex-grow: 0.5;
+    text-align: left;
+}
+
+.pricing_card-name h2 {
+    color: #515151;
+    font-size: 1.75em;
+    width: auto;
+    font-weight: 600;
+    margin-left: 0.25%;
 }
 
 
@@ -924,6 +1162,171 @@ header {
 
 @media only screen and (min-width: 740px) {
 
+    .header_title {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-grow: 0.5;
+    }
+
+    .header_title h1 {
+        font-size: 1.5em;
+    }
+
+
+
+    .header_nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-grow: 0.5;
+    }
+
+    .header_nav,
+    .header_nav a {
+        font-size: 1em;
+        font-weight: 300;
+    }
+
+    .section_title-md {
+        max-width: 98%;
+        font-size: 6em;
+        text-align: left;
+        margin: 1.5% 0.5%;
+        font-weight: 500;
+        color: #333;
+
+    }
+
+
+
+    .flex_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        width: auto;
+        margin: 0.5%;
+    }
+
+    .section_text-light {
+        max-width: 80%;
+    }
+
+    .section_text-light p {
+        color: #fafafa;
+        font-size: 1.25em;
+        line-height: 2.5;
+        font-weight: 300;
+    }
+
+    .section_title-md-light h3 {
+        color: #fafafa;
+        font-size: 2.5em;
+        line-height: 2;
+        font-weight: 400;
+    }
+
+    .section_2-img {
+        position: unset;
+        flex-grow: 1;
+        margin: 0%;
+        width: auto;
+        border-radius: 12px;
+        width: 100%;
+        max-width: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section_2-img img {
+        mask-image: radial-gradient(circle, black, black 35%, transparent 95%);
+        max-width: 50%;
+        width: auto;
+        align-self: center;
+    }
+
+    #review-content div:nth-child(1),
+    #review-content div:nth-child(3) {
+        align-self: flex-start;
+    }
+
+    #review-content div:nth-child(2) {
+        flex-direction: row-reverse;
+        align-self: flex-end;
+    }
+
+    .review_card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        height: 450px;
+        width: auto;
+        max-width: 92.5%;
+        align-self: center;
+        margin: 0.5%;
+        color: #333;
+    }
+
+    .review_card-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        align-self: center;
+        height: auto;
+        min-height: 75%;
+        width: auto;
+        max-width: 60%;
+        margin: 0.5%;
+        color: #3f3f3f;
+    }
+
+    .review_card-date {
+        font-size: 1.75em;
+        font-weight: 400;
+        font-family: "Caveat", cursive;
+    }
+
+    .review_card-main {
+        font-size: 2em;
+        line-height: 2;
+        font-weight: 200;
+        font-family: "Caveat", cursive;
+    }
+
+    .review_card-customer {
+        font-size: 2em;
+        font-family: "Caveat", cursive;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .review_card-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        height: 98%;
+        max-width: 40%;
+        margin: 0.5%;
+    }
+
+    .review_card-img img {
+        width: 100%;
+        max-width: 98%;
+        border-radius: 5px;
+        mask-image: radial-gradient(circle, black, black 35%, transparent 95%);
+    }
+
     /* --
 
 -- */
@@ -932,7 +1335,7 @@ header {
     }
 
     #service-content {
-        max-width: 80%;
+        max-width: 90%;
         width: 100%;
     }
 
@@ -1029,11 +1432,12 @@ header {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        height: 50vh;
+
         width: 100%;
         max-width: 98%;
         margin: 0.5%;
         color: #333;
+        padding: 0.5%;
         border: 0.25px solid #d0d0d0;
     }
 
