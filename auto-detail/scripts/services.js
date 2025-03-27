@@ -1,7 +1,7 @@
 const serviceData = [
     {
         "id": 1,
-        "name": "Express Shine Package",
+        "name": "Express Shine",
         "singleWash": 20,
         "membershipPrice": 200,
         "details": [
@@ -30,7 +30,7 @@ const serviceData = [
     },
     {
         "id": 2,
-        "name": "Deluxe Glow Package ",
+        "name": "Deluxe Glow ",
         "singleWash": 35,
         "membershipPrice": 270,
         "details": [
@@ -54,7 +54,7 @@ const serviceData = [
     },
     {
         "id": 3,
-        "name": "Ultimate Sparkle Package",
+        "name": "Ultimate Sparkle",
         "singleWash": 50,
         "membershipPrice": 420,
         "details": [
@@ -98,14 +98,11 @@ $(document).ready(function () {
                                 $${item.singleWash} single wash
                             </p>
                         </div>
-                        <div class="pricing_card-col">
-                            <ul 
-                                class="pricing_card-ul" 
-                                id="details-${item.id}">
-                            </ul>
+                        <div class="pricing_card-col" id="details-${item.id}">
+                    
                         </div>
                         <div class="pricing_card-row">
-                            <a type=button href="../membership/index.html" class='pricing_card-btn'>GET STARTED</a>
+                            <a type=button href="#serviceTable" class='pricing_card-btn'>GET STARTED</a>
                         </div>
                     </div>
                 </div>
@@ -116,7 +113,7 @@ $(document).ready(function () {
         // Map over details and append to the corresponding ul
         if (item.details && item.details.length > 0) {
             item.details.forEach(function (detail) {
-                $(`#details-${item.id}`).append(`<p><i class=""></i> ${detail.name}</p>`);
+                $(`#details-${item.id}`).append(`<p class="pricing_card-desc"><i class=""></i> ${detail.name}</p>`);
             });
         }
     });
