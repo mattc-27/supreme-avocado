@@ -125,7 +125,7 @@ body {
 -- Footer Block
 --- --- --- --- --- */
 .footer_standard {
-    height: fit-content;
+    height: 50vh;
     margin: 0;
     font-family: "Open Sans", serif;
     background-color: #333333;
@@ -154,6 +154,7 @@ body {
     width: 100%;
     max-width: 98%;
     align-self: center;
+    margin: 2.5% 0%;
     border-top: 0.5px solid #fff;
 }
 
