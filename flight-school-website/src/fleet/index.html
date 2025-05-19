@@ -15,37 +15,25 @@
 </head>
 
 <body>
-    <!-- mobile header  -->
-    <header id="standardHeader">
-        <div class='header__content'>
-            <div class='header__title'>
-                <img src="../assets/logo_b.png" />
-            </div>
-            <nav class="header__nav" id="">
-                <span class="nav_item"> <a href='../../index.html'>Home</a></span>
-                <span class="nav_item"> <a href='.index.html'>Fleet</a></span>
-        
-            </nav>
-        </div>
-        <!-- mobile nav / dropdown -->
-        <div class='mobile_nav'>
-            <div class='mobile__title'>
-                <img src="./src/assets/logo_b.png" />
-            </div>
-            <div class="mobile_icon">
-                <i class="fa-solid fa-bars" id="showMobileIcon"></i>
-            </div>
-            <ul id="mobileMenu" style="display: none;">
-                <li> <a href='../../index.html'>Home</a></li>
-                <li> <a href='.index.html'>Fleet</a></li>
-                <li> <a class='nav-link' href="https://mattc-27.github.io/supreme-avocado/">Return</a></li>
-            </ul>
-        </div>
-    </header>
-    <!-- -->
     <main class="container">
+        <!-- mobile header  -->
+        <header class='header_content-new' id="headerContent">
+            <div class='header_logo' id="headerTitle">
+                <img src="../assets/no_bg_logo.png" />
+                <h1>Elevation Aviation</h1>
+            </div>
+
+            <nav class="header__nav">
+                <span class="nav_item"> <a href="../../index.html">Home</a></span>
+                <span class="nav_item"> <a href='../training/index.html'>Flight Instruction</a></span>
+                <span class="nav_item"> <a href='./index.html'>Fleet</a></span>
+                <span class="nav_item"> <a href="./">About</a></span>
+                <span class="nav_item"> <a href="https://mattc-27.github.io/supreme-avocado/">Return</a></span>
+            </nav>
+        </header>
         <!-- -->
-        <section id="hero_wrapper">
+        <!-- -->
+        <!--  <section id="hero_wrapper">
             <div class="hero_content">
                 <div class='hero_title'>
                     <h1>Explore Our Fleet</h1>
@@ -54,27 +42,35 @@
                         the
                         skies.</p>
                 </div>
-        </section>
+        </section>-->
         <!-- -->
-        <section class="section__layout-lg flex_col content_even mbt5" id="fleet_page">
-            <div class='flex_row content_center items_center section_title'>
-                <h2>
-                    Diverse, modern, and meticulously maintained – our fleet is designed to provide the best
-                    learning experience possible.
-                </h2>
-            </div>
-            <div class='flex_col section_text'>
-                <p><b>Diverse Selection: </b>
-                    </br>From single-engine trainers to advanced multi-engine aircraft.</p>
-                <p><b>Safety First:</b>
-                    </br> Regular maintenance ensures every flight is safe and reliable.</p>
-                <p><b>Modern Equipment:</b>
-                    </br> All aircraft feature advanced avionics for real-world training.</p>
-            </div>
+        <section class="section__layout-md flex_col content_center" style="height: 75vh;">
+            <div class="flex_col-container" style="position: relative; z-index: 999999;">
+                <!--flex_row content_even items_start  top: 0%;
+                border: 0.5px solid blue; 
+                -->
+                <div class="flex_col content_even items_center"
+                    style="width: 100%; max-width: 100%; position: relative; z-index: 999999; height: 100%;">
+                    <div class="section_title">
+                        <h2>
+                            Diverse, modern, and meticulously maintained – our fleet is designed to provide the best
+                            learning experience possible.
+                        </h2>
+                    </div>
+                    <div class='flex_col section_text'>
+                        <p><b>Diverse Selection: </b>
+                            </br>From single-engine trainers to advanced multi-engine aircraft.</p>
+                        <p><b>Safety First:</b>
+                            </br> Regular maintenance ensures every flight is safe and reliable.</p>
+                        <p><b>Modern Equipment:</b>
+                            </br> All aircraft feature advanced avionics for real-world training.</p>
+                    </div>
 
-            <div class="flex_col-img">
-                <img
-                    src="https://images.unsplash.com/photo-1686925131684-70ea6f680cd6?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                    <div class="flex_col-img">
+                        <img
+                            src="https://images.unsplash.com/photo-1686925131684-70ea6f680cd6?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                    </div>
+                </div>
             </div>
         </section>
         <!-- -->
@@ -102,41 +98,43 @@
                 </div>
             </div>
         </div>
+
+        <!-- -->
+        <footer class="footer_standard">
+            <div class="footer_content">
+                <div class="footer_logo">
+                    <img src="../assets/elevate_logo-dark.png" />
+                </div>
+                <div class="footer_row">
+                    <div class="footer_info-location">
+                        <h3>Location</h3>
+                        <p>Centennial Airport (APA)</p>
+                        <p> 7555 S Peoria St, Hangar 12</p>
+                        <p>Englewood, CO 80112</p>
+                    </div>
+                    <div class="footer_info-location">
+                        <h3>Contact</h3>
+                        <p>(303) 555-0131</p>
+                        <p>info@elevateaviationacademy.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_content-bottom">
+                <div class="footer_col-text">
+                    <p id="footer_text-md" style="color: #fff;">© 2025 Elevate Aviation Academy. All Rights Reserved.
+                    </p>
+                    <p id="footer_text-xs">Proudly training pilots in Colorado since 1998.</p>
+                </div>
+                <div class="footer_social">
+                    <h3>Follow us</h3>
+                    <div class="footer_social-icons">
+                        <i class="fa-brands fa-square-facebook footer_icon"></i>
+                        <i class="fa-brands fa-instagram footer_icon"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </main>
-    <!-- -->
-    <footer class="footer_standard">
-        <div class="footer_content">
-            <div class="footer_logo">
-                <img src="../assets/elevate_logo-dark.png" />
-            </div>
-            <div class="footer_row">
-                <div class="footer_info-location">
-                    <h3>Location</h3>
-                    <p>Centennial Airport (APA)</p>
-                    <p> 7555 S Peoria St, Hangar 12</p>
-                    <p>Englewood, CO 80112</p>
-                </div>
-                <div class="footer_info-location">
-                    <h3>Contact</h3>
-                    <p>(303) 555-0131</p>
-                    <p>info@elevateaviationacademy.com</p>
-                </div>
-            </div>
-        </div>
-        <div class="footer_content-bottom">
-            <div class="footer_col-text">
-                <p id="footer_text-md" style="color: #fff;">© 2025 Elevate Aviation Academy. All Rights Reserved.</p>
-                <p id="footer_text-xs">Proudly training pilots in Colorado since 1998.</p>
-            </div>
-            <div class="footer_social">
-                <h3>Follow us</h3>
-                <div class="footer_social-icons">
-                    <i class="fa-brands fa-square-facebook footer_icon"></i>
-                    <i class="fa-brands fa-instagram footer_icon"></i>
-                </div>
-            </div>
-        </div>
-    </footer>
 </body>
 <script type="module">
     const mobileBtn = document.getElementById('showMobileIcon')

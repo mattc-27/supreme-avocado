@@ -12,6 +12,10 @@
     color: #333;
 }
 
+h1, h2, h3, a, p {
+    font-family: 'Open sans';
+}
+
 :root {
     --main-font-family: "Open Sans", serif;
 }
@@ -41,11 +45,6 @@ body {
 --- --- --- --- --- */
 #mainNav {
     display: none;
-}
-
-.header__content {
-    display: none;
-
 }
 
 .mobile_nav {
@@ -119,7 +118,133 @@ body {
     font-size: 1.25em;
 }
 
+.header_content-new {
+    width: 100%;
+    max-width: 99.99%;
+    margin: 0%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 2.5% 0%;
+    margin: 0%;
+    /*
+        position: fixed;
+    z-index: 999999;
+    top: 0%;
+    */
 
+}
+
+#headerContent {
+    /*     background-color: transparent;
+    transition: background-color 0.1s ease-in-out;\
+    background-color: #fafafa;*/
+
+}
+
+
+
+
+#headerTitle h1 {
+    font-size: 1.25em;
+    transition: color 0.3s ease-in-out;
+    color: #333;
+}
+
+
+#headerTitle.scrolled h1 {
+    color: #333;
+
+}
+
+.header_logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.25%;
+    max-width: 98%;
+    flex-grow: 1;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 75%;
+    margin: 0.5% 0%;
+    padding: 0.25%;
+    margin-left: 2.5%;
+    flex-grow: 1;
+}
+
+
+.header_logo img {
+    height: 80px;
+    width: 100px;
+}
+
+.header_content-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 40%;
+
+}
+
+
+
+
+.nav_item {
+    flex-grow: 1;
+    height: auto;
+    display: flex;
+    max-width: 20%;
+    font-weight: 400;
+}
+
+.nav_item a {
+    text-decoration: none;
+    margin-left: 2.5%;
+    font-size: 0.75em;
+    align-self: center;
+    text-align: center;
+    cursor: pointer;
+    color: #333;
+}
+
+
+
+header {
+    position: sticky;
+    top: 0;
+    max-width: 100%;
+    border-bottom: 1px solid #eee;
+    z-index: 999999;
+    background-color: #333;
+    background-color: #fafafa;
+    height: 10vh;
+    z-index: 9999999;
+    box-shadow: -0.25px 1px 3px 0.5px rgba(157, 157, 157, 0.2);
+}
+
+
+#header_wrapper {
+    height: 90vh;
+    min-height: fit-content;
+    width: 100%;
+    max-width: 99.99%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*   background-color: #8d8d8d6e;
+   background-image: url('https://images.unsplash.com/photo-1683971336619-d445cbec0276?q=80&w=1489&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');*/
+    /*     background-image: url('https://images.unsplash.com/photo-1586063029643-fd87377743ef?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center;
+    background-size: cover;*/
+}
 
 /* --- --- --- --- ---
 -- Footer Block
@@ -291,6 +416,7 @@ body {
 }
 
 
+
 /* ------ ------ ------ 
 
 breakpoints 
@@ -302,7 +428,15 @@ breakpoints
     /* --- --- --- --- ---
 -- Header Block
 --- --- --- --- --- */
-    header {}
+
+    .header_content-new {
+        width: 100%;
+        max-width: 99.99%;
+        margin: 0%;
+        display: flex;
+        margin: 0%;
+    }
+
 
     .header__content {
         width: 100%;
@@ -328,31 +462,28 @@ breakpoints
     .header__nav {
         display: flex;
         align-items: center;
-        justify-content: center;
-        width: 100%;
-        max-width: 80%;
+        justify-content: flex-start;
     }
 
     .nav_item {
         flex-grow: 1;
-        height: 20%;
         display: flex;
-        border-left: 0.5px solid #b1b1b1;
-        color: #fff;
     }
 
     .nav_item a {
         text-decoration: none;
-        margin-left: 0.5%;
+        width: fit-content;
+        min-width: 150px;
+        padding: 0.25%;
+        max-width: 99%;
+        padding-left: 1%;
         font-size: 0.9em;
         align-self: center;
-        font-family: 'Open sans';
         cursor: pointer;
-        color: #fff;
     }
 
-    .nav-link {
-        color: #fff;
+    .nav_item a:hover {
+        color: #666;
     }
 
     .mobile_nav {
