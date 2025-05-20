@@ -145,6 +145,10 @@ button {
     line-height: 2;
 }
 
+.section_title.large h1 {
+    font-size: 5rem;
+}
+
 .section_title h2 {
     font-weight: 500;
     font-size: 2.25em;
@@ -435,11 +439,70 @@ button {
 }
 
 .card__metrics {
-    height: 100%;
+    height: 200px;
     color: #333;
     width: auto;
     align-self: center;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card__metrics h3 {
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+
+.card__metrics p {
+    font-size: 1.15rem;
+    line-height: 2;
+    font-weight: 300;
+}
+
+.card__metrics.light p {
+    display: inline-block;
+    position: unset;
+    /**/
+    /**/
+    width: 100%;
+    max-width: 90%;
+    padding: 2%;
+    line-height: 1.5;
+    text-align: left;
+    /**/
+    font-weight: 300;
+    color: #fff;
+}
+
+.card__metrics.light h3 {
+    display: inline-block;
+    position: unset;
+    /**/
+    /**/
+    width: 100%;
+    max-width: 90%;
+    padding: 2%;
+    line-height: 1.5;
+    text-align: left;
+    /**/
+    font-weight: 300;
+    color: #fff;
+}
+
+.dark {
+    width: 100%;
+    max-width: 98%;
+    height: 20vh;
+    margin: 0.25% 1%;
+    background: #333;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+
+}
+
+.fleet_page-title-main {
+    font-size: 2.5rem;
 }
 
 .metric_num {
@@ -1508,6 +1571,15 @@ banners
         width: 100%;
     }
 
+    .flex_row {
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+        width: 100%;
+        max-width: 99%;
+    }
+
+
     .card_md {
         display: flex;
         flex-direction: column;
@@ -1526,6 +1598,10 @@ banners
         max-width: 98%;
         flex-grow: 0.5;
         /*  */
+    }
+
+    .section_title h1.large {
+        font-size: 5rem;
     }
 
     .section_title h2 {
